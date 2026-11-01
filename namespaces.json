@@ -1,0 +1,109 @@
+{
+  "schema": "noodlestan.registry.namespaces/1",
+  "snapshot": "2026-11-01",
+  "namespaces": [
+    {
+      "name": "Namespace: Art JS",
+      "canonical": "@art-js",
+      "purpose": "Tools for working with Art files as programs.",
+      "description": "Art JS libraries and tools for authoring, validating, and projecting Art MD programs.",
+      "owner": "Project: Art JS",
+      "repositories": [
+        "Repository: Art JS"
+      ]
+    },
+    {
+      "name": "Namespace: Art Lib",
+      "canonical": "@art-lib",
+      "purpose": "Build high quality, consistent, Cli and Tool experiences from composable units.",
+      "description": "Shared libraries and tools for building CLIs and Tools.",
+      "owner": "Project: Art Lib",
+      "repositories": [
+        "Repository: Art Lib"
+      ]
+    },
+    {
+      "name": "Namespace: Art MD",
+      "canonical": "@art-md",
+      "purpose": "Express structured data in Markdown with an extensible language.",
+      "description": "Art MD language spec, libraries, and tools.",
+      "owner": "Project: Art MD",
+      "repositories": [
+        "Repository: Art MD"
+      ]
+    },
+    {
+      "name": "Namespace: Art Works",
+      "canonical": "@art-works",
+      "purpose": "Manage multi-repository development environments for parallel planning and execution.",
+      "description": "Tools for discovering projects, managing knowledge and context resources, and operating across multiple checkouts: cloning, visualizing, synchronizing, and executing commands.",
+      "owner": "Project: Art Works",
+      "repositories": [
+        "Repository: Art Works"
+      ]
+    },
+    {
+      "name": "Namespace: Artisans",
+      "canonical": "@artisans",
+      "purpose": "Hand-crafted micro applications for humans working with Art and Artificials.",
+      "description": "No-build vanilla HTML/CSS/JS apps. State lives in plain JSON files next to each app. Each app is served with a single zero-dependency node http script.",
+      "owner": "Project: Artisans",
+      "repositories": [
+        "Repository: Artisans"
+      ]
+    },
+    {
+      "name": "Namespace: No Comply",
+      "canonical": "@no-comply",
+      "purpose": "Publish the No Comply SolidJS packages under a shared identity.",
+      "description": "SolidJS libraries for accessibility, composables, contexts, dev tooling, and primitives, with the meta extraction CLI and standard UI demo.",
+      "owner": "Project: No Comply",
+      "repositories": [
+        "Repository: No Comply"
+      ]
+    },
+    {
+      "name": "Namespace: Noodlestan",
+      "canonical": "@noodlestan",
+      "purpose": "Publish the shared Noodlestan ecosystem conventions, tools, and components under one canonical npm scope.",
+      "description": "Packages published from multiple Noodlestan repositories `noodlestan/conventions`, `noodlestan/noodlestan-web`, and `noodlestan/workspace-tooling`.",
+      "owner": "Project: Noodlestan Management",
+      "repositories": [
+        "Repository: Art MD",
+        "Repository: Conventions",
+        "Repository: Noodlestan Web",
+        "Repository: Workspace Tooling"
+      ]
+    },
+    {
+      "name": "Namespace: Purrception",
+      "canonical": "@purrception",
+      "purpose": "Publish the Purrception language tooling packages under a shared identity.",
+      "description": "TypeScript language extraction libraries and source tooling (`lang-ts`, `lang-ts-extract`, `source-fs`, `primitives`).",
+      "owner": "Project: Purrception",
+      "repositories": [
+        "Repository: Purrception"
+      ]
+    },
+    {
+      "name": "Namespace: Purrpose",
+      "canonical": "@purrpose",
+      "purpose": "Publish the Purrpose client packages under a shared identity.",
+      "description": "Client-side Babel tooling and SolidJS service packages (`client-babel`, its presets, and `solid-shiki-service`).",
+      "owner": "Project: Purrpose",
+      "repositories": [
+        "Repository: Purrpose"
+      ]
+    },
+    {
+      "name": "Namespace: Purrtrait",
+      "canonical": "@purrtrait",
+      "purpose": "Publish the Purrtrait rendering packages under a shared identity.",
+      "description": "TSX rendering libraries (`client-tsx`, `code-renderer`, `lang-ts`, `solid-code`, `view-tsx`).",
+      "owner": "Project: Purrtrait",
+      "repositories": [
+        "Repository: Purrtrait"
+      ]
+    }
+  ]
+}

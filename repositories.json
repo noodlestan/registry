@@ -1,0 +1,158 @@
+{
+  "schema": "noodlestan.registry.repositories/1",
+  "snapshot": "2026-11-01",
+  "repositories": [
+    {
+      "name": "Repository: Art Boards",
+      "canonical": "noodlestan/art-boards",
+      "remote": "git@github.com:noodlestan/art-boards.git",
+      "purpose": "Host and manage the Art Boards packages and tools, and their knowledge and planning artefacts.",
+      "description": "Monorepo containing the Art Boards roadmap and backlogs, knowledge, and CLI source code.",
+      "owner": "Project: Art Boards"
+    },
+    {
+      "name": "Repository: Art Domains",
+      "canonical": "noodlestan/art-domains",
+      "remote": "git@github.com:noodlestan/art-domains.git",
+      "purpose": "Host and manage the Art Domains planning artefacts.",
+      "description": "This repository hosts the Art Domains planning artefacts only: the roadmap, the backlogs, the knowledge references, and the records.",
+      "owner": "Project: Art Domains"
+    },
+    {
+      "name": "Repository: Art JS",
+      "canonical": "noodlestan/art-js",
+      "remote": "git@github.com:noodlestan/art-js.git",
+      "purpose": "Host and manage the Art JS packages and tools, and their knowledge and planning artefacts.",
+      "description": "Monorepo containing the Art JS roadmap and backlogs, knowledge, and library source code.",
+      "owner": "Project: Art JS"
+    },
+    {
+      "name": "Repository: Art Lib",
+      "canonical": "noodlestan/art-lib",
+      "remote": "git@github.com:noodlestan/art-lib.git",
+      "purpose": "Host and manage the Art Lib shared libraries and tools, and their planning artefacts.",
+      "description": "Monorepo containing the Art Lib shared libraries and tools, and their backlogs.",
+      "owner": "Project: Art Lib"
+    },
+    {
+      "name": "Repository: Art MD",
+      "canonical": "noodlestan/art-md",
+      "remote": "git@github.com:noodlestan/art-md.git",
+      "purpose": "Host and manage the Art MD packages and tools, and their knowledge and planning artefacts.",
+      "description": "Monorepo containing the Art MD roadmap and backlogs, language spec, knowledge, and library source code.",
+      "owner": "Project: Art MD"
+    },
+    {
+      "name": "Repository: Art Works",
+      "canonical": "noodlestan/art-works",
+      "remote": "git@github.com:noodlestan/art-works.git",
+      "purpose": "Host and manage the Art Works orchestration tools and applications, and their planning artefacts.",
+      "description": "Monorepo containing the Art Works roadmap, orchestration source code, and their backlogs.",
+      "owner": "Project: Art Works"
+    },
+    {
+      "name": "Repository: Artificials",
+      "canonical": "noodlestan/artificials",
+      "remote": "git@github.com:noodlestan/artificials.git",
+      "purpose": "Host and manage the Artificials roadmap, and the docs and demos applications.",
+      "description": "Monorepo containing the Artificials coordination roadmap, docs and demo applicationsa and their backlogs, and shared tooling and content.",
+      "owner": "Project: Artificials"
+    },
+    {
+      "name": "Repository: Artisans",
+      "canonical": "noodlestan/artisans",
+      "remote": "git@github.com:noodlestan/artisans.git",
+      "purpose": "Host and manage the Artisans experiments, and their planning artefacts.",
+      "description": "Small, indepedents apps and tools.",
+      "owner": "Project: Artisans"
+    },
+    {
+      "name": "Repository: Conventions",
+      "canonical": "noodlestan/conventions",
+      "remote": "git@github.com:noodlestan/conventions.git",
+      "purpose": "Host and manage the Noodlestan Conventions packages and its backlog.",
+      "description": "A collection of convention packages written in Art, architecture for distributing conventions, and backlog of conventions and distribution tools.",
+      "owner": "Project: Noodlestan Conventions"
+    },
+    {
+      "name": "Repository: Management",
+      "canonical": "noodlestan/_mgmt",
+      "remote": "git@github.com:noodlestan/_mgmt.git",
+      "purpose": "Host and manage Noodlestan's roadmap and incubate new projects.",
+      "description": "Repository containg Noodlestan's organization-wide roadmap, incubation backlogs, project ideas, research notes, and conceptual material.",
+      "owner": "Project: Noodlestan Management"
+    },
+    {
+      "name": "Repository: No Comply",
+      "canonical": "noodlestan/no-comply",
+      "remote": "git@github.com:noodlestan/no-comply.git",
+      "purpose": "Host and manage the No Comply project roadmap, the packages, and the docs and demo applications.",
+      "description": "Monorepo containing the No Comply roadmap, library packages, CLI tools to extract codebase matadata, docs and demo applications, and their backlogs, and knowledge.",
+      "owner": "Project: No Comply"
+    },
+    {
+      "name": "Repository: Noodlestan Web",
+      "canonical": "noodlestan/noodlestan-web",
+      "remote": "git@github.com:noodlestan/noodlestan-web.git",
+      "purpose": "Host the Noodlestan websites source code and content and manage their backlogs.",
+      "description": "Monorepo containing source code of Noodlestan websites and their backlogs, and shared content reusable in websites hosted in other repositories.",
+      "owner": "Project: Noodlestan Web"
+    },
+    {
+      "name": "Repository: Ops",
+      "canonical": "noodlestan/_ops",
+      "remote": "git@github.com:noodlestan/_ops.git",
+      "purpose": "Host and manage Noodlestan's operations, infrastructure resources, and operations backlog.",
+      "description": "Repository containing Terraform modules and AWS resource definitions.",
+      "owner": "Project: Noodlestan Ops"
+    },
+    {
+      "name": "Repository: Purrception",
+      "canonical": "noodlestan/purrception",
+      "remote": "git@github.com:noodlestan/purrception.git",
+      "purpose": "Host and manage the Purrception packages and tools, and their planning artefacts.",
+      "description": "Monorepo containing the Purrception roadmap, libraries defining metadata sources and languages, CLI tools for metadata extraction, and their backlogs.",
+      "owner": "Project: Purrception"
+    },
+    {
+      "name": "Repository: Purrfect",
+      "canonical": "noodlestan/purrfect",
+      "remote": "git@github.com:noodlestan/purrfect.git",
+      "purpose": "Host and manage the Purrfect project roadmap, and docs and demo applications.",
+      "description": "Monorepo containing the Purrfect coordination roadmap, docs and demo applications, and shared tooling.",
+      "owner": "Project: Purrfect"
+    },
+    {
+      "name": "Repository: Purrpose",
+      "canonical": "noodlestan/purrpose",
+      "remote": "git@github.com:noodlestan/purrpose.git",
+      "purpose": "Host and manage the Purrpose packages and tools, and their planning artefacts.",
+      "description": "Monorepo containing the Purrpose roadmap, utility libraries, and their backlogs.",
+      "owner": "Project: Purrpose"
+    },
+    {
+      "name": "Repository: Purrtrait",
+      "canonical": "noodlestan/purrtrait",
+      "remote": "git@github.com:noodlestan/purrtrait.git",
+      "purpose": "Host and manage the Purrtrait packages and tools, and their planning artefacts.",
+      "description": "Monorepo containing the Purrtrait roadmap, libraries for source code transformation, rendering, and syntax highlighting, CLI tools for metadata extraction, and their backlogs.",
+      "owner": "Project: Purrtrait"
+    },
+    {
+      "name": "Repository: Registry",
+      "canonical": "noodlestan/registry",
+      "remote": "git@github.com:noodlestan/registry.git",
+      "purpose": "Host and publish the Noodlestan registry views — namespaces, repositories, and projects.",
+      "description": "Data-only repository holding hand-authored JSON views and JSON schemas, served through raw GitHub endpoints.",
+      "owner": "Project: Registry"
+    },
+    {
+      "name": "Repository: Workspace Tooling",
+      "canonical": "noodlestan/workspace-tooling",
+      "remote": "git@github.com:noodlestan/workspace-tooling.git",
+      "purpose": "Host and manage the workspace tooling related packages and their planning artefacts.",
+      "description": "Monorepo containing build tools and configs for Noodlestan workspaces and their backlogs.",
+      "owner": "Project: Noodlestan Workspace Tooling"
+    }
+  ]
+}

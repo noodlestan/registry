@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Namespaces view",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "snapshot",
+    "namespaces"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string"
+    },
+    "snapshot": {
+      "type": "string"
+    },
+    "namespaces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "canonical",
+          "purpose",
+          "description",
+          "owner",
+          "repositories"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "canonical": {
+            "type": "string",
+            "pattern": "^@[a-z0-9-]*$"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "repositories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
