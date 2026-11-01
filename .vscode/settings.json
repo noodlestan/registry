@@ -1,0 +1,21 @@
+{
+  "files.associations": {
+    "*.art": "markdown",
+    "*.tart": "markdown"
+  },
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#d36b1c",
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.inactiveBackground": "#b66e16",
+    "titleBar.inactiveForeground": "#cccccc",
+    "sideBar.background": "#000100",
+    "sideBar.foreground": "#d9dfce"
+  },
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  }
+}

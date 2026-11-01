@@ -1,0 +1,31 @@
+# Module
+
+## Project: Registry
+
+**Purpose:** Publish machine-consumable Noodlestan registry views of namespaces, repositories, and projects.
+
+**Description:** Data-only project hosting hand-authored JSON views and their schemas, consumed through raw GitHub endpoints by `@noodlestan/commons` and other tooling.
+
+**Owner:** Project: Noodlestan Management
+
+**Author:** Noodlestan Collective
+
+**Repository:** Repository: Registry
+
+**Code:** https://github.com/noodlestan/registry
+
+**Resources:**
+
+- WIP
+
+**Keywords:**
+
+- registry
+- views
+- json
+
+**Private:** `false`
+
+**Management:** Uses Workflow: Planning Work with one backlog; the repository publishes data views only — no source code and no npm packages.
+
+**License:** License: Noodlestan 2026 MIT

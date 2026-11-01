@@ -1,0 +1,53 @@
+# Module
+
+## Repository: Registry
+
+**Purpose:** Host and publish the Noodlestan registry views — namespaces, repositories, and projects.
+
+**Description:** Data-only repository holding hand-authored JSON views and JSON schemas, served through raw GitHub endpoints.
+
+**Owner:** Project: Registry
+
+**Author:** Noodlestan Collective
+
+**Remote:** `git@github.com:noodlestan/registry.git`
+
+**Canonical:** `noodlestan/registry`
+
+**Consumers:** `@noodlestan/commons`, registry tooling
+
+**Private:** `false`
+
+**Workspaces:** None
+
+**Language:** JSON
+
+**Engines:**
+
+- Node: `>= 22`
+
+**PackageManager:** `npm@10.2.3`
+
+**PackageFile:** package.json
+
+**Dependencies:**
+
+- Runtime:
+  - None
+- Dev:
+  - `@noodlestan/prettier-config`
+  - `prettier`
+  - `lefthook`
+
+**Scripts:**
+
+- Package Script Set: Root Lifecycle
+
+**Scaffolders:**
+
+- Scaffolder Skeleton: Project Skeleton
+- Scaffolder Files: Project README
+- Scaffolder Files: Project Package Json
+- Scaffolder Files: Project Lefthook
+
+**License:** License: Noodlestan 2026 MIT

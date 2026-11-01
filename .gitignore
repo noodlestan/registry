@@ -1,0 +1,51 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Dependency directories
+node_modules/
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Runtime data
+pids
+.temp
+*.pid
+*.seed
+*.pid.lock
+
+# Cache directories
+.turbo
+.npm
+.eslintcache
+
+# Environment variable files
+.env
+
+# Build directories
+**/generated
+**/dist
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Test directories
+**/.coverage
+**/coverage
