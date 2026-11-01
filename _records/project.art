@@ -20,12 +20,14 @@
 
 **Keywords:**
 
+- noodlestan
 - registry
-- views
-- json
+- json-registry
+- static-json
+- json-api
 
 **Private:** `false`
 
-**Management:** Uses Workflow: Planning Work with one backlog; the repository publishes data views only — no source code and no npm packages.
+**Management:** Managed in Project: Noodlestan Management
 
 **License:** License: Noodlestan 2026 MIT

@@ -22,7 +22,7 @@ data/namespaces.json    — Namespaces view
 data/repositories.json  — Repositories view
 data/projects.json      — Projects view
 data/endpoints.json     — Endpoint index for discoverability
-schema/                 — JSON schemas, one per view
+schema/v1/             — JSON schemas, one per view (versioned path)
 _records/           — project, repository, and license records
 ```
 

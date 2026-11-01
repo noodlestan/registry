@@ -1,13 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Repositories view",
+  "$id": "https://raw.githubusercontent.com/noodlestan/registry/main/schema/v1/namespaces.schema.json",
+  "title": "Namespaces view",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "schema",
-    "snapshot",
-    "repositories"
-  ],
+  "required": ["schema", "snapshot", "namespaces"],
   "properties": {
     "schema": {
       "type": "string"
@@ -15,30 +12,19 @@
     "snapshot": {
       "type": "string"
     },
-    "repositories": {
+    "namespaces": {
       "type": "array",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": [
-          "name",
-          "canonical",
-          "remote",
-          "purpose",
-          "description",
-          "owner"
-        ],
+        "required": ["name", "canonical", "purpose", "description", "owner", "repositories"],
         "properties": {
           "name": {
             "type": "string"
           },
           "canonical": {
             "type": "string",
-            "pattern": "^[a-z0-9._-]+/[a-z0-9._-]+$"
-          },
-          "remote": {
-            "type": "string",
-            "pattern": "^git@github\\.com:.+\\.git$"
+            "pattern": "^@[a-z0-9-]*$"
           },
           "purpose": {
             "type": "string"
@@ -48,6 +34,12 @@
           },
           "owner": {
             "type": "string"
+          },
+          "repositories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }

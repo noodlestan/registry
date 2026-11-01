@@ -1,13 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/noodlestan/registry/main/schema/v1/projects.schema.json",
   "title": "Projects view",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "schema",
-    "snapshot",
-    "projects"
-  ],
+  "required": ["schema", "snapshot", "projects"],
   "properties": {
     "schema": {
       "type": "string"
@@ -46,28 +43,17 @@
             }
           },
           "owner": {
-            "type": [
-              "string",
-              "null"
-            ]
+            "type": ["string", "null"]
           },
           "repository": {
-            "type": [
-              "string",
-              "null"
-            ]
+            "type": ["string", "null"]
           },
           "resources": {
             "type": "array",
             "items": {
               "type": "object",
               "additionalProperties": false,
-              "required": [
-                "name",
-                "canonical",
-                "path",
-                "private"
-              ],
+              "required": ["name", "canonical", "path", "private"],
               "properties": {
                 "name": {
                   "type": "string"

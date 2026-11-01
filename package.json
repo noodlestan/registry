@@ -4,7 +4,10 @@
   "description": "Noodlestan registry views (namespaces, repositories, projects) published as raw JSON endpoints.",
   "keywords": [
     "noodlestan",
-    "registry"
+    "registry",
+    "json-registry",
+    "static-json",
+    "json-api"
   ],
   "author": "Noodlestan",
   "license": "MIT",
