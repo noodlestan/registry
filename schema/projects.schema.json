@@ -24,6 +24,7 @@
           "name",
           "purpose",
           "description",
+          "keywords",
           "owner",
           "repository",
           "resources"
@@ -37,6 +38,12 @@
           },
           "description": {
             "type": "string"
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "owner": {
             "type": [

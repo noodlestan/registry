@@ -4,7 +4,7 @@
 
 **Purpose:** Host and publish the Noodlestan registry views — namespaces, repositories, and projects.
 
-**Description:** Data-only repository holding hand-authored JSON views and JSON schemas, served through raw GitHub endpoints.
+**Description:** Repository holding JSON views and JSON schemas, served through raw GitHub endpoints.
 
 **Owner:** Project: Registry
 

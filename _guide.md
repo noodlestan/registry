@@ -2,7 +2,7 @@
 
 > Publish machine-consumable Noodlestan registry views as raw JSON endpoints.
 
-Data-only repository hosting hand-authored JSON views (namespaces, repositories, projects) and their schemas, consumed by `@noodlestan/commons` and other tooling through raw GitHub URLs.
+JSON views (namespaces, repositories, projects) and their schemas, consumed by `@noodlestan/commons` and other tooling through raw GitHub URLs.
 
 ## Recommended Reading
 
@@ -18,10 +18,11 @@ _guide.md           — this file
 README.md           — endpoints, schemas, consumption notes
 package.json        — root manifest (private)
 lefthook.yml        — pre-commit hooks (prettier)
-namespaces.json     — Namespaces view
-repositories.json   — Repositories view
-projects.json       — Projects view
-schema/             — JSON schemas, one per view
+data/namespaces.json    — Namespaces view
+data/repositories.json  — Repositories view
+data/projects.json      — Projects view
+data/endpoints.json     — Endpoint index for discoverability
+schema/                 — JSON schemas, one per view
 _records/           — project, repository, and license records
 ```
 

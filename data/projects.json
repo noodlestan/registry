@@ -6,6 +6,12 @@
       "name": "Project: Art Boards",
       "purpose": "Visualize resources and coordinate agent sessions with human-machine collaboration tools.",
       "description": "Tools for coordinating agent sessions and discovering and visualizing resources and artefacts.",
+      "keywords": [
+        "art",
+        "agent-workflows",
+        "delegation",
+        "agent-visualization"
+      ],
       "owner": "Project: Artificials",
       "repository": "Repository: Art Boards",
       "resources": []
@@ -14,6 +20,16 @@
       "name": "Project: Art Domains",
       "purpose": "Extends agentic working environments with structured instructions projected from stable sources of truth.",
       "description": "Distributable artificial resources within knowledge and work domains: structures, templates, processes, agent instructions, modes, and skills.",
+      "keywords": [
+        "art",
+        "agent-workflows",
+        "agent-instructions",
+        "skills",
+        "knowledge-management",
+        "structured-data",
+        "workspaces",
+        "records"
+      ],
       "owner": "Project: Artificials",
       "repository": "Repository: Art Domains",
       "resources": []
@@ -22,6 +38,11 @@
       "name": "Project: Art JS",
       "purpose": "Enable Art files to be authored as programs, with validation, language tooling, and automated projection to target formats.",
       "description": "Libraries and tools for working with Art MD as a programming language, including records, resources, modules, programs, program builders, validators, projectors, language services, and related tooling.",
+      "keywords": [
+        "art",
+        "markdown",
+        "ast"
+      ],
       "owner": "Project: Artificials",
       "repository": "Repository: Art JS",
       "resources": [
@@ -73,6 +94,10 @@
       "name": "Project: Art Lib",
       "purpose": "Build high quality, consistent, Cli and Tool experiences from composable units.",
       "description": "Shared libraries and tools for building CLIs and Tools.",
+      "keywords": [
+        "art",
+        "terminal-apps"
+      ],
       "owner": "Project: Artificials",
       "repository": "Repository: Art Lib",
       "resources": [
@@ -88,6 +113,13 @@
       "name": "Project: Art MD",
       "purpose": "Express structured data in Markdown with an extensible language that enables human and machine authoring at scale and automated transformations.",
       "description": "Language specification and JavaScript libraries for extracting structured data into a MDAST derived AST, with an open construct registry. Provides parsing, validation, transformation, and serialization of Art MD content.",
+      "keywords": [
+        "art",
+        "markdown",
+        "ast",
+        "structured-data",
+        "agent-instructions"
+      ],
       "owner": null,
       "repository": "Repository: Art MD",
       "resources": [
@@ -145,6 +177,13 @@
       "name": "Project: Art Works",
       "purpose": "Manage multi-repository development environments for parallel planning and execution.",
       "description": "Tools for discovering projects, managing knowledge and context resources, and operating across multiple checkouts: cloning, visualizing, synchronizing, and executing commands.",
+      "keywords": [
+        "art",
+        "agent-workflows",
+        "workspaces",
+        "multi-repository",
+        "git"
+      ],
       "owner": "Project: Art Domains",
       "repository": "Repository: Art Works",
       "resources": [
@@ -160,6 +199,13 @@
       "name": "Project: Artificials",
       "purpose": "Generate and manage (Art)ificial Driven Development environments.",
       "description": "A collection of tools and resources to generate and manage knowledge artefacts and agent instructions.",
+      "keywords": [
+        "art",
+        "markdown",
+        "agent-workflows",
+        "delegation",
+        "agent-instructions"
+      ],
       "owner": "Project: Noodlestan Management",
       "repository": "Repository: Artificials",
       "resources": []
@@ -168,6 +214,12 @@
       "name": "Project: Artisans",
       "purpose": "Have fun with artificials.",
       "description": "Creative and experimental micro projects developed entirely using Artificials.",
+      "keywords": [
+        "art",
+        "experimental",
+        "creative",
+        "demo"
+      ],
       "owner": "Project: Artificials",
       "repository": "Repository: Artisans",
       "resources": []
@@ -176,6 +228,12 @@
       "name": "Project: No Comply",
       "purpose": "Context-aware UI system built with SolidJS and modern CSS.",
       "description": "SolidJS layered library ecosystem spanning foundational types, accessibility primitives, contexts and services, composable controllers, a themeable component library, and developer tooling.",
+      "keywords": [
+        "solidjs",
+        "ui",
+        "components",
+        "component-library"
+      ],
       "owner": "Project: Noodlestan Management",
       "repository": "Repository: No Comply",
       "resources": [
@@ -239,6 +297,10 @@
       "name": "Project: Noodlestan Conventions",
       "purpose": "Distributable Noodlestan conventions written in Art.",
       "description": "Conventions packages for Noodlestan stack, including Typescript, JSX, Solid JS, and SCSS.",
+      "keywords": [
+        "conventions",
+        "style-guide"
+      ],
       "owner": "Project: Noodlestan Management",
       "repository": "Repository: Conventions",
       "resources": [
@@ -284,6 +346,11 @@
       "name": "Project: Noodlestan Management",
       "purpose": "Coordinate Noodlestan projects and their roadmaps and orgnanize shared assets.",
       "description": "Noodlestan's top-level roadmap, ideas, research notes, and incubation material.",
+      "keywords": [
+        "project-management",
+        "roadmap",
+        "governance"
+      ],
       "owner": null,
       "repository": "Repository: Management",
       "resources": []
@@ -292,6 +359,11 @@
       "name": "Project: Noodlestan Ops",
       "purpose": "Infrastructure as code for Noodlestan projects.",
       "description": "Terraform configurations for managing AWS resources: DNS zones, SSL certificates, S3 buckets, CloudFront distributions, and state backends. Organized into accounts, backend, domains, and modules.",
+      "keywords": [
+        "infrastructure",
+        "terraform",
+        "aws"
+      ],
       "owner": "Project: Noodlestan Management",
       "repository": "Repository: Ops",
       "resources": []
@@ -300,6 +372,9 @@
       "name": "Project: Noodlestan Web",
       "purpose": "Noodlestan says Hello World.",
       "description": "Repository of Noodlestan websites — typically built with Astro.",
+      "keywords": [
+        "documentation"
+      ],
       "owner": "Project: Noodlestan Management",
       "repository": "Repository: Noodlestan Web",
       "resources": [
@@ -315,6 +390,10 @@
       "name": "Project: Noodlestan Workspace Tooling",
       "purpose": "Build tooling for Noodlestan workspaces.",
       "description": "Esbuild CLI wrapper, ESLint config, and base TypeScript configs.",
+      "keywords": [
+        "tooling",
+        "configs"
+      ],
       "owner": "Project: Noodlestan Management",
       "repository": "Repository: Workspace Tooling",
       "resources": [
@@ -348,6 +427,12 @@
       "name": "Project: Purrception",
       "purpose": "Extract and compose metadata from source code and artefacts.",
       "description": "Collection of abstractions and tools for building metadata extraction pipelines from local and remote sources using heuristics, schemas, and factories.",
+      "keywords": [
+        "metadata",
+        "extraction",
+        "source-code",
+        "heuristics"
+      ],
       "owner": "Project: Noodlestan Management",
       "repository": "Repository: Purrception",
       "resources": []
@@ -356,6 +441,13 @@
       "name": "Project: Purrfect",
       "purpose": "Extract, compose, and expose metadata to support the discovery, interpretation, and operation of artefacts.",
       "description": "Collection of composable tools and abstractions for building metadata extraction pipelines, aggregations, indexes, visualizations, and metadata endpoints.",
+      "keywords": [
+        "metadata",
+        "extraction",
+        "visualization",
+        "aggregation",
+        "indexing"
+      ],
       "owner": "Project: Noodlestan Management",
       "repository": "Repository: Purrfect",
       "resources": []
@@ -364,6 +456,9 @@
       "name": "Project: Purrpose",
       "purpose": "In browser source code and metadata transformations.",
       "description": "Single-purpose utilities for in-browser transformations: JSX/TSX compilation, SolidJS JSX transform presets, and Shiki-based syntax highlighting.",
+      "keywords": [
+        "solidjs"
+      ],
       "owner": "Project: Noodlestan Management",
       "repository": "Repository: Purrpose",
       "resources": []
@@ -372,6 +467,11 @@
       "name": "Project: Purrtrait",
       "purpose": "Transform, render and visualize metadata about source code and artefacts.",
       "description": "Collection of tools for rendering code, visualizing metadata, and creating representations for humans and tools.",
+      "keywords": [
+        "metadata",
+        "visualization",
+        "rendering"
+      ],
       "owner": "Project: Noodlestan Management",
       "repository": "Repository: Purrtrait",
       "resources": []
@@ -380,6 +480,7 @@
       "name": "Project: Registry",
       "purpose": "Publish machine-consumable Noodlestan registry views of namespaces, repositories, and projects.",
       "description": "Data-only project hosting hand-authored JSON views and their schemas, consumed through raw GitHub endpoints by `@noodlestan/commons` and other tooling.",
+      "keywords": [],
       "owner": "Project: Noodlestan Management",
       "repository": "Repository: Registry",
       "resources": []

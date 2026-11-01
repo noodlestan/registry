@@ -2,7 +2,7 @@
 
 > Publish machine-consumable Noodlestan registry views as raw JSON endpoints.
 
-Hand-authored JSON views of Noodlestan identity — namespaces, repositories, and projects — with their JSON schemas. Data-only: no generator, no CI, no npm packages; refreshes are ordinary human PRs that bump each view's `snapshot`.
+JSON views of Noodlestan identity — namespaces, repositories, and projects — with their JSON schemas, published as raw endpoints. Each view carries a `snapshot` date.
 
 **Keywords:** noodlestan, registry.
 
@@ -10,9 +10,10 @@ Hand-authored JSON views of Noodlestan identity — namespaces, repositories, an
 
 | View | Endpoint | Schema |
 | --- | --- | --- |
-| Namespaces | https://raw.githubusercontent.com/noodlestan/registry/main/namespaces.json | `schema/namespaces.schema.json` |
-| Repositories | https://raw.githubusercontent.com/noodlestan/registry/main/repositories.json | `schema/repositories.schema.json` |
-| Projects | https://raw.githubusercontent.com/noodlestan/registry/main/projects.json | `schema/projects.schema.json` |
+| Namespaces | https://raw.githubusercontent.com/noodlestan/registry/main/data/namespaces.json | `schema/namespaces.schema.json` |
+| Repositories | https://raw.githubusercontent.com/noodlestan/registry/main/data/repositories.json | `schema/repositories.schema.json` |
+| Projects | https://raw.githubusercontent.com/noodlestan/registry/main/data/projects.json | `schema/projects.schema.json` |
+| Endpoint index | https://raw.githubusercontent.com/noodlestan/registry/main/data/endpoints.json | — |
 
 - Identity is the record's resource `name` (example: `Namespace: Art JS`); references between views are exact `name` matches.
 - `canonical` carries the npm scope (namespaces), the GitHub slug (repositories), or the npm package name (project resources).

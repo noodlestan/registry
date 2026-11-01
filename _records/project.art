@@ -4,7 +4,7 @@
 
 **Purpose:** Publish machine-consumable Noodlestan registry views of namespaces, repositories, and projects.
 
-**Description:** Data-only project hosting hand-authored JSON views and their schemas, consumed through raw GitHub endpoints by `@noodlestan/commons` and other tooling.
+**Description:** Project hosting JSON views and their schemas, consumed through raw GitHub endpoints by `@noodlestan/commons` and other tooling.
 
 **Owner:** Project: Noodlestan Management
 

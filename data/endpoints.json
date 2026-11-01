@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "endpoints": [
+    {
+      "name": "Namespaces",
+      "description": "Noodlestan namespaces and their canonical npm scopes.",
+      "url": "./namespaces.json"
+    },
+    {
+      "name": "Repositories",
+      "description": "Noodlestan repositories and their slugs, remotes, and owners.",
+      "url": "./repositories.json"
+    },
+    {
+      "name": "Projects",
+      "description": "Projects in the workspace.",
+      "url": "./projects.json"
+    }
+  ]
+}

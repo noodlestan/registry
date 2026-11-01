@@ -1,7 +1,7 @@
 {
   "name": "noodlestan/registry",
   "version": "0.0.1",
-  "description": "Hand-authored Noodlestan registry views (namespaces, repositories, projects) published as raw JSON endpoints.",
+  "description": "Noodlestan registry views (namespaces, repositories, projects) published as raw JSON endpoints.",
   "keywords": [
     "noodlestan",
     "registry"
