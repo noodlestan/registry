@@ -26,6 +26,7 @@
         "records"
       ],
       "owner": "Project: Artificials",
+      "code": "https://github.com/noodlestan/art-domains",
       "repository": "Repository: Art Domains",
       "resources": []
     },
@@ -35,6 +36,7 @@
       "description": "Libraries and tools for working with Art MD as a programming language, including records, resources, modules, programs, program builders, validators, projectors, language services, and related tooling.",
       "keywords": ["art", "markdown", "ast"],
       "owner": "Project: Artificials",
+      "code": "https://github.com/noodlestan/art-js",
       "repository": "Repository: Art JS",
       "resources": [
         {
@@ -87,6 +89,7 @@
       "description": "Shared libraries and tools for building CLIs and Tools.",
       "keywords": ["art", "terminal-apps"],
       "owner": "Project: Artificials",
+      "code": "https://github.com/noodlestan/art-lib",
       "repository": "Repository: Art Lib",
       "resources": [
         {
@@ -103,12 +106,18 @@
       "description": "Language specification and JavaScript libraries for extracting structured data into a MDAST derived AST, with an open construct registry. Provides parsing, validation, transformation, and serialization of Art MD content.",
       "keywords": ["art", "markdown", "ast", "structured-data", "agent-instructions"],
       "owner": null,
+      "code": "https://github.com/noodlestan/art-md",
+      "website": "https://art-md.noodlestan.org",
+      "docs": "https://art-md.noodlestan.org/docs",
       "repository": "Repository: Art MD",
       "resources": [
         {
           "name": "Package: Parser",
           "canonical": "@art-md/parser",
           "path": "libs/parser/",
+          "code": "https://github.com/noodlestan/art-md/tree/main/libs/parser",
+          "website": "https://art-md.noodlestan.org/",
+          "docs": "https://art-md.noodlestan.org/docs/api/art-md/parser",
           "private": false
         },
         {
@@ -177,6 +186,7 @@
       "description": "A collection of tools and resources to generate and manage knowledge artefacts and agent instructions.",
       "keywords": ["art", "markdown", "agent-workflows", "delegation", "agent-instructions"],
       "owner": "Project: Noodlestan Management",
+      "code": "https://github.com/noodlestan/artificials",
       "repository": "Repository: Artificials",
       "resources": []
     },
@@ -186,6 +196,8 @@
       "description": "Creative and experimental micro projects developed entirely using Artificials.",
       "keywords": ["art", "experimental", "creative", "demo"],
       "owner": "Project: Artificials",
+      "code": "https://github.com/noodlestan/artisans",
+      "website": "https://art-mantras.noodlestan.org",
       "repository": "Repository: Artisans",
       "resources": []
     },
@@ -195,6 +207,7 @@
       "description": "SolidJS layered library ecosystem spanning foundational types, accessibility primitives, contexts and services, composable controllers, a themeable component library, and developer tooling.",
       "keywords": ["solidjs", "ui", "components", "component-library"],
       "owner": "Project: Noodlestan Management",
+      "code": "https://github.com/noodlestan/no-comply",
       "repository": "Repository: No Comply",
       "resources": [
         {
@@ -259,6 +272,7 @@
       "description": "Conventions packages for Noodlestan stack, including Typescript, JSX, Solid JS, and SCSS.",
       "keywords": ["conventions", "style-guide"],
       "owner": "Project: Noodlestan Management",
+      "code": "https://github.com/noodlestan/conventions",
       "repository": "Repository: Conventions",
       "resources": [
         {
@@ -305,6 +319,7 @@
       "description": "Noodlestan's top-level roadmap, ideas, research notes, and incubation material.",
       "keywords": ["project-management", "roadmap", "governance"],
       "owner": null,
+      "code": "https://github.com/noodlestan/_mgmt",
       "repository": "Repository: Management",
       "resources": []
     },
@@ -314,6 +329,7 @@
       "description": "Terraform configurations for managing AWS resources: DNS zones, SSL certificates, S3 buckets, CloudFront distributions, and state backends. Organized into accounts, backend, domains, and modules.",
       "keywords": ["infrastructure", "terraform", "aws"],
       "owner": "Project: Noodlestan Management",
+      "code": "https://github.com/noodlestan/_ops",
       "repository": "Repository: Ops",
       "resources": []
     },
@@ -323,6 +339,8 @@
       "description": "Repository of Noodlestan websites — typically built with Astro.",
       "keywords": ["documentation"],
       "owner": "Project: Noodlestan Management",
+      "code": "https://github.com/noodlestan/noodlestan-web",
+      "website": "https://noodlestan.org",
       "repository": "Repository: Noodlestan Web",
       "resources": [
         {
@@ -339,6 +357,7 @@
       "description": "Esbuild CLI wrapper, ESLint config, and base TypeScript configs.",
       "keywords": ["tooling", "configs"],
       "owner": "Project: Noodlestan Management",
+      "code": "https://github.com/noodlestan/workspace-tooling",
       "repository": "Repository: Workspace Tooling",
       "resources": [
         {
@@ -373,6 +392,7 @@
       "description": "Collection of abstractions and tools for building metadata extraction pipelines from local and remote sources using heuristics, schemas, and factories.",
       "keywords": ["metadata", "extraction", "source-code", "heuristics"],
       "owner": "Project: Noodlestan Management",
+      "code": "https://github.com/noodlestan/purrception",
       "repository": "Repository: Purrception",
       "resources": []
     },
@@ -382,6 +402,7 @@
       "description": "Collection of composable tools and abstractions for building metadata extraction pipelines, aggregations, indexes, visualizations, and metadata endpoints.",
       "keywords": ["metadata", "extraction", "visualization", "aggregation", "indexing"],
       "owner": "Project: Noodlestan Management",
+      "code": "https://github.com/noodlestan/purrfect",
       "repository": "Repository: Purrfect",
       "resources": []
     },
@@ -391,6 +412,7 @@
       "description": "Single-purpose utilities for in-browser transformations: JSX/TSX compilation, SolidJS JSX transform presets, and Shiki-based syntax highlighting.",
       "keywords": ["solidjs"],
       "owner": "Project: Noodlestan Management",
+      "code": "https://github.com/noodlestan/purrpose",
       "repository": "Repository: Purrpose",
       "resources": []
     },
@@ -400,6 +422,7 @@
       "description": "Collection of tools for rendering code, visualizing metadata, and creating representations for humans and tools.",
       "keywords": ["metadata", "visualization", "rendering"],
       "owner": "Project: Noodlestan Management",
+      "code": "https://github.com/noodlestan/purrtrait",
       "repository": "Repository: Purrtrait",
       "resources": []
     },
@@ -409,6 +432,7 @@
       "description": "Data-only project hosting hand-authored JSON views and their schemas, consumed through raw GitHub endpoints by `@noodlestan/commons` and other tooling.",
       "keywords": ["noodlestan", "registry", "json-registry", "static-json", "json-api"],
       "owner": "Project: Noodlestan Management",
+      "code": "https://github.com/noodlestan/registry",
       "repository": "Repository: Registry",
       "resources": []
     }

@@ -64,11 +64,29 @@
                 "path": {
                   "type": "string"
                 },
+                "code": {
+                  "type": "string"
+                },
+                "website": {
+                  "type": "string"
+                },
+                "docs": {
+                  "type": "string"
+                },
                 "private": {
                   "type": "boolean"
                 }
               }
             }
+          },
+          "code": {
+            "type": "string"
+          },
+          "website": {
+            "type": "string"
+          },
+          "docs": {
+            "type": "string"
           }
         }
       }
