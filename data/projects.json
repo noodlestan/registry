@@ -8,6 +8,7 @@
       "description": "Tools for coordinating agent sessions and discovering and visualizing resources and artefacts.",
       "keywords": ["art", "agent-workflows", "delegation", "agent-visualization"],
       "owner": "Project: Artificials",
+      "code": "https://github.com/noodlestan/art-boards",
       "repository": "Repository: Art Boards",
       "resources": []
     },
@@ -170,6 +171,7 @@
       "description": "Tools for discovering projects, managing knowledge and context resources, and operating across multiple checkouts: cloning, visualizing, synchronizing, and executing commands.",
       "keywords": ["art", "agent-workflows", "workspaces", "multi-repository", "git"],
       "owner": "Project: Art Domains",
+      "code": "https://github.com/noodlestan/art-works",
       "repository": "Repository: Art Works",
       "resources": [
         {
