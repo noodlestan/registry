@@ -23,6 +23,7 @@ data/repositories.json  — Repositories view
 data/projects.json      — Projects view
 data/endpoints.json     — Endpoint index for discoverability
 schema/v1/             — JSON schemas, one per view (versioned path)
+knowledge/             — vocabulary, components, decisions, and design documents
 _records/           — project, repository, and license records
 ```
 
