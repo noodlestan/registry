@@ -1,53 +1,112 @@
 # Design: Data
 
-**Purpose:** Every input and managed data source the ecosystem reads or maintains: what is duplicated across sources, and which tool reads or updates each so the duplications stay in sync. Endpoints are excluded — they are outputs.
+**Purpose:**
+
+- Every input and managed data source the ecosystem reads or maintains: what is duplicated across sources, and which tool reads or updates each so the duplications stay in sync. Endpoints are excluded — they are outputs.
 
 ## Duplication Map
 
 The same facts appear in more than one place by design (see [adr/registry.md](../adr/registry.md), "accept duplication"):
 
-| Fact                        | Manifest                  | Record                          | Kept in sync by                                       |
-| --------------------------- | ------------------------- | ------------------------------- | ----------------------------------------------------- |
-| `name` (canonical identity) | `name` field              | `canonicalName` / resource name | `registry-pre-commit` validates; human on change      |
-| `version`                   | `version` field           | `Package Dependency` records    | `registry-pre-commit` enforces canonical versions     |
-| `canonical` (slug, scope)   | `repository`/scope in use | `Canonical` field               | validation at commit; registration reports mismatches |
-| `purpose`, `description`    | `description`             | `Purpose` / `Description`       | human; registration projects the record side          |
+| Fact                        | Manifest                  | Record                          | Kept in sync by                                   |
+| --------------------------- | ------------------------- | ------------------------------- | ------------------------------------------------- |
+| `name` (canonical identity) | `name` field              | `canonicalName` / resource name | Commons Registry Peer validates; human on change  |
+| `version`                   | `version` field           | `Package Dependency` records    | Commons Registry Peer enforces canonical versions |
+| `canonical` (slug, scope)   | `repository`/scope in use | `Canonical` field               | validation at commit; Indexer reports mismatches  |
+| `purpose`, `description`    | `description`             | `Purpose` / `Description`       | human; Indexer projects the record side           |
 
-Rule of thumb: the manifest wins for what npm consumes; the record wins for what tools consume; validation flags disagreement rather than silently choosing.
+Rule: Package manifests is the authority on identity and registry core data. Records augment this data with metadata and become the source of truth for consumers that can tolerate eventual consistency.
+
+## Canonicals Per Entity
+
+| Entity         | Canonical form                      | Example                               |
+| -------------- | ----------------------------------- | ------------------------------------- |
+| Project        | resource name                       | `Project: Art JS`                     |
+| Repository     | GitHub slug / manifest `name` field | `noodlestan/art-js`                   |
+| Namespace      | npm scope                           | `@art-js`                             |
+| Package        | manifest `name` field               | `@art-js/records`, `apps-art-md-web`  |
+| Dependency set | resource name                       | `Package Dependency Set: Build Tools` |
+
+**Note:** GitHub slug and manifest `name` field are not currently matching on (slugs) `noodlestan/_mgmt` and `noodlestan/_ops`.
 
 ## Records
 
-Sub-level = Structures (see [design/records.md](records.md)).
+See [design/records.md](records.md)
 
 ### Project records
 
-Read by: registration (projects view). Updated by: humans and migration tooling.
+**Read by:**
+
+- Commons Registry Indexer (projects view).
+
+**Updated by:**
+
+- migration tooling.
 
 ### Repository records
 
-Read by: registration (repositories view), workspace-cli (checkout resolution). Updated by: humans; validated by `registry-pre-commit`.
+**Read by:**
+
+- Commons Registry Indexer (repositories view)
+- `workspace-cli` (checkout resolution).
+
+**Updated by:**
+
+- Commons Registry Peer (validates and updates)
 
 ### Namespace records
 
-Read by: registration (namespaces view). Updated by: humans.
+**Read by:**
+
+- Commons Registry Indexer (namespaces view).
+
+**Updated by:**
+
+- humans.
 
 ### Package records
 
-Read by: registration (package fields inside the projects view). Updated by: humans.
+**Read by:**
+
+- Commons Registry Indexer (package fields inside the projects view).
+
+**Updated by:**
+
+- Commons Registry Peer (validates and updates)
 
 ### Dependency set records
 
-Read by: registration (planned dependency views). Updated by: humans and `registry-pre-commit`.
+**Read by:**
+
+- Commons Registry Indexer (planned dependency views).
+
+**Updated by:**
+
+- Commons Registry Peer.
 
 ## Manifests
 
 ### Root manifests
 
-Read by: registration (project-level fields), commons (own repo), website collector. Updated by: humans and `registry-pre-commit`.
+**Read by:**
+
+- Commons Registry Indexer (project-level fields),
+- Commons Registry Peer (local repository)
+
+**Updated by:**
+
+- Commons Registry Peer.
 
 ### Package manifests
 
-Read by: registration (resource fields), commons (dependency declarations). Updated by: humans, `registry-pre-commit`, and `commons` for its generated block.
+**Read by:**
+
+- Commons Registry Indexer (resource fields)
+- Commons Registry Peer (dependency declarations).
+
+**Updated by:**
+
+- Commons Registry Peer.
 
 ## Eventually Read
 

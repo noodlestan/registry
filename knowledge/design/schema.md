@@ -2,6 +2,16 @@
 
 **Purpose:** How view schemas are versioned and referenced — the rules only; the schemas themselves live at `schema/v1/*.schema.json` and are never restated here.
 
+## URLs
+
+Base: `https://raw.githubusercontent.com/noodlestan/registry/main/`
+
+| Resource     | Path                                  |
+| ------------ | ------------------------------------- |
+| Namespaces   | `schema/v1/namespaces.schema.json`    |
+| Repositories | `schema/v1/repositories}.schema.json` |
+| Projects     | `schema/v1/projects.schema.json`      |
+
 ## Versioning
 
 - **Path is the version:** `schema/v1/…`. An incompatible change ships as `schema/v2/…`; old payloads keep resolving against v1.

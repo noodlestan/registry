@@ -2,7 +2,7 @@
 
 > Publish machine-consumable Noodlestan registry views as raw JSON endpoints.
 
-JSON views (namespaces, repositories, projects) and their schemas, consumed by `@noodlestan/commons` and other tooling through raw GitHub URLs.
+JSON views (namespaces, repositories, projects) and their schemas, consumed by the Commons Registry Peer and other tooling through raw GitHub URLs. The Commons Registry Indexer is their single writer.
 
 ## Recommended Reading
 

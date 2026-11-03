@@ -1,35 +1,62 @@
 # Design: Tools
 
-**Purpose:** One section per tool: what it is responsible for and when it runs. Field-level detail lives in [design/records.md](records.md), [design/manifests.md](manifests.md), and [design/data.md](data.md).
+**Purpose:** Identify the tools that produce and consume Registry data and explain their responsibilities.
 
-## `@noodlestan/registration`
+**Commons repository:** `noodlestan/noodle-commons` hosts both tools.
 
-**Responsibility:** Updates the registry — regenerates the view JSON files from source records and commits them — for whatever reason a run was triggered. The single writer of `data/*.json`.
+## Commons Registry Indexer — `@noodle-commons/indexer`
 
-**Triggers:** manual run, push from a registered repository, scheduled backstop. See [design/workflows.md](workflows.md).
+**Binary:** `commons-indexer-cli`.
 
-**Hosted in:** `$WORKSPACE_TOOLING/cli/registration`. **Installed in:** `registry` (it runs with the registry checkout).
+See [design/workflows.md](workflows.md).
 
-## `@noodlestan/commons`
+**Responsibilities:**
 
-**Responsibility:** Validates a monorepo's dependency declarations against the published views before a commit lands; regenerates the monorepo's own generated manifest block.
+- The source of truth for the list of "managed repositories" (its config).
+- The single writer of `data/*.json`.
+- Updates the registry data endpoints on pushes to managed repositories, by regenerating the views from current snapshot and incremental updates.
+- Updates the registry data endpoints on schedule by re-reading all sources and regenerating the views.
 
-**Triggers:** pre-commit in any monorepo that adopts it.
+**Triggers:**
 
-## `@noodlestan/registry-pre-commit`
+- manual run
+- push from a managed repository
+- scheduled backstop.
 
-**Responsibility:** Regenerates and validates a source repository's records against manifest policy, enforcing canonical versions at commit time.
+**Hosted in:** `$COMMONS/cli/indexer`.
 
-**Triggers:** pre-commit in each source repository.
+**Installed in:** `registry` (it runs with the registry checkout).
+
+## Commons Registry Peer — `@noodle-commons/peer`
+
+**Binary:** `commons-peer-cli`.
+
+**Responsibilities:**
+
+- Validates monorepo root and package manifests vs policy.
+- Autofixes monorepo and package manifests vs policy and vs records when fields are absent.
+- Validates monorepo root vs root records, and package manifest vs package records.
+- Identifies cross repo dependencies and reflects them in the root manifest.
+- Identifies recuprocal cross repo artDependencies (planning/execution) and reflects them in the root manifest.
+- Validates monorepo and package manifest dependencies against dependency sets (dependency sets are only recorded in records, never in manifests), example: `Dependency Set: Root` (available in registry).
+- Validates package manifest dependencies against `Dependency Set: Root` (available in registry).
+
+**Triggers:** pre-commit in source repository.
+
+**Hosted in:** `$COMMONS/cli/peer`.
+
+**Installed in:** All managed monorepos.
 
 ## `@art-works/workspace-cli`
 
-**Responsibility:** Workspace operations over checkouts and records: `clone`, `sanity`, `branch`, `link`, `publish`. It does **not** generate or update registry views.
+**Responsibilities:**
 
-**Triggers:** manual.
+- Consumer only — executes workspace operations over checkouts: `clone`, `sanity`, `branch`, `link`, `publish` — Currently reads records, might consume registry endpoints in the future.
 
-## Website Record Collector
+## `noodlestan-web` Website Collection Builder
 
-**Responsibility:** Builds the website's project collection from project records.
+**Responsibilities:**
 
-**Triggers:** manual (`npm run update-project-records`, `update-project-collection`). Its data source moves from local checkouts to published endpoints.
+- Consumer only — builds the website's project collection from project records. Currenly reads records, will switch to registry soon.
+
+**Triggers:** manual (`npm run update-project-records`, `update-project-collection`).

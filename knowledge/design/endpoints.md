@@ -30,9 +30,3 @@ canonical "noodlestan/art-js"
 
 remote "git@github.com:noodlestan/art-js.git"  ->  canonical (strip prefix / .git)
 ```
-
-## Consumption Rules
-
-- Payloads carry a `schema` id (compatibility token); the URL carries the location — see [design/schema.md](schema.md).
-- `snapshot` is display-only provenance; never gate on its age.
-- raw.githubusercontent caches by path; consumers should tolerate short propagation windows after a push.

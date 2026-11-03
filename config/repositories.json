@@ -1,0 +1,23 @@
+{
+  "repositories": [
+    "git@github.com:noodlestan/art-boards.git",
+    "git@github.com:noodlestan/art-domains.git",
+    "git@github.com:noodlestan/art-js.git",
+    "git@github.com:noodlestan/art-lib.git",
+    "git@github.com:noodlestan/art-md.git",
+    "git@github.com:noodlestan/art-works.git",
+    "git@github.com:noodlestan/artificials.git",
+    "git@github.com:noodlestan/artisans.git",
+    "git@github.com:noodlestan/conventions.git",
+    "git@github.com:noodlestan/_mgmt.git",
+    "git@github.com:noodlestan/no-comply.git",
+    "git@github.com:noodlestan/noodlestan-web.git",
+    "git@github.com:noodlestan/_ops.git",
+    "git@github.com:noodlestan/purrception.git",
+    "git@github.com:noodlestan/purrfect.git",
+    "git@github.com:noodlestan/purrpose.git",
+    "git@github.com:noodlestan/purrtrait.git",
+    "git@github.com:noodlestan/registry.git",
+    "git@github.com:noodlestan/workspace-tooling.git"
+  ]
+}

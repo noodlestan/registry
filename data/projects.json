@@ -431,7 +431,7 @@
     {
       "name": "Project: Registry",
       "purpose": "Publish machine-consumable Noodlestan registry views of namespaces, repositories, and projects.",
-      "description": "Data-only project hosting hand-authored JSON views and their schemas, consumed through raw GitHub endpoints by `@noodlestan/commons` and other tooling.",
+      "description": "Data-only project hosting registry JSON views and their schemas, consumed by the Commons Registry Peer and other tooling through raw GitHub endpoints.",
       "keywords": ["noodlestan", "registry", "json-registry", "static-json", "json-api"],
       "owner": "Project: Noodlestan Management",
       "code": "https://github.com/noodlestan/registry",

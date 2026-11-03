@@ -11,20 +11,8 @@
 - **Canonical** — the natural machine identity of an entity (slug, scope, npm name). See [adr/schema.md](adr/schema.md).
 - **View** — a published JSON projection of records. See [design/schema.md](design/schema.md).
 - **Endpoint** — a raw GitHub URL serving a view or schema. See [design/endpoints.md](design/endpoints.md).
-- **Registration** — `@noodlestan/registration`, the tool that updates the registry on triggers. See [design/tools.md](design/tools.md).
+- **Registry indexing** — Commons Registry Indexer, which refreshes and publishes Registry views on triggers. See [design/tools.md](design/tools.md).
+- **Source validation** — Commons Registry Peer, which checks repository manifests, records, and dependencies. See [design/tools.md](design/tools.md).
 - **Trigger** — what causes a tool to run. See [design/workflows.md](design/workflows.md).
 - **Duplication** — the same fact stored in more than one source (manifest and record). See [design/data.md](design/data.md).
 - **IaC** — records reused as templates when scaffolding new resources. See [adr/registry.md](adr/registry.md).
-
-## Canonicals Per Entity
-
-| Entity         | Canonical form   | Example                               |
-| -------------- | ---------------- | ------------------------------------- |
-| Project        | resource name    | `Project: Art JS`                     |
-| Repository     | GitHub slug      | `noodlestan/art-js`                   |
-| Namespace      | npm scope        | `@art-js`                             |
-| Package        | npm package name | `@art-js/records`, `apps-art-md-web`  |
-| Dependency set | resource name    | `Package Dependency Set: Build Tools` |
-| Manifest       | `name` field     | `noodlestan/art-md`                   |
-| View           | schema id        | `noodlestan.registry.namespaces/1`    |
-| Endpoint       | raw GitHub URL   | `…/main/data/namespaces.json`         |

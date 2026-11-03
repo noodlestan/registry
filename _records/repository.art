@@ -14,7 +14,7 @@
 
 **Canonical:** `noodlestan/registry`
 
-**Consumers:** `@noodlestan/commons`, registry tooling
+**Consumers:** Commons Registry Indexer (`@noodle-commons/indexer`) and Commons Registry Peer (`@noodle-commons/peer`).
 
 **Private:** `false`
 
