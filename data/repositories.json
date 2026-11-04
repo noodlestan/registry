@@ -84,8 +84,8 @@
     },
     {
       "name": "Repository: Management",
-      "canonical": "noodlestan/_mgmt",
-      "remote": "git@github.com:noodlestan/_mgmt.git",
+      "canonical": "noodlestan/management",
+      "remote": "git@github.com:noodlestan/management.git",
       "purpose": "Host and manage Noodlestan's roadmap and incubate new projects.",
       "description": "Repository containg Noodlestan's organization-wide roadmap, incubation backlogs, project ideas, research notes, and conceptual material.",
       "owner": "Project: Noodlestan Management"
@@ -108,8 +108,8 @@
     },
     {
       "name": "Repository: Ops",
-      "canonical": "noodlestan/_ops",
-      "remote": "git@github.com:noodlestan/_ops.git",
+      "canonical": "noodlestan/ops",
+      "remote": "git@github.com:noodlestan/ops.git",
       "purpose": "Host and manage Noodlestan's operations, infrastructure resources, and operations backlog.",
       "description": "Repository containing Terraform modules and AWS resource definitions.",
       "owner": "Project: Noodlestan Ops"

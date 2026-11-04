@@ -344,7 +344,7 @@
       "description": "Noodlestan's top-level roadmap, ideas, research notes, and incubation material.",
       "keywords": ["project-management", "roadmap", "governance"],
       "owner": null,
-      "code": "https://github.com/noodlestan/_mgmt",
+      "code": "https://github.com/noodlestan/management",
       "repository": "Repository: Management",
       "resources": []
     },
@@ -354,7 +354,7 @@
       "description": "Terraform configurations for managing AWS resources: DNS zones, SSL certificates, S3 buckets, CloudFront distributions, and state backends. Organized into accounts, backend, domains, and modules.",
       "keywords": ["infrastructure", "terraform", "aws"],
       "owner": "Project: Noodlestan Management",
-      "code": "https://github.com/noodlestan/_ops",
+      "code": "https://github.com/noodlestan/ops",
       "repository": "Repository: Ops",
       "resources": []
     },
