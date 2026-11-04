@@ -1,6 +1,6 @@
 {
   "schema": "noodlestan.registry.namespaces/1",
-  "snapshot": "2026-11-01",
+  "snapshot": "2026-11-04",
   "namespaces": [
     {
       "name": "Namespace: Art JS",
@@ -49,6 +49,14 @@
       "description": "SolidJS libraries for accessibility, composables, contexts, dev tooling, and primitives, with the meta extraction CLI and standard UI demo.",
       "owner": "Project: No Comply",
       "repositories": ["Repository: No Comply"]
+    },
+    {
+      "name": "Namespace: Noodle Commons",
+      "canonical": "@noodle-commons",
+      "purpose": "Publish the Commons tooling packages under a shared identity.",
+      "description": "Packages published from `noodlestan/commons`: the Indexer (`@noodle-commons/indexer`) and Peer (`@noodle-commons/peer`) CLIs.",
+      "owner": "Project: Noodlestan Commons",
+      "repositories": ["Repository: Commons"]
     },
     {
       "name": "Namespace: Noodlestan",

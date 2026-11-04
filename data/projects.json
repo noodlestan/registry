@@ -276,7 +276,20 @@
       "owner": "Project: Noodlestan Management",
       "code": "https://github.com/noodlestan/commons",
       "repository": "Repository: Commons",
-      "resources": []
+      "resources": [
+        {
+          "name": "Package: Commons Indexer",
+          "canonical": "@noodle-commons/indexer",
+          "path": "cli/indexer",
+          "private": false
+        },
+        {
+          "name": "Package: Commons Peer",
+          "canonical": "@noodle-commons/peer",
+          "path": "cli/peer",
+          "private": false
+        }
+      ]
     },
     {
       "name": "Project: Noodlestan Conventions",
