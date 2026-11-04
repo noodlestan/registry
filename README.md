@@ -4,7 +4,7 @@
 
 JSON views of Noodlestan identity — namespaces, repositories, and projects — with their JSON schemas, published as raw endpoints. Each view carries a `snapshot` date.
 
-**Keywords:** noodlestan, registry, json-registry, static-json, json-api.
+**Keywords:** registry, governance, json-api.
 
 ## Endpoints
 
