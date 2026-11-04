@@ -27,7 +27,7 @@ Rule: Package manifests is the authority on identity and registry core data. Rec
 | Package        | manifest `name` field               | `@art-js/records`, `apps-art-md-web`  |
 | Dependency set | resource name                       | `Package Dependency Set: Build Tools` |
 
-**Note:** GitHub slug and manifest `name` field are not currently matching on (slugs) `noodlestan/_mgmt` and `noodlestan/_ops`.
+**Note:** GitHub slug and manifest `name` field are not currently matching on (slugs) `noodlestan/no-comply`, `noodlestan/purr*`, and `noodlestan/workspace-tooling`.
 
 ## Records
 
