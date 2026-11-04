@@ -3,10 +3,8 @@
   "version": "0.0.1",
   "description": "Noodlestan registry views (namespaces, repositories, projects) published as raw JSON endpoints.",
   "keywords": [
-    "noodlestan",
     "registry",
-    "json-registry",
-    "static-json",
+    "governance",
     "json-api"
   ],
   "author": "Noodlestan",
