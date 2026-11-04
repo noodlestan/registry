@@ -131,6 +131,14 @@
       "owner": "Project: Purrfect"
     },
     {
+      "name": "Repository: Purrfiles",
+      "canonical": "noodlestan/purrfiles",
+      "remote": "git@github.com:noodlestan/purrfiles.git",
+      "purpose": "Host and manage the Purrfiles meta packages.",
+      "description": "Monorepo with the Noodlestan entity model, meta service, and extraction tools.",
+      "owner": "Project: Purrfiles"
+    },
+    {
       "name": "Repository: Purrpose",
       "canonical": "noodlestan/purrpose",
       "remote": "git@github.com:noodlestan/purrpose.git",

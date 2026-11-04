@@ -419,6 +419,29 @@
       "resources": []
     },
     {
+      "name": "Project: Purrfiles",
+      "purpose": "Define entity model and provide shared extraction tooling.",
+      "description": "Home of meta service, entity models, and the extraction tooling shared by Noodlestan docs sites.",
+      "keywords": ["metadata", "extraction", "entities", "purrception"],
+      "owner": "Project: Noodlestan Management",
+      "code": "https://github.com/noodlestan/purrfiles",
+      "repository": "Repository: Purrfiles",
+      "resources": [
+        {
+          "name": "Package: Purrfiles Entities",
+          "canonical": "@noodlestan/purrfiles-entities",
+          "path": "libs/purrfiles-entities/",
+          "private": false
+        },
+        {
+          "name": "Package: Purrfiles Extract",
+          "canonical": "@noodlestan/purrfiles-extract",
+          "path": "cli/purrfiles-extract/",
+          "private": false
+        }
+      ]
+    },
+    {
       "name": "Project: Purrpose",
       "purpose": "In browser source code and metadata transformations.",
       "description": "Single-purpose utilities for in-browser transformations: JSX/TSX compilation, SolidJS JSX transform presets, and Shiki-based syntax highlighting.",
