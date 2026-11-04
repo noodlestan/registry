@@ -435,7 +435,7 @@
       "name": "Project: Purrfiles",
       "purpose": "Define entity model and provide shared extraction tooling.",
       "description": "Home of meta service, entity models, and the extraction tooling shared by Noodlestan docs sites.",
-      "keywords": ["metadata", "extraction", "entities", "purrception"],
+      "keywords": ["metadata", "extraction", "entities", "purrception", "governance"],
       "owner": "Project: Noodlestan Management",
       "code": "https://github.com/noodlestan/purrfiles",
       "repository": "Repository: Purrfiles",
