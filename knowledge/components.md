@@ -16,10 +16,10 @@ Root and package manifests are governed by [Project: Noodlestan Ops]($OPS/knowle
 
 ## CLIs
 
-| Tool                     | Responsibility                                      | Status  | Home                                                 |
-| ------------------------ | --------------------------------------------------- | ------- | ---------------------------------------------------- |
-| Commons Registry Indexer | Generates and publishes Registry data views.        | PLANNED | `noodle-commons/cli/indexer` (`commons-indexer-cli`) |
-| Commons Registry Peer    | Checks source manifests, records, and dependencies. | PLANNED | `noodle-commons/cli/peer` (`commons-peer-cli`)       |
+| Tool                     | Responsibility                                      | Status  | Home                                              |
+| ------------------------ | --------------------------------------------------- | ------- | ------------------------------------------------- |
+| Commons Registry Indexer | Generates and publishes Registry data views.        | PLANNED | `@noodle-commons/indexer` (`commons-indexer-cli`) |
+| Commons Registry Peer    | Checks source manifests, records, and dependencies. | PLANNED | `@noodle-commons/peer` (`commons-peer-cli`)       |
 
 ## Pre-commit Hooks
 
