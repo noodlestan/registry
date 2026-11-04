@@ -6,8 +6,8 @@
       "name": "Repository: Art Boards",
       "canonical": "noodlestan/art-boards",
       "remote": "git@github.com:noodlestan/art-boards.git",
-      "purpose": "Host and manage the Art Boards packages and tools, and their knowledge and planning artefacts.",
-      "description": "Monorepo containing the Art Boards roadmap and backlogs, knowledge, and CLI source code.",
+      "purpose": "Host and manage the Art Boards project: the Art Whiteboard CLI, the Art Relayboard CLI, and their planning artefacts.",
+      "description": "Monorepo containing the Art Boards roadmap, the Art Whiteboard CLI and Art Relayboard CLI packages, and their backlogs and knowledge documentation.",
       "owner": "Project: Art Boards"
     },
     {

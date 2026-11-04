@@ -3,6 +3,14 @@
   "snapshot": "2026-11-04",
   "namespaces": [
     {
+      "name": "Namespace: Art Boards",
+      "canonical": "@art-boards",
+      "purpose": "Visualize resources and coordinate agent sessions with human-machine collaboration tools.",
+      "description": "Tools for coordinating agent sessions and discovering and visualizing resources and artefacts.",
+      "owner": "Project: Art Boards",
+      "repositories": ["Repository: Art Boards"]
+    },
+    {
       "name": "Namespace: Art JS",
       "canonical": "@art-js",
       "purpose": "Tools for working with Art files as programs.",
