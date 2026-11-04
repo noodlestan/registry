@@ -1,6 +1,6 @@
 {
   "schema": "noodlestan.registry.repositories/1",
-  "snapshot": "2026-11-01",
+  "snapshot": "2026-11-04",
   "repositories": [
     {
       "name": "Repository: Art Boards",
@@ -65,6 +65,14 @@
       "purpose": "Host and manage the Artisans experiments, and their planning artefacts.",
       "description": "Small, indepedents apps and tools.",
       "owner": "Project: Artisans"
+    },
+    {
+      "name": "Repository: Commons",
+      "canonical": "noodlestan/commons",
+      "remote": "git@github.com:noodlestan/commons.git",
+      "purpose": "Host and manage the Commons tooling packages and their knowledge.",
+      "description": "Monorepo containing the Commons Indexer and Commons Peer CLI tools and their design knowledge.",
+      "owner": "Project: Noodlestan Commons"
     },
     {
       "name": "Repository: Conventions",

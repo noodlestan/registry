@@ -1,6 +1,6 @@
 {
   "schema": "noodlestan.registry.projects/1",
-  "snapshot": "2026-11-01",
+  "snapshot": "2026-11-04",
   "projects": [
     {
       "name": "Project: Art Boards",
@@ -267,6 +267,16 @@
           "private": true
         }
       ]
+    },
+    {
+      "name": "Project: Noodlestan Commons",
+      "purpose": "Keep Noodlestan repositories and Registry views consistent.",
+      "description": "A suite of tools for publishing, validating, and curating the Noodlestan monorepo manifests, records, dependencies, and Registry data.",
+      "keywords": ["commons", "registry", "indexer", "peer", "cli", "tooling"],
+      "owner": "Project: Noodlestan Management",
+      "code": "https://github.com/noodlestan/commons",
+      "repository": "Repository: Commons",
+      "resources": []
     },
     {
       "name": "Project: Noodlestan Conventions",
