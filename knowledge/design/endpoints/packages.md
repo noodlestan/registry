@@ -15,7 +15,7 @@ A Registry package view replaces the drifting hand-maintained inventory with a d
 ## References
 
 - Baseline: the hand-maintained inventory in `$OPS/knowledge/package-inventory.md`.
-- Plan: `$MANAGEMENT/_backlog/4-next/plan-poc-manifest-registry/plan.md`.
+- Plan: `$MANAGEMENT/_backlog/3-now/plan-poc-manifest-registry/plan.md`.
 
 ## Definitions
 

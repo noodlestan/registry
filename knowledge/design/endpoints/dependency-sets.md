@@ -14,7 +14,7 @@ Sets live in one place instead of being duplicated in every repository: validato
 
 ## References
 
-- Migration: `$MANAGEMENT/_backlog/4-next/plan-poc-manifest-registry/instructions/migrate-dependency-sets.md`.
+- Migration: `$MANAGEMENT/_backlog/3-now/plan-poc-manifest-registry/instructions/migrate-dependency-sets.md`.
 - Validation side: `$OPS/knowledge/design/dependency-sets.md`.
 
 ## Definitions
