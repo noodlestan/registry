@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "repositoryCanonical": "noodlestan/noodlestan-web",
+  "checkout": {
+    "name": "noodlestan-web",
+    "path": "checkouts/noodlestan-web"
+  },
+  "sourceSnapshot": {
+    "capturedAt": "2026-11-05T23:17:23.085Z",
+    "commit": "37de6e228b02617101a77d3c6aa2801ea8ae397e",
+    "dirtyPaths": []
+  },
+  "coverage": {
+    "checkoutRecordPath": "../../_records/checkouts/noodlestan-web-@-noodlestan-web-checkout.art",
+    "repositoryRecordPath": "../../_records/repositories/noodlestan-web.art",
+    "manifestPathsDiscovered": [
+      "apps/noodlestan-web/package.json",
+      "package.json",
+      "packages/astro-components/package.json"
+    ],
+    "manifestPathsInventoried": [
+      "apps/noodlestan-web/package.json",
+      "package.json",
+      "packages/astro-components/package.json"
+    ],
+    "recordPaths": [
+      "_records/license.art",
+      "_records/namespace.art",
+      "_records/project.art",
+      "_records/repository.art",
+      "apps/noodlestan-web/_records/deployment-infrastructure.art",
+      "apps/noodlestan-web/_records/package.art",
+      "apps/noodlestan-web/_records/production-environment.art",
+      "apps/noodlestan-web/_records/staging-environment.art",
+      "apps/noodlestan-web/_records/static-web-deployment.art",
+      "data/_records/projects/art-boards.art",
+      "data/_records/projects/art-domains.art",
+      "data/_records/projects/art-js.art",
+      "data/_records/projects/art-lib.art",
+      "data/_records/projects/art-md.art",
+      "data/_records/projects/art-works.art",
+      "data/_records/projects/artificials.art",
+      "data/_records/projects/conventions.art",
+      "data/_records/projects/management.art",
+      "data/_records/projects/no-comply.art",
+      "data/_records/projects/noodlestan-web.art",
+      "data/_records/projects/ops.art",
+      "data/_records/projects/purrception.art",
+      "data/_records/projects/purrfect.art",
+      "data/_records/projects/purrpose.art",
+      "data/_records/projects/purrtrait.art",
+      "data/_records/projects/workspace-tooling.art",
+      "packages/astro-components/_records/npm-deployment.art",
+      "packages/astro-components/_records/package.art"
+    ]
+  },
+  "issues": [
+    {
+      "sourcePath": "packages/astro-components/_records/package.art",
+      "code": "package-record-path-conflict",
+      "message": "`packages/astro-components/_records/package.art` declares `Path:` `$PROJECT/packages/astro-components/` but sits with `packages/astro-components/package.json` (directory `packages/astro-components/`); both values are preserved as observed."
+    }
+  ],
+  "manifests": [
+    {
+      "path": "apps/noodlestan-web/package.json",
+      "canonical": "apps-noodlestan-web",
+      "version": "0.0.1",
+      "private": true,
+      "dependencies": {
+        "@noodlestan/astro-components": "*",
+        "astro": "7.4.2"
+      },
+      "peerDependencies": null,
+      "devDependencies": {
+        "@noodlestan/prettier-config-astro": "0.1.1",
+        "prettier-plugin-astro": "1.1.0"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Noodlestan Web",
+          "canonical": "noodlestan/noodlestan-web",
+          "remote": "git@github.com:noodlestan/noodlestan-web.git",
+          "owner": "Project: Noodlestan Web",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Noodlestan Web",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Noodlestan Web",
+          "code": "https://github.com/noodlestan/noodlestan-web",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "apps/noodlestan-web/_records/package.art",
+        "identity": {
+          "name": "Noodlestan Website",
+          "canonicalName": "apps-noodlestan-web",
+          "path": "apps/noodlestan-web",
+          "packageFile": null,
+          "namespace": null,
+          "owner": "Project: Noodlestan Web",
+          "private": true,
+          "published": false
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "apps/noodlestan-web/_records/deployment-infrastructure.art",
+        "apps/noodlestan-web/_records/package.art",
+        "apps/noodlestan-web/_records/production-environment.art",
+        "apps/noodlestan-web/_records/staging-environment.art",
+        "apps/noodlestan-web/_records/static-web-deployment.art"
+      ]
+    },
+    {
+      "path": "package.json",
+      "canonical": "noodlestan/noodlestan-web",
+      "version": "0.0.1",
+      "private": true,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": {
+        "@noodlestan/conventions-typescript": "0.1.0",
+        "@noodlestan/conventions-unit-tests": "0.1.0",
+        "@noodlestan/eslint-config": "0.0.9",
+        "@noodlestan/prettier-config": "0.1.1",
+        "@noodlestan/tsconfig": "0.2.1",
+        "@types/node": "24.13.0",
+        "eslint": "8.57.1",
+        "lefthook": "2.2.2",
+        "prettier": "3.9.10",
+        "tsx": "4.23.15",
+        "turbo": "2.11.10",
+        "typescript": "5.9.3",
+        "vite": "8.3.5",
+        "vite-plugin-solid": "2.11.14",
+        "vite-plugin-solid-svg": "0.8.1",
+        "vitest": "5.0.5"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Noodlestan Web",
+          "canonical": "noodlestan/noodlestan-web",
+          "remote": "git@github.com:noodlestan/noodlestan-web.git",
+          "owner": "Project: Noodlestan Web",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Noodlestan Web",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Noodlestan Web",
+          "code": "https://github.com/noodlestan/noodlestan-web",
+          "private": false
+        }
+      },
+      "packageRecord": null,
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art"
+      ]
+    },
+    {
+      "path": "packages/astro-components/package.json",
+      "canonical": "@noodlestan/astro-components",
+      "version": "0.1.2",
+      "private": false,
+      "dependencies": null,
+      "peerDependencies": {
+        "astro": "^7.4.2"
+      },
+      "devDependencies": {
+        "@noodlestan/prettier-config-astro": "0.1.1",
+        "prettier-plugin-astro": "1.1.0"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Noodlestan Web",
+          "canonical": "noodlestan/noodlestan-web",
+          "remote": "git@github.com:noodlestan/noodlestan-web.git",
+          "owner": "Project: Noodlestan Web",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Noodlestan Web",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Noodlestan Web",
+          "code": "https://github.com/noodlestan/noodlestan-web",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "packages/astro-components/_records/package.art",
+        "identity": {
+          "name": "Noodlestan Astro Components",
+          "canonicalName": "@noodlestan/astro-components",
+          "path": "$PROJECT/packages/astro-components/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Noodlestan Web",
+          "owner": "Project: Noodlestan Web",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "packages/astro-components/_records/npm-deployment.art",
+        "packages/astro-components/_records/package.art"
+      ]
+    }
+  ]
+}

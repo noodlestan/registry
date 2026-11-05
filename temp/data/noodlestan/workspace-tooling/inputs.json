@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 1,
+  "repositoryCanonical": "noodlestan/workspace-tooling",
+  "checkout": {
+    "name": "workspace-tooling",
+    "path": "checkouts/workspace-tooling"
+  },
+  "sourceSnapshot": {
+    "capturedAt": "2026-11-05T23:17:23.361Z",
+    "commit": "9d61dbadd6a35e55acc1e171da8d71ecb75176a1",
+    "dirtyPaths": []
+  },
+  "coverage": {
+    "checkoutRecordPath": "../../_records/checkouts/workspace-tooling-checkout.art",
+    "repositoryRecordPath": "../../_records/repositories/workspace-tooling.art",
+    "manifestPathsDiscovered": [
+      "cli/esbuild-cli/package.json",
+      "configs/eslint-config/package.json",
+      "configs/prettier-config-astro/package.json",
+      "configs/prettier-config/package.json",
+      "configs/tsconfig/package.json",
+      "package.json"
+    ],
+    "manifestPathsInventoried": [
+      "cli/esbuild-cli/package.json",
+      "configs/eslint-config/package.json",
+      "configs/prettier-config-astro/package.json",
+      "configs/prettier-config/package.json",
+      "configs/tsconfig/package.json",
+      "package.json"
+    ],
+    "recordPaths": [
+      "_records/dependencies/build-tools.art",
+      "_records/dependencies/eslint-config-dev.art",
+      "_records/dependencies/project-lint.art",
+      "_records/dependencies/project-tools.art",
+      "_records/dependencies/workspace-config.art",
+      "_records/license.art",
+      "_records/namespace.art",
+      "_records/project.art",
+      "_records/repository.art",
+      "_records/scripts/esbuild-cli.art",
+      "_records/scripts/eslint-config.art",
+      "_records/scripts/prettier-config.art",
+      "_records/scripts/root-lifecycle.art",
+      "cli/esbuild-cli/_records/npm-deployment.art",
+      "cli/esbuild-cli/_records/package.art",
+      "configs/eslint-config/_records/npm-deployment.art",
+      "configs/eslint-config/_records/package.art",
+      "configs/prettier-config-astro/_records/npm-deployment.art",
+      "configs/prettier-config-astro/_records/package.art",
+      "configs/prettier-config/_records/npm-deployment.art",
+      "configs/prettier-config/_records/package.art",
+      "configs/tsconfig/_records/npm-deployment.art",
+      "configs/tsconfig/_records/package.art"
+    ]
+  },
+  "issues": [],
+  "manifests": [
+    {
+      "path": "cli/esbuild-cli/package.json",
+      "canonical": "@noodlestan/esbuild",
+      "version": "0.1.1",
+      "private": false,
+      "dependencies": {
+        "esbuild": "0.28.2",
+        "esbuild-plugin-file-path-extensions": "2.1.4"
+      },
+      "peerDependencies": null,
+      "devDependencies": null,
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Workspace Tooling",
+          "canonical": "noodlestan/workspace-tooling",
+          "remote": "git@github.com:noodlestan/workspace-tooling.git",
+          "owner": "Project: Noodlestan Workspace Tooling",
+          "packageFile": "package.json",
+          "private": true,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Noodlestan Workspace Tooling",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Workspace Tooling",
+          "code": "https://github.com/noodlestan/workspace-tooling",
+          "private": true
+        }
+      },
+      "packageRecord": {
+        "path": "cli/esbuild-cli/_records/package.art",
+        "identity": {
+          "name": "ESBuild CLI",
+          "canonicalName": "@noodlestan/esbuild",
+          "path": "cli/esbuild-cli/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Art Domains",
+          "owner": "Project: Artificial",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/dependencies/build-tools.art",
+        "_records/dependencies/eslint-config-dev.art",
+        "_records/dependencies/project-lint.art",
+        "_records/dependencies/project-tools.art",
+        "_records/dependencies/workspace-config.art",
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/esbuild-cli.art",
+        "_records/scripts/eslint-config.art",
+        "_records/scripts/prettier-config.art",
+        "_records/scripts/root-lifecycle.art",
+        "cli/esbuild-cli/_records/npm-deployment.art",
+        "cli/esbuild-cli/_records/package.art"
+      ]
+    },
+    {
+      "path": "configs/eslint-config/package.json",
+      "canonical": "@noodlestan/eslint-config",
+      "version": "0.0.9",
+      "private": false,
+      "dependencies": {
+        "@typescript-eslint/eslint-plugin": "8.11.0",
+        "eslint-config-prettier": "10.1.8",
+        "eslint-config-standard": "17.1.0",
+        "eslint-plugin-import": "2.32.0",
+        "eslint-plugin-jsx-a11y": "6.10.2",
+        "eslint-plugin-mdx": "3.8.1",
+        "eslint-plugin-prettier": "5.5.6",
+        "eslint-plugin-solid": "0.14.5"
+      },
+      "peerDependencies": {
+        "eslint": "^8.57.1",
+        "prettier": "^3.9.10",
+        "typescript": "^5.9.3"
+      },
+      "devDependencies": {
+        "@types/eslint": "9.6.1",
+        "@types/node": "24.13.0",
+        "@typescript-eslint/parser": "8.61.0",
+        "eslint": "8.57.1",
+        "solid-js": "1.9.17"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Workspace Tooling",
+          "canonical": "noodlestan/workspace-tooling",
+          "remote": "git@github.com:noodlestan/workspace-tooling.git",
+          "owner": "Project: Noodlestan Workspace Tooling",
+          "packageFile": "package.json",
+          "private": true,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Noodlestan Workspace Tooling",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Workspace Tooling",
+          "code": "https://github.com/noodlestan/workspace-tooling",
+          "private": true
+        }
+      },
+      "packageRecord": {
+        "path": "configs/eslint-config/_records/package.art",
+        "identity": {
+          "name": "ESLint Config",
+          "canonicalName": "@noodlestan/eslint-config",
+          "path": "configs/eslint-config/",
+          "packageFile": "package.json",
+          "namespace": "@noodlestan",
+          "owner": "Project: Artificial",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [
+        {
+          "path": "_records/dependencies/project-lint.art",
+          "fields": {
+            "Dependencies": [
+              "- Package Dependency: ESLint Config Prettier",
+              "- Package Dependency: TypeScript ESLint Plugin",
+              "- Package Dependency: ESLint Config Standard",
+              "- Package Dependency: ESLint Plugin Import",
+              "- Package Dependency: ESLint Plugin JSX A11y",
+              "- Package Dependency: ESLint Plugin MDX",
+              "- Package Dependency: ESLint Plugin Prettier",
+              "- Package Dependency: ESLint Plugin Solid"
+            ]
+          }
+        },
+        {
+          "path": "_records/dependencies/eslint-config-dev.art",
+          "fields": {
+            "Dependencies": [
+              "- Package Dependency: Types ESLint",
+              "- Package Dependency: Types Node",
+              "- Package Dependency: TypeScript ESLint Parser",
+              "- Package Dependency: Lefthook",
+              "- Package Dependency: ESLint",
+              "- Package Dependency: Solid JS"
+            ]
+          }
+        }
+      ],
+      "recordFiles": [
+        "_records/dependencies/build-tools.art",
+        "_records/dependencies/eslint-config-dev.art",
+        "_records/dependencies/project-lint.art",
+        "_records/dependencies/project-tools.art",
+        "_records/dependencies/workspace-config.art",
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/esbuild-cli.art",
+        "_records/scripts/eslint-config.art",
+        "_records/scripts/prettier-config.art",
+        "_records/scripts/root-lifecycle.art",
+        "configs/eslint-config/_records/npm-deployment.art",
+        "configs/eslint-config/_records/package.art"
+      ]
+    },
+    {
+      "path": "configs/prettier-config-astro/package.json",
+      "canonical": "@noodlestan/prettier-config-astro",
+      "version": "0.1.1",
+      "private": false,
+      "dependencies": {
+        "@noodlestan/prettier-config": "0.1.1"
+      },
+      "peerDependencies": {
+        "prettier": "^3.9.10",
+        "prettier-plugin-astro": "^1.1.0"
+      },
+      "devDependencies": null,
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Workspace Tooling",
+          "canonical": "noodlestan/workspace-tooling",
+          "remote": "git@github.com:noodlestan/workspace-tooling.git",
+          "owner": "Project: Noodlestan Workspace Tooling",
+          "packageFile": "package.json",
+          "private": true,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Noodlestan Workspace Tooling",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Workspace Tooling",
+          "code": "https://github.com/noodlestan/workspace-tooling",
+          "private": true
+        }
+      },
+      "packageRecord": {
+        "path": "configs/prettier-config-astro/_records/package.art",
+        "identity": {
+          "name": "Prettier Config Astro",
+          "canonicalName": "@noodlestan/prettier-config-astro",
+          "path": "configs/prettier-config-astro/",
+          "packageFile": "package.json",
+          "namespace": "@noodlestan",
+          "owner": "Project: Artificial",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/dependencies/build-tools.art",
+        "_records/dependencies/eslint-config-dev.art",
+        "_records/dependencies/project-lint.art",
+        "_records/dependencies/project-tools.art",
+        "_records/dependencies/workspace-config.art",
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/esbuild-cli.art",
+        "_records/scripts/eslint-config.art",
+        "_records/scripts/prettier-config.art",
+        "_records/scripts/root-lifecycle.art",
+        "configs/prettier-config-astro/_records/npm-deployment.art",
+        "configs/prettier-config-astro/_records/package.art"
+      ]
+    },
+    {
+      "path": "configs/prettier-config/package.json",
+      "canonical": "@noodlestan/prettier-config",
+      "version": "0.1.1",
+      "private": false,
+      "dependencies": null,
+      "peerDependencies": {
+        "prettier": "^3.9.10"
+      },
+      "devDependencies": null,
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Workspace Tooling",
+          "canonical": "noodlestan/workspace-tooling",
+          "remote": "git@github.com:noodlestan/workspace-tooling.git",
+          "owner": "Project: Noodlestan Workspace Tooling",
+          "packageFile": "package.json",
+          "private": true,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Noodlestan Workspace Tooling",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Workspace Tooling",
+          "code": "https://github.com/noodlestan/workspace-tooling",
+          "private": true
+        }
+      },
+      "packageRecord": {
+        "path": "configs/prettier-config/_records/package.art",
+        "identity": {
+          "name": "Prettier Config",
+          "canonicalName": "@noodlestan/prettier-config",
+          "path": "configs/prettier-config/",
+          "packageFile": "package.json",
+          "namespace": "@noodlestan",
+          "owner": "Project: Artificial",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/dependencies/build-tools.art",
+        "_records/dependencies/eslint-config-dev.art",
+        "_records/dependencies/project-lint.art",
+        "_records/dependencies/project-tools.art",
+        "_records/dependencies/workspace-config.art",
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/esbuild-cli.art",
+        "_records/scripts/eslint-config.art",
+        "_records/scripts/prettier-config.art",
+        "_records/scripts/root-lifecycle.art",
+        "configs/prettier-config/_records/npm-deployment.art",
+        "configs/prettier-config/_records/package.art"
+      ]
+    },
+    {
+      "path": "configs/tsconfig/package.json",
+      "canonical": "@noodlestan/tsconfig",
+      "version": "0.2.1",
+      "private": false,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": null,
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Workspace Tooling",
+          "canonical": "noodlestan/workspace-tooling",
+          "remote": "git@github.com:noodlestan/workspace-tooling.git",
+          "owner": "Project: Noodlestan Workspace Tooling",
+          "packageFile": "package.json",
+          "private": true,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Noodlestan Workspace Tooling",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Workspace Tooling",
+          "code": "https://github.com/noodlestan/workspace-tooling",
+          "private": true
+        }
+      },
+      "packageRecord": {
+        "path": "configs/tsconfig/_records/package.art",
+        "identity": {
+          "name": "TS Config",
+          "canonicalName": "@noodlestan/tsconfig",
+          "path": "configs/tsconfig/",
+          "packageFile": "package.json",
+          "namespace": "@noodlestan",
+          "owner": "Project: Artificial",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/dependencies/build-tools.art",
+        "_records/dependencies/eslint-config-dev.art",
+        "_records/dependencies/project-lint.art",
+        "_records/dependencies/project-tools.art",
+        "_records/dependencies/workspace-config.art",
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/esbuild-cli.art",
+        "_records/scripts/eslint-config.art",
+        "_records/scripts/prettier-config.art",
+        "_records/scripts/root-lifecycle.art",
+        "configs/tsconfig/_records/npm-deployment.art",
+        "configs/tsconfig/_records/package.art"
+      ]
+    },
+    {
+      "path": "package.json",
+      "canonical": "noodlestan/workspace-tooling",
+      "version": "0.0.11",
+      "private": true,
+      "dependencies": {
+        "esbuild": "0.28.2",
+        "esbuild-plugin-file-path-extensions": "2.1.4"
+      },
+      "peerDependencies": null,
+      "devDependencies": {
+        "@noodlestan/conventions-typescript": "0.1.0",
+        "@noodlestan/conventions-unit-tests": "0.1.0",
+        "@noodlestan/eslint-config": "0.0.9",
+        "@noodlestan/prettier-config": "0.1.1",
+        "@types/node": "24.13.0",
+        "eslint": "8.57.1",
+        "lefthook": "2.2.2",
+        "prettier": "3.9.10",
+        "prettier-plugin-astro": "1.1.0",
+        "turbo": "2.11.10",
+        "typescript": "5.9.3"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Workspace Tooling",
+          "canonical": "noodlestan/workspace-tooling",
+          "remote": "git@github.com:noodlestan/workspace-tooling.git",
+          "owner": "Project: Noodlestan Workspace Tooling",
+          "packageFile": "package.json",
+          "private": true,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Noodlestan Workspace Tooling",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Workspace Tooling",
+          "code": "https://github.com/noodlestan/workspace-tooling",
+          "private": true
+        }
+      },
+      "packageRecord": null,
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/dependencies/build-tools.art",
+        "_records/dependencies/eslint-config-dev.art",
+        "_records/dependencies/project-lint.art",
+        "_records/dependencies/project-tools.art",
+        "_records/dependencies/workspace-config.art",
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/esbuild-cli.art",
+        "_records/scripts/eslint-config.art",
+        "_records/scripts/prettier-config.art",
+        "_records/scripts/root-lifecycle.art"
+      ]
+    }
+  ]
+}

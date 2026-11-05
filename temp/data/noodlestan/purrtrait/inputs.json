@@ -1,0 +1,525 @@
+{
+  "schemaVersion": 1,
+  "repositoryCanonical": "noodlestan/purrtrait",
+  "checkout": {
+    "name": "purrtrait",
+    "path": "checkouts/purrtrait"
+  },
+  "sourceSnapshot": {
+    "capturedAt": "2026-11-05T23:17:23.290Z",
+    "commit": "2e36d69f304599a2e507f10ca7b312faabc74768",
+    "dirtyPaths": []
+  },
+  "coverage": {
+    "checkoutRecordPath": "../../_records/checkouts/purrtrait-checkout.art",
+    "repositoryRecordPath": "../../_records/repositories/purrtrait.art",
+    "manifestPathsDiscovered": [
+      "libs/astro-components/package.json",
+      "libs/client-tsx/package.json",
+      "libs/code-renderer/package.json",
+      "libs/jsdoc-renderer/package.json",
+      "libs/lang-ts/package.json",
+      "libs/solid-code/package.json",
+      "libs/view-tsx/package.json",
+      "package.json"
+    ],
+    "manifestPathsInventoried": [
+      "libs/astro-components/package.json",
+      "libs/client-tsx/package.json",
+      "libs/code-renderer/package.json",
+      "libs/jsdoc-renderer/package.json",
+      "libs/lang-ts/package.json",
+      "libs/solid-code/package.json",
+      "libs/view-tsx/package.json",
+      "package.json"
+    ],
+    "recordPaths": [
+      "_records/license.art",
+      "_records/namespace.art",
+      "_records/project.art",
+      "_records/repository.art",
+      "_records/scripts/root-lifecycle.art",
+      "libs/astro-components/_records/package.art",
+      "libs/client-tsx/_records/npm-deployment.art",
+      "libs/client-tsx/_records/package.art",
+      "libs/code-renderer/_records/npm-deployment.art",
+      "libs/code-renderer/_records/package.art",
+      "libs/jsdoc-renderer/_records/npm-deployment.art",
+      "libs/jsdoc-renderer/_records/package.art",
+      "libs/lang-ts/_records/npm-deployment.art",
+      "libs/lang-ts/_records/package.art",
+      "libs/solid-code/_records/npm-deployment.art",
+      "libs/solid-code/_records/package.art",
+      "libs/view-tsx/_records/npm-deployment.art",
+      "libs/view-tsx/_records/package.art"
+    ]
+  },
+  "issues": [],
+  "manifests": [
+    {
+      "path": "libs/astro-components/package.json",
+      "canonical": "@purrtrait/astro-components",
+      "version": "0.0.1",
+      "private": false,
+      "dependencies": {
+        "@purrtrait/code-renderer": "0.0.11",
+        "@purrtrait/jsdoc-renderer": "0.0.2",
+        "@purrtrait/lang-ts": "0.0.12",
+        "marked": "18.1.2"
+      },
+      "peerDependencies": {
+        "astro": "^7",
+        "shiki": "^4"
+      },
+      "devDependencies": {
+        "@purrception/lang-ts": "0.1.1"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrtrait",
+          "canonical": "noodlestan/purrtrait",
+          "remote": "git@github.com:noodlestan/purrtrait.git",
+          "owner": "Project: Purrtrait",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrtrait",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrtrait",
+          "code": "https://github.com/noodlestan/purrtrait",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "libs/astro-components/_records/package.art",
+        "identity": {
+          "name": "Astro Components",
+          "canonicalName": "@purrtrait/astro-components",
+          "path": "libs/astro-components/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Purrtrait",
+          "owner": "Project: Purrtrait",
+          "private": false,
+          "published": false
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art",
+        "libs/astro-components/_records/package.art"
+      ]
+    },
+    {
+      "path": "libs/client-tsx/package.json",
+      "canonical": "@purrtrait/client-tsx",
+      "version": "0.0.11",
+      "private": false,
+      "dependencies": {},
+      "peerDependencies": {
+        "typescript": "^5.9.3"
+      },
+      "devDependencies": {
+        "vite-plugin-solid": "2.11.14"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrtrait",
+          "canonical": "noodlestan/purrtrait",
+          "remote": "git@github.com:noodlestan/purrtrait.git",
+          "owner": "Project: Purrtrait",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrtrait",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrtrait",
+          "code": "https://github.com/noodlestan/purrtrait",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "libs/client-tsx/_records/package.art",
+        "identity": {
+          "name": "Client TSX",
+          "canonicalName": "@purrtrait/client-tsx",
+          "path": "libs/client-tsx/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Purrtrait",
+          "owner": "Project: Purrtrait",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art",
+        "libs/client-tsx/_records/npm-deployment.art",
+        "libs/client-tsx/_records/package.art"
+      ]
+    },
+    {
+      "path": "libs/code-renderer/package.json",
+      "canonical": "@purrtrait/code-renderer",
+      "version": "0.0.11",
+      "private": false,
+      "dependencies": {},
+      "peerDependencies": {},
+      "devDependencies": {},
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrtrait",
+          "canonical": "noodlestan/purrtrait",
+          "remote": "git@github.com:noodlestan/purrtrait.git",
+          "owner": "Project: Purrtrait",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrtrait",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrtrait",
+          "code": "https://github.com/noodlestan/purrtrait",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "libs/code-renderer/_records/package.art",
+        "identity": {
+          "name": "Code Renderer",
+          "canonicalName": "@purrtrait/code-renderer",
+          "path": "libs/code-renderer/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Purrtrait",
+          "owner": "Project: Purrtrait",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art",
+        "libs/code-renderer/_records/npm-deployment.art",
+        "libs/code-renderer/_records/package.art"
+      ]
+    },
+    {
+      "path": "libs/jsdoc-renderer/package.json",
+      "canonical": "@purrtrait/jsdoc-renderer",
+      "version": "0.0.2",
+      "private": false,
+      "dependencies": {},
+      "peerDependencies": {},
+      "devDependencies": {
+        "@purrception/lang-ts": "0.1.1"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrtrait",
+          "canonical": "noodlestan/purrtrait",
+          "remote": "git@github.com:noodlestan/purrtrait.git",
+          "owner": "Project: Purrtrait",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrtrait",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrtrait",
+          "code": "https://github.com/noodlestan/purrtrait",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "libs/jsdoc-renderer/_records/package.art",
+        "identity": {
+          "name": "JSDoc Renderer",
+          "canonicalName": "@purrtrait/jsdoc-renderer",
+          "path": "libs/jsdoc-renderer/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Purrtrait",
+          "owner": "Project: Purrtrait",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art",
+        "libs/jsdoc-renderer/_records/npm-deployment.art",
+        "libs/jsdoc-renderer/_records/package.art"
+      ]
+    },
+    {
+      "path": "libs/lang-ts/package.json",
+      "canonical": "@purrtrait/lang-ts",
+      "version": "0.0.12",
+      "private": false,
+      "dependencies": {
+        "@purrception/lang-ts": "0.1.1",
+        "@purrtrait/code-renderer": "0.0.11"
+      },
+      "peerDependencies": {},
+      "devDependencies": {},
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrtrait",
+          "canonical": "noodlestan/purrtrait",
+          "remote": "git@github.com:noodlestan/purrtrait.git",
+          "owner": "Project: Purrtrait",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrtrait",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrtrait",
+          "code": "https://github.com/noodlestan/purrtrait",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "libs/lang-ts/_records/package.art",
+        "identity": {
+          "name": "Lang TS",
+          "canonicalName": "@purrtrait/lang-ts",
+          "path": "libs/lang-ts/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Purrtrait",
+          "owner": "Project: Purrtrait",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art",
+        "libs/lang-ts/_records/npm-deployment.art",
+        "libs/lang-ts/_records/package.art"
+      ]
+    },
+    {
+      "path": "libs/solid-code/package.json",
+      "canonical": "@purrtrait/solid-code",
+      "version": "0.0.13",
+      "private": false,
+      "dependencies": {
+        "@purrtrait/code-renderer": "*",
+        "@purrtrait/lang-ts": "*"
+      },
+      "peerDependencies": {
+        "solid-js": "^1.9.17"
+      },
+      "devDependencies": {
+        "vite-plugin-solid": "2.11.14"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrtrait",
+          "canonical": "noodlestan/purrtrait",
+          "remote": "git@github.com:noodlestan/purrtrait.git",
+          "owner": "Project: Purrtrait",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrtrait",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrtrait",
+          "code": "https://github.com/noodlestan/purrtrait",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "libs/solid-code/_records/package.art",
+        "identity": {
+          "name": "Solid Code",
+          "canonicalName": "@purrtrait/solid-code",
+          "path": "libs/solid-code/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Purrtrait",
+          "owner": "Project: Purrtrait",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art",
+        "libs/solid-code/_records/npm-deployment.art",
+        "libs/solid-code/_records/package.art"
+      ]
+    },
+    {
+      "path": "libs/view-tsx/package.json",
+      "canonical": "@purrtrait/view-tsx",
+      "version": "0.0.11",
+      "private": false,
+      "dependencies": {
+        "@purrtrait/client-tsx": "*"
+      },
+      "peerDependencies": {
+        "typescript": "^5.9.3"
+      },
+      "devDependencies": {
+        "vite-plugin-solid": "2.11.14"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrtrait",
+          "canonical": "noodlestan/purrtrait",
+          "remote": "git@github.com:noodlestan/purrtrait.git",
+          "owner": "Project: Purrtrait",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrtrait",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrtrait",
+          "code": "https://github.com/noodlestan/purrtrait",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "libs/view-tsx/_records/package.art",
+        "identity": {
+          "name": "View TSX",
+          "canonicalName": "@purrtrait/view-tsx",
+          "path": "libs/view-tsx/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Purrtrait",
+          "owner": "Project: Purrtrait",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art",
+        "libs/view-tsx/_records/npm-deployment.art",
+        "libs/view-tsx/_records/package.art"
+      ]
+    },
+    {
+      "path": "package.json",
+      "canonical": "noodlestan/purrtrait",
+      "version": "0.0.11",
+      "private": true,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": {
+        "@noodlestan/conventions-typescript": "0.1.0",
+        "@noodlestan/conventions-unit-tests": "0.1.0",
+        "@noodlestan/esbuild": "0.1.1",
+        "@noodlestan/eslint-config": "0.0.9",
+        "@noodlestan/prettier-config": "0.1.1",
+        "@noodlestan/tsconfig": "0.2.1",
+        "@types/node": "24.13.0",
+        "@vitest/coverage-v8": "5.0.5",
+        "eslint": "8.57.1",
+        "lefthook": "2.2.2",
+        "prettier": "3.9.10",
+        "turbo": "2.11.10",
+        "typescript": "5.9.3",
+        "vite": "8.3.5",
+        "vitest": "5.0.5"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrtrait",
+          "canonical": "noodlestan/purrtrait",
+          "remote": "git@github.com:noodlestan/purrtrait.git",
+          "owner": "Project: Purrtrait",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrtrait",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrtrait",
+          "code": "https://github.com/noodlestan/purrtrait",
+          "private": false
+        }
+      },
+      "packageRecord": null,
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art"
+      ]
+    }
+  ]
+}

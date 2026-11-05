@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "repositoryCanonical": "noodlestan/artisans",
+  "checkout": {
+    "name": "artisans",
+    "path": "checkouts/artisans"
+  },
+  "sourceSnapshot": {
+    "capturedAt": "2026-11-05T23:17:22.857Z",
+    "commit": "4b595303909590055041e9d70f2032fb446edcf6",
+    "dirtyPaths": []
+  },
+  "coverage": {
+    "checkoutRecordPath": "../../_records/checkouts/artisans-checkout.art",
+    "repositoryRecordPath": "../../_records/repositories/artisans.art",
+    "manifestPathsDiscovered": ["apps/art-mantras/package.json", "package.json"],
+    "manifestPathsInventoried": ["apps/art-mantras/package.json", "package.json"],
+    "recordPaths": [
+      "_records/dependencies/build-tools-dev.art",
+      "_records/dependencies/cli-dev.art",
+      "_records/dependencies/project-lint.art",
+      "_records/dependencies/project-tools.art",
+      "_records/dependencies/project-typescript.art",
+      "_records/dependencies/purrception-extract.art",
+      "_records/dependencies/solid-lib-dev.art",
+      "_records/dependencies/solid-lib-peer.art",
+      "_records/license.art",
+      "_records/namespace.art",
+      "_records/project.art",
+      "_records/repository.art",
+      "_records/scripts/cli-build.art",
+      "_records/scripts/common-scripts.art",
+      "_records/scripts/lib-build.art",
+      "_records/scripts/micro-app-serve.art",
+      "_records/scripts/purrception-extract.art",
+      "_records/scripts/root-extract.art",
+      "_records/scripts/root-lifecycle.art",
+      "apps/art-mantras/_records/package.art",
+      "apps/art-mantras/_records/production-environment.art",
+      "apps/art-mantras/_records/staging-environment.art",
+      "apps/art-mantras/_records/static-web-deployment.art"
+    ]
+  },
+  "issues": [
+    {
+      "sourcePath": "apps/art-mantras/_records/package.art",
+      "code": "package-record-path-conflict",
+      "message": "`apps/art-mantras/_records/package.art` declares `Path:` `artisans/apps/art-mantras/` but sits with `apps/art-mantras/package.json` (directory `apps/art-mantras/`); both values are preserved as observed."
+    }
+  ],
+  "manifests": [
+    {
+      "path": "apps/art-mantras/package.json",
+      "canonical": "@artisans/art-mantras",
+      "version": "0.0.1",
+      "private": true,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": null,
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Artisans",
+          "canonical": "noodlestan/artisans",
+          "remote": "git@github.com:noodlestan/artisans.git",
+          "owner": "Project: Artisans",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Artisans",
+          "owner": "Project: Artificials",
+          "repository": "Repository: Artisans",
+          "code": "https://github.com/noodlestan/artisans",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "apps/art-mantras/_records/package.art",
+        "identity": {
+          "name": "Art Mantras",
+          "canonicalName": "@artisans/art-mantras",
+          "path": "artisans/apps/art-mantras/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Artisans",
+          "owner": "Project: Artificial",
+          "private": true,
+          "published": false
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/dependencies/build-tools-dev.art",
+        "_records/dependencies/cli-dev.art",
+        "_records/dependencies/project-lint.art",
+        "_records/dependencies/project-tools.art",
+        "_records/dependencies/project-typescript.art",
+        "_records/dependencies/purrception-extract.art",
+        "_records/dependencies/solid-lib-dev.art",
+        "_records/dependencies/solid-lib-peer.art",
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/cli-build.art",
+        "_records/scripts/common-scripts.art",
+        "_records/scripts/lib-build.art",
+        "_records/scripts/micro-app-serve.art",
+        "_records/scripts/purrception-extract.art",
+        "_records/scripts/root-extract.art",
+        "_records/scripts/root-lifecycle.art",
+        "apps/art-mantras/_records/package.art",
+        "apps/art-mantras/_records/production-environment.art",
+        "apps/art-mantras/_records/staging-environment.art",
+        "apps/art-mantras/_records/static-web-deployment.art"
+      ]
+    },
+    {
+      "path": "package.json",
+      "canonical": "noodlestan/artisans",
+      "version": "0.0.1",
+      "private": true,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": {
+        "@noodlestan/conventions-typescript": "0.1.0",
+        "@noodlestan/conventions-unit-tests": "0.1.0",
+        "@noodlestan/eslint-config": "0.0.9",
+        "@noodlestan/prettier-config": "0.1.1",
+        "@noodlestan/tsconfig": "0.2.1",
+        "@types/node": "24.13.0",
+        "eslint": "8.57.1",
+        "lefthook": "2.2.2",
+        "prettier": "3.9.10",
+        "turbo": "2.11.10",
+        "typescript": "5.9.3"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Artisans",
+          "canonical": "noodlestan/artisans",
+          "remote": "git@github.com:noodlestan/artisans.git",
+          "owner": "Project: Artisans",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Artisans",
+          "owner": "Project: Artificials",
+          "repository": "Repository: Artisans",
+          "code": "https://github.com/noodlestan/artisans",
+          "private": false
+        }
+      },
+      "packageRecord": null,
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/dependencies/build-tools-dev.art",
+        "_records/dependencies/cli-dev.art",
+        "_records/dependencies/project-lint.art",
+        "_records/dependencies/project-tools.art",
+        "_records/dependencies/project-typescript.art",
+        "_records/dependencies/purrception-extract.art",
+        "_records/dependencies/solid-lib-dev.art",
+        "_records/dependencies/solid-lib-peer.art",
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/cli-build.art",
+        "_records/scripts/common-scripts.art",
+        "_records/scripts/lib-build.art",
+        "_records/scripts/micro-app-serve.art",
+        "_records/scripts/purrception-extract.art",
+        "_records/scripts/root-extract.art",
+        "_records/scripts/root-lifecycle.art"
+      ]
+    }
+  ]
+}

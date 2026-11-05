@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "repositoryCanonical": "noodlestan/ops",
+  "checkout": {
+    "name": "ops",
+    "path": "checkouts/ops"
+  },
+  "sourceSnapshot": {
+    "capturedAt": "2026-11-05T23:17:23.122Z",
+    "commit": "f2a870beec7d66e7155b951ae2c0af637512f6a4",
+    "dirtyPaths": []
+  },
+  "coverage": {
+    "checkoutRecordPath": "../../_records/checkouts/ops-checkout.art",
+    "repositoryRecordPath": "../../_records/repositories/ops.art",
+    "manifestPathsDiscovered": ["package.json"],
+    "manifestPathsInventoried": ["package.json"],
+    "recordPaths": [
+      "_records/license.art",
+      "_records/project.art",
+      "_records/repository.art",
+      "_records/scripts/root-lifecycle.art"
+    ]
+  },
+  "issues": [],
+  "manifests": [
+    {
+      "path": "package.json",
+      "canonical": "noodlestan/ops",
+      "version": "0.0.1",
+      "private": true,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": {
+        "@noodlestan/prettier-config": "0.1.1",
+        "lefthook": "2.2.2",
+        "prettier": "3.9.10"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Ops",
+          "canonical": "noodlestan/ops",
+          "remote": "git@github.com:noodlestan/ops.git",
+          "owner": "Project: Noodlestan Ops",
+          "packageFile": "package.json",
+          "private": true,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Noodlestan Ops",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Ops",
+          "code": "https://github.com/noodlestan/ops",
+          "private": true
+        }
+      },
+      "packageRecord": null,
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art"
+      ]
+    }
+  ]
+}

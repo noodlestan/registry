@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "repositoryCanonical": "noodlestan/purrpose",
+  "checkout": {
+    "name": "purrpose",
+    "path": "checkouts/purrpose"
+  },
+  "sourceSnapshot": {
+    "capturedAt": "2026-11-05T23:17:23.255Z",
+    "commit": "7fb06b21b6ed6a795b39fd95c24c97affe320ede",
+    "dirtyPaths": []
+  },
+  "coverage": {
+    "checkoutRecordPath": "../../_records/checkouts/purrpose-checkout.art",
+    "repositoryRecordPath": "../../_records/repositories/purrpose.art",
+    "manifestPathsDiscovered": [
+      "libs/client-babel-preset-solidjs/package.json",
+      "libs/client-babel/package.json",
+      "libs/solid-shiki-service/package.json",
+      "package.json"
+    ],
+    "manifestPathsInventoried": [
+      "libs/client-babel-preset-solidjs/package.json",
+      "libs/client-babel/package.json",
+      "libs/solid-shiki-service/package.json",
+      "package.json"
+    ],
+    "recordPaths": [
+      "_records/license.art",
+      "_records/namespace.art",
+      "_records/project.art",
+      "_records/repository.art",
+      "_records/scripts/root-lifecycle.art",
+      "libs/client-babel-preset-solidjs/_records/npm-deployment.art",
+      "libs/client-babel-preset-solidjs/_records/package.art",
+      "libs/client-babel/_records/npm-deployment.art",
+      "libs/client-babel/_records/package.art",
+      "libs/solid-shiki-service/_records/npm-deployment.art",
+      "libs/solid-shiki-service/_records/package.art"
+    ]
+  },
+  "issues": [],
+  "manifests": [
+    {
+      "path": "libs/client-babel-preset-solidjs/package.json",
+      "canonical": "@purrpose/client-babel-preset-solidjs",
+      "version": "0.0.12",
+      "private": false,
+      "dependencies": {},
+      "peerDependencies": {
+        "@purrpose/client-babel": "^0.0.11",
+        "babel-plugin-jsx-dom-expressions": "^0.40.7",
+        "solid-js": "^1.9.17"
+      },
+      "devDependencies": {},
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrpose",
+          "canonical": "noodlestan/purrpose",
+          "remote": "git@github.com:noodlestan/purrpose.git",
+          "owner": "Project: Purrpose",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrpose",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrpose",
+          "code": "https://github.com/noodlestan/purrpose",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "libs/client-babel-preset-solidjs/_records/package.art",
+        "identity": {
+          "name": "Client Babel Preset Solid JS",
+          "canonicalName": "@purrpose/client-babel-preset-solidjs",
+          "path": "libs/client-babel-preset-solidjs/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Purrpose",
+          "owner": "Project: Purrpose",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art",
+        "libs/client-babel-preset-solidjs/_records/npm-deployment.art",
+        "libs/client-babel-preset-solidjs/_records/package.art"
+      ]
+    },
+    {
+      "path": "libs/client-babel/package.json",
+      "canonical": "@purrpose/client-babel",
+      "version": "0.0.11",
+      "private": false,
+      "dependencies": {},
+      "peerDependencies": {
+        "@babel/standalone": "^7.29.7",
+        "assert": "^2.1.0"
+      },
+      "devDependencies": {
+        "@types/babel__standalone": "7.1.9"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrpose",
+          "canonical": "noodlestan/purrpose",
+          "remote": "git@github.com:noodlestan/purrpose.git",
+          "owner": "Project: Purrpose",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrpose",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrpose",
+          "code": "https://github.com/noodlestan/purrpose",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "libs/client-babel/_records/package.art",
+        "identity": {
+          "name": "Client Babel",
+          "canonicalName": "@purrpose/client-babel",
+          "path": "libs/client-babel/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Purrpose",
+          "owner": "Project: Purrpose",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art",
+        "libs/client-babel/_records/npm-deployment.art",
+        "libs/client-babel/_records/package.art"
+      ]
+    },
+    {
+      "path": "libs/solid-shiki-service/package.json",
+      "canonical": "@purrpose/solid-shiki-service",
+      "version": "0.0.13",
+      "private": false,
+      "dependencies": {
+        "@no-comply/solid-primitives": "0.0.12"
+      },
+      "peerDependencies": {
+        "prettier": "^3.9.10",
+        "shiki": "^4.3.0",
+        "solid-js": "^1.9.17"
+      },
+      "devDependencies": {
+        "vite-plugin-solid": "2.11.14",
+        "vite-plugin-solid-svg": "0.8.1"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrpose",
+          "canonical": "noodlestan/purrpose",
+          "remote": "git@github.com:noodlestan/purrpose.git",
+          "owner": "Project: Purrpose",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrpose",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrpose",
+          "code": "https://github.com/noodlestan/purrpose",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "libs/solid-shiki-service/_records/package.art",
+        "identity": {
+          "name": "Solid Shiki Service",
+          "canonicalName": "@purrpose/solid-shiki-service",
+          "path": "libs/solid-shiki-service/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Purrpose",
+          "owner": "Project: Purrpose",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art",
+        "libs/solid-shiki-service/_records/npm-deployment.art",
+        "libs/solid-shiki-service/_records/package.art"
+      ]
+    },
+    {
+      "path": "package.json",
+      "canonical": "noodlestan/purrpose",
+      "version": "0.0.11",
+      "private": true,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": {
+        "@noodlestan/conventions-typescript": "0.1.0",
+        "@noodlestan/conventions-unit-tests": "0.1.0",
+        "@noodlestan/eslint-config": "0.0.9",
+        "@noodlestan/prettier-config": "0.1.1",
+        "@noodlestan/tsconfig": "0.2.1",
+        "@vitest/coverage-v8": "5.0.5",
+        "eslint": "8.57.1",
+        "lefthook": "2.2.2",
+        "prettier": "3.9.10",
+        "turbo": "2.11.10",
+        "typescript": "5.9.3",
+        "vite": "8.3.5",
+        "vitest": "5.0.5"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrpose",
+          "canonical": "noodlestan/purrpose",
+          "remote": "git@github.com:noodlestan/purrpose.git",
+          "owner": "Project: Purrpose",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrpose",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrpose",
+          "code": "https://github.com/noodlestan/purrpose",
+          "private": false
+        }
+      },
+      "packageRecord": null,
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art"
+      ]
+    }
+  ]
+}

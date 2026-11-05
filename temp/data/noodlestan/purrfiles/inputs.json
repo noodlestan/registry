@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "repositoryCanonical": "noodlestan/purrfiles",
+  "checkout": {
+    "name": "purrfiles",
+    "path": "checkouts/purrfiles"
+  },
+  "sourceSnapshot": {
+    "capturedAt": "2026-11-05T23:17:23.221Z",
+    "commit": "ae5ed530d930673440550134ad53d42b4c458171",
+    "dirtyPaths": []
+  },
+  "coverage": {
+    "checkoutRecordPath": "../../_records/checkouts/purrfiles-checkout.art",
+    "repositoryRecordPath": "../../_records/repositories/purrfiles.art",
+    "manifestPathsDiscovered": [
+      "cli/purrfiles-extract/package.json",
+      "libs/purrfiles-entities/package.json",
+      "package.json"
+    ],
+    "manifestPathsInventoried": [
+      "cli/purrfiles-extract/package.json",
+      "libs/purrfiles-entities/package.json",
+      "package.json"
+    ],
+    "recordPaths": [
+      "_records/license.art",
+      "_records/project.art",
+      "_records/repository.art",
+      "cli/purrfiles-extract/_records/npm-deployment.art",
+      "cli/purrfiles-extract/_records/package.art",
+      "libs/purrfiles-entities/_records/npm-deployment.art",
+      "libs/purrfiles-entities/_records/package.art"
+    ]
+  },
+  "issues": [
+    {
+      "sourcePath": "../../_records/repositories/purrfiles.art",
+      "code": "duplicate-repository-record",
+      "message": "Registered repository records for `Purrfiles` are duplicated (_records/repositories/purrfiles.art, _records/repositories/repository.art); all declare canonical `noodlestan/purrfiles`. `coverage.repositoryRecordPath` cites `_records/repositories/purrfiles.art`."
+    }
+  ],
+  "manifests": [
+    {
+      "path": "cli/purrfiles-extract/package.json",
+      "canonical": "@noodlestan/purrfiles-extract",
+      "version": "0.0.1",
+      "private": false,
+      "dependencies": {
+        "@noodlestan/purrfiles-entities": "0.0.1",
+        "@purrception/lang-ts-extract": "0.1.1",
+        "@purrception/primitives": "0.1.0",
+        "@purrception/source-fs": "0.1.1"
+      },
+      "peerDependencies": null,
+      "devDependencies": {
+        "vitest": "5.0.5"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrfiles",
+          "canonical": "noodlestan/purrfiles",
+          "remote": "git@github.com:noodlestan/purrfiles.git",
+          "owner": "Project: Purrfiles",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**", "cli/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrfiles",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrfiles",
+          "code": "https://github.com/noodlestan/purrfiles",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "cli/purrfiles-extract/_records/package.art",
+        "identity": {
+          "name": "Purrfiles Extract",
+          "canonicalName": "@noodlestan/purrfiles-extract",
+          "path": "cli/purrfiles-extract/",
+          "packageFile": "package.json",
+          "namespace": null,
+          "owner": "Project: Purrfiles",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "cli/purrfiles-extract/_records/npm-deployment.art",
+        "cli/purrfiles-extract/_records/package.art"
+      ]
+    },
+    {
+      "path": "libs/purrfiles-entities/package.json",
+      "canonical": "@noodlestan/purrfiles-entities",
+      "version": "0.0.1",
+      "private": false,
+      "dependencies": {
+        "@purrception/lang-ts": "0.1.1",
+        "@purrception/primitives": "0.1.0"
+      },
+      "peerDependencies": null,
+      "devDependencies": {
+        "vitest": "5.0.5"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrfiles",
+          "canonical": "noodlestan/purrfiles",
+          "remote": "git@github.com:noodlestan/purrfiles.git",
+          "owner": "Project: Purrfiles",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**", "cli/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrfiles",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrfiles",
+          "code": "https://github.com/noodlestan/purrfiles",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "libs/purrfiles-entities/_records/package.art",
+        "identity": {
+          "name": "Purrfiles Entities",
+          "canonicalName": "@noodlestan/purrfiles-entities",
+          "path": "libs/purrfiles-entities/",
+          "packageFile": "package.json",
+          "namespace": null,
+          "owner": "Project: Purrfiles",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "libs/purrfiles-entities/_records/npm-deployment.art",
+        "libs/purrfiles-entities/_records/package.art"
+      ]
+    },
+    {
+      "path": "package.json",
+      "canonical": "noodlestan/purrfiles",
+      "version": "0.0.1",
+      "private": true,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": {
+        "@noodlestan/conventions-typescript": "0.1.0",
+        "@noodlestan/conventions-unit-tests": "0.1.0",
+        "@noodlestan/esbuild": "0.1.1",
+        "@noodlestan/eslint-config": "0.0.9",
+        "@noodlestan/prettier-config": "0.1.1",
+        "@noodlestan/tsconfig": "0.2.1",
+        "@types/node": "24.13.0",
+        "@vitest/coverage-v8": "5.0.5",
+        "eslint": "8.57.1",
+        "lefthook": "2.2.2",
+        "prettier": "3.9.10",
+        "turbo": "2.11.10",
+        "typescript": "5.9.3",
+        "vite": "8.3.5"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrfiles",
+          "canonical": "noodlestan/purrfiles",
+          "remote": "git@github.com:noodlestan/purrfiles.git",
+          "owner": "Project: Purrfiles",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**", "cli/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrfiles",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrfiles",
+          "code": "https://github.com/noodlestan/purrfiles",
+          "private": false
+        }
+      },
+      "packageRecord": null,
+      "dependencySetDeclarations": [],
+      "recordFiles": ["_records/license.art", "_records/project.art", "_records/repository.art"]
+    }
+  ]
+}

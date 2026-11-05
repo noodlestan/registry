@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "repositoryCanonical": "noodlestan/management",
+  "checkout": {
+    "name": "management",
+    "path": "checkouts/management"
+  },
+  "sourceSnapshot": {
+    "capturedAt": "2026-11-05T23:17:22.960Z",
+    "commit": "2e6112f8130d571799cca23e52f5f3a0209ac0af",
+    "dirtyPaths": ["_backlog/3-now/plan-poc-manifest-registry/plan.md"]
+  },
+  "coverage": {
+    "checkoutRecordPath": "../../_records/checkouts/management-checkout.art",
+    "repositoryRecordPath": "../../_records/repositories/management.art",
+    "manifestPathsDiscovered": [
+      "_backlog/3-now/plan-migrate-planning-to-own-repos/plan__scaffold-package/package.json",
+      "package.json"
+    ],
+    "manifestPathsInventoried": [
+      "_backlog/3-now/plan-migrate-planning-to-own-repos/plan__scaffold-package/package.json",
+      "package.json"
+    ],
+    "recordPaths": [
+      "_backlog/3-now/plan-migrate-planning-to-own-repos/plan__scaffold-package/_records/package.art",
+      "_backlog/3-now/plan-migrate-planning-to-own-repos/plan__scaffold-repo/_records/license.art",
+      "_backlog/3-now/plan-migrate-planning-to-own-repos/plan__scaffold-repo/_records/project.art",
+      "_backlog/3-now/plan-migrate-planning-to-own-repos/plan__scaffold-repo/_records/repository.art",
+      "_records/license.art",
+      "_records/project.art",
+      "_records/repository.art",
+      "_records/scripts/root-lifecycle.art"
+    ]
+  },
+  "issues": [
+    {
+      "sourcePath": "_backlog/3-now/plan-migrate-planning-to-own-repos/plan__scaffold-package/_records/package.art",
+      "code": "package-record-path-conflict",
+      "message": "`_backlog/3-now/plan-migrate-planning-to-own-repos/plan__scaffold-package/_records/package.art` declares `Path:` `./` but sits with `_backlog/3-now/plan-migrate-planning-to-own-repos/plan__scaffold-package/package.json` (directory `_backlog/3-now/plan-migrate-planning-to-own-repos/plan__scaffold-package/`); both values are preserved as observed."
+    }
+  ],
+  "manifests": [
+    {
+      "path": "_backlog/3-now/plan-migrate-planning-to-own-repos/plan__scaffold-package/package.json",
+      "canonical": "@noodlestan/{family}-planning",
+      "version": "0.0.1",
+      "private": true,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": {
+        "@noodlestan/prettier-config": "0.1.1",
+        "lefthook": "2.2.2",
+        "prettier": "3.9.10",
+        "turbo": "2.11.10"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Management",
+          "canonical": "noodlestan/management",
+          "remote": "git@github.com:noodlestan/management.git",
+          "owner": "Project: Noodlestan Management",
+          "packageFile": "package.json",
+          "private": true,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Noodlestan Management",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Management",
+          "code": "https://github.com/noodlestan/management",
+          "private": true
+        }
+      },
+      "packageRecord": {
+        "path": "_backlog/3-now/plan-migrate-planning-to-own-repos/plan__scaffold-package/_records/package.art",
+        "identity": {
+          "name": "{repo-name} Planning",
+          "canonicalName": "@noodlestan/{family}-planning",
+          "path": ".",
+          "packageFile": "package.json",
+          "namespace": null,
+          "owner": "Project: {repo-name}",
+          "private": true,
+          "published": false
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_backlog/3-now/plan-migrate-planning-to-own-repos/plan__scaffold-package/_records/package.art",
+        "_records/license.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art"
+      ]
+    },
+    {
+      "path": "package.json",
+      "canonical": "noodlestan/management",
+      "version": "0.0.1",
+      "private": true,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": {
+        "@noodlestan/prettier-config": "0.1.1",
+        "lefthook": "2.2.2",
+        "prettier": "3.9.10"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Management",
+          "canonical": "noodlestan/management",
+          "remote": "git@github.com:noodlestan/management.git",
+          "owner": "Project: Noodlestan Management",
+          "packageFile": "package.json",
+          "private": true,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Noodlestan Management",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Management",
+          "code": "https://github.com/noodlestan/management",
+          "private": true
+        }
+      },
+      "packageRecord": null,
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art"
+      ]
+    }
+  ]
+}

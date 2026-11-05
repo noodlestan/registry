@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "repositoryCanonical": "noodlestan/purrception",
+  "checkout": {
+    "name": "purrception",
+    "path": "checkouts/purrception"
+  },
+  "sourceSnapshot": {
+    "capturedAt": "2026-11-05T23:17:23.156Z",
+    "commit": "e9d0762d876933fccc4483581b5cc27759c270d8",
+    "dirtyPaths": []
+  },
+  "coverage": {
+    "checkoutRecordPath": "../../_records/checkouts/purrception-checkout.art",
+    "repositoryRecordPath": "../../_records/repositories/purrception.art",
+    "manifestPathsDiscovered": [
+      "cli/lang-ts-extract/package.json",
+      "cli/source-fs/package.json",
+      "libs/lang-ts/package.json",
+      "libs/primitives/package.json",
+      "package.json"
+    ],
+    "manifestPathsInventoried": [
+      "cli/lang-ts-extract/package.json",
+      "cli/source-fs/package.json",
+      "libs/lang-ts/package.json",
+      "libs/primitives/package.json",
+      "package.json"
+    ],
+    "recordPaths": [
+      "_records/license.art",
+      "_records/namespace.art",
+      "_records/project.art",
+      "_records/repository.art",
+      "_records/scripts/root-lifecycle.art",
+      "cli/lang-ts-extract/_records/npm-deployment.art",
+      "cli/lang-ts-extract/_records/package.art",
+      "cli/source-fs/_records/npm-deployment.art",
+      "cli/source-fs/_records/package.art",
+      "libs/lang-ts/_records/npm-deployment.art",
+      "libs/lang-ts/_records/package.art",
+      "libs/primitives/_records/npm-deployment.art",
+      "libs/primitives/_records/package.art"
+    ]
+  },
+  "issues": [],
+  "manifests": [
+    {
+      "path": "cli/lang-ts-extract/package.json",
+      "canonical": "@purrception/lang-ts-extract",
+      "version": "0.1.1",
+      "private": false,
+      "dependencies": {
+        "@purrception/primitives": "0.1.0",
+        "@purrception/lang-ts": "0.1.1",
+        "typescript": "5.9.3"
+      },
+      "peerDependencies": null,
+      "devDependencies": {},
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrception",
+          "canonical": "noodlestan/purrception",
+          "remote": "git@github.com:noodlestan/purrception.git",
+          "owner": "Project: Purrception",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrception",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrception",
+          "code": "https://github.com/noodlestan/purrception",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "cli/lang-ts-extract/_records/package.art",
+        "identity": {
+          "name": "Lang TS Extract",
+          "canonicalName": "@purrception/lang-ts-extract",
+          "path": "cli/lang-ts-extract/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Purrception",
+          "owner": "Project: Purrception",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art",
+        "cli/lang-ts-extract/_records/npm-deployment.art",
+        "cli/lang-ts-extract/_records/package.art"
+      ]
+    },
+    {
+      "path": "cli/source-fs/package.json",
+      "canonical": "@purrception/source-fs",
+      "version": "0.1.1",
+      "private": false,
+      "dependencies": {
+        "@purrception/primitives": "0.1.0",
+        "chokidar": "5.0.0",
+        "perfect-debounce": "2.1.0"
+      },
+      "peerDependencies": null,
+      "devDependencies": {},
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrception",
+          "canonical": "noodlestan/purrception",
+          "remote": "git@github.com:noodlestan/purrception.git",
+          "owner": "Project: Purrception",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrception",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrception",
+          "code": "https://github.com/noodlestan/purrception",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "cli/source-fs/_records/package.art",
+        "identity": {
+          "name": "Source FS",
+          "canonicalName": "@purrception/source-fs",
+          "path": "cli/source-fs/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Purrception",
+          "owner": "Project: Purrception",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art",
+        "cli/source-fs/_records/npm-deployment.art",
+        "cli/source-fs/_records/package.art"
+      ]
+    },
+    {
+      "path": "libs/lang-ts/package.json",
+      "canonical": "@purrception/lang-ts",
+      "version": "0.1.1",
+      "private": false,
+      "dependencies": {
+        "@purrception/primitives": "0.1.0"
+      },
+      "peerDependencies": null,
+      "devDependencies": {},
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrception",
+          "canonical": "noodlestan/purrception",
+          "remote": "git@github.com:noodlestan/purrception.git",
+          "owner": "Project: Purrception",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrception",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrception",
+          "code": "https://github.com/noodlestan/purrception",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "libs/lang-ts/_records/package.art",
+        "identity": {
+          "name": "Lang TS",
+          "canonicalName": "@purrception/lang-ts",
+          "path": "libs/lang-ts/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Purrception",
+          "owner": "Project: Purrception",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art",
+        "libs/lang-ts/_records/npm-deployment.art",
+        "libs/lang-ts/_records/package.art"
+      ]
+    },
+    {
+      "path": "libs/primitives/package.json",
+      "canonical": "@purrception/primitives",
+      "version": "0.1.0",
+      "private": false,
+      "dependencies": {},
+      "peerDependencies": null,
+      "devDependencies": {},
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrception",
+          "canonical": "noodlestan/purrception",
+          "remote": "git@github.com:noodlestan/purrception.git",
+          "owner": "Project: Purrception",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrception",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrception",
+          "code": "https://github.com/noodlestan/purrception",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "libs/primitives/_records/package.art",
+        "identity": {
+          "name": "Primitives",
+          "canonicalName": "@purrception/primitives",
+          "path": "libs/primitives/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Purrception",
+          "owner": "Project: Purrception",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art",
+        "libs/primitives/_records/npm-deployment.art",
+        "libs/primitives/_records/package.art"
+      ]
+    },
+    {
+      "path": "package.json",
+      "canonical": "noodlestan/purrception",
+      "version": "0.0.12",
+      "private": true,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": {
+        "@noodlestan/conventions-typescript": "0.1.0",
+        "@noodlestan/conventions-unit-tests": "0.1.0",
+        "@noodlestan/esbuild": "0.1.1",
+        "@noodlestan/eslint-config": "0.0.9",
+        "@noodlestan/prettier-config": "0.1.1",
+        "@noodlestan/tsconfig": "0.2.1",
+        "@types/node": "24.13.0",
+        "@vitest/coverage-v8": "5.0.5",
+        "eslint": "8.57.1",
+        "lefthook": "2.2.2",
+        "prettier": "3.9.10",
+        "turbo": "2.11.10",
+        "typescript": "5.9.3",
+        "vite": "8.3.5",
+        "vitest": "5.0.5"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrception",
+          "canonical": "noodlestan/purrception",
+          "remote": "git@github.com:noodlestan/purrception.git",
+          "owner": "Project: Purrception",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrception",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrception",
+          "code": "https://github.com/noodlestan/purrception",
+          "private": false
+        }
+      },
+      "packageRecord": null,
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art"
+      ]
+    }
+  ]
+}

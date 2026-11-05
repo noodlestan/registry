@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "repositoryCanonical": "noodlestan/art-lib",
+  "checkout": {
+    "name": "art-lib",
+    "path": "checkouts/art-lib"
+  },
+  "sourceSnapshot": {
+    "capturedAt": "2026-11-05T23:17:22.686Z",
+    "commit": "5cd8d8269be30ca64170a67b369789dc7d6223ab",
+    "dirtyPaths": []
+  },
+  "coverage": {
+    "checkoutRecordPath": "../../_records/checkouts/art-lib-checkout.art",
+    "repositoryRecordPath": "../../_records/repositories/art-lib.art",
+    "manifestPathsDiscovered": [
+      "libs/config/package.json",
+      "libs/fs-records/package.json",
+      "libs/logger/package.json",
+      "package.json"
+    ],
+    "manifestPathsInventoried": [
+      "libs/config/package.json",
+      "libs/fs-records/package.json",
+      "libs/logger/package.json",
+      "package.json"
+    ],
+    "recordPaths": [
+      "_records/dependencies/build-tools-dev.art",
+      "_records/dependencies/cli-dev.art",
+      "_records/dependencies/project-lint.art",
+      "_records/dependencies/project-tools.art",
+      "_records/dependencies/project-typescript.art",
+      "_records/dependencies/purrception-extract.art",
+      "_records/dependencies/solid-lib-dev.art",
+      "_records/dependencies/solid-lib-peer.art",
+      "_records/license.art",
+      "_records/namespace.art",
+      "_records/project.art",
+      "_records/repository.art",
+      "_records/scripts/cli-build.art",
+      "_records/scripts/common-scripts.art",
+      "_records/scripts/lib-build.art",
+      "_records/scripts/micro-app-serve.art",
+      "_records/scripts/purrception-extract.art",
+      "_records/scripts/root-extract.art",
+      "_records/scripts/root-lifecycle.art",
+      "libs/config/_records/npm-deployment.art",
+      "libs/config/_records/package.art",
+      "libs/fs-records/_records/npm-deployment.art",
+      "libs/fs-records/_records/package.art",
+      "libs/logger/_records/npm-deployment.art",
+      "libs/logger/_records/package.art"
+    ]
+  },
+  "issues": [],
+  "manifests": [
+    {
+      "path": "libs/config/package.json",
+      "canonical": "@art-lib/config",
+      "version": "0.0.2",
+      "private": false,
+      "dependencies": {
+        "esbuild": "0.28.2"
+      },
+      "peerDependencies": null,
+      "devDependencies": {},
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Art Lib",
+          "canonical": "noodlestan/art-lib",
+          "remote": "git@github.com:noodlestan/art-lib.git",
+          "owner": "Project: Art Lib",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Art Lib",
+          "owner": "Project: Artificials",
+          "repository": "Repository: Art Lib",
+          "code": "https://github.com/noodlestan/art-lib",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "libs/config/_records/package.art",
+        "identity": {
+          "name": "Art Lib Config",
+          "canonicalName": "@art-lib/config",
+          "path": "libs/config/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Art Lib",
+          "owner": "Project: Art Lib",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/dependencies/build-tools-dev.art",
+        "_records/dependencies/cli-dev.art",
+        "_records/dependencies/project-lint.art",
+        "_records/dependencies/project-tools.art",
+        "_records/dependencies/project-typescript.art",
+        "_records/dependencies/purrception-extract.art",
+        "_records/dependencies/solid-lib-dev.art",
+        "_records/dependencies/solid-lib-peer.art",
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/cli-build.art",
+        "_records/scripts/common-scripts.art",
+        "_records/scripts/lib-build.art",
+        "_records/scripts/micro-app-serve.art",
+        "_records/scripts/purrception-extract.art",
+        "_records/scripts/root-extract.art",
+        "_records/scripts/root-lifecycle.art",
+        "libs/config/_records/npm-deployment.art",
+        "libs/config/_records/package.art"
+      ]
+    },
+    {
+      "path": "libs/fs-records/package.json",
+      "canonical": "@art-lib/fs-records",
+      "version": "0.0.3",
+      "private": false,
+      "dependencies": {
+        "@art-md/primitives": "0.0.6"
+      },
+      "peerDependencies": null,
+      "devDependencies": {},
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Art Lib",
+          "canonical": "noodlestan/art-lib",
+          "remote": "git@github.com:noodlestan/art-lib.git",
+          "owner": "Project: Art Lib",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Art Lib",
+          "owner": "Project: Artificials",
+          "repository": "Repository: Art Lib",
+          "code": "https://github.com/noodlestan/art-lib",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "libs/fs-records/_records/package.art",
+        "identity": {
+          "name": "Art Lib FS Records",
+          "canonicalName": "@art-lib/fs-records",
+          "path": "libs/fs-records/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Art Lib",
+          "owner": "Project: Art Lib",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/dependencies/build-tools-dev.art",
+        "_records/dependencies/cli-dev.art",
+        "_records/dependencies/project-lint.art",
+        "_records/dependencies/project-tools.art",
+        "_records/dependencies/project-typescript.art",
+        "_records/dependencies/purrception-extract.art",
+        "_records/dependencies/solid-lib-dev.art",
+        "_records/dependencies/solid-lib-peer.art",
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/cli-build.art",
+        "_records/scripts/common-scripts.art",
+        "_records/scripts/lib-build.art",
+        "_records/scripts/micro-app-serve.art",
+        "_records/scripts/purrception-extract.art",
+        "_records/scripts/root-extract.art",
+        "_records/scripts/root-lifecycle.art",
+        "libs/fs-records/_records/npm-deployment.art",
+        "libs/fs-records/_records/package.art"
+      ]
+    },
+    {
+      "path": "libs/logger/package.json",
+      "canonical": "@art-lib/logger",
+      "version": "0.0.1",
+      "private": false,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": null,
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Art Lib",
+          "canonical": "noodlestan/art-lib",
+          "remote": "git@github.com:noodlestan/art-lib.git",
+          "owner": "Project: Art Lib",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Art Lib",
+          "owner": "Project: Artificials",
+          "repository": "Repository: Art Lib",
+          "code": "https://github.com/noodlestan/art-lib",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "libs/logger/_records/package.art",
+        "identity": {
+          "name": "Art Lib Logger",
+          "canonicalName": "@art-lib/logger",
+          "path": "libs/logger/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Art Lib",
+          "owner": "Project: Art Lib",
+          "private": false,
+          "published": true
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/dependencies/build-tools-dev.art",
+        "_records/dependencies/cli-dev.art",
+        "_records/dependencies/project-lint.art",
+        "_records/dependencies/project-tools.art",
+        "_records/dependencies/project-typescript.art",
+        "_records/dependencies/purrception-extract.art",
+        "_records/dependencies/solid-lib-dev.art",
+        "_records/dependencies/solid-lib-peer.art",
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/cli-build.art",
+        "_records/scripts/common-scripts.art",
+        "_records/scripts/lib-build.art",
+        "_records/scripts/micro-app-serve.art",
+        "_records/scripts/purrception-extract.art",
+        "_records/scripts/root-extract.art",
+        "_records/scripts/root-lifecycle.art",
+        "libs/logger/_records/npm-deployment.art",
+        "libs/logger/_records/package.art"
+      ]
+    },
+    {
+      "path": "package.json",
+      "canonical": "noodlestan/art-lib",
+      "version": "0.0.1",
+      "private": true,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": {
+        "@noodlestan/conventions-typescript": "0.1.0",
+        "@noodlestan/conventions-unit-tests": "0.1.0",
+        "@noodlestan/esbuild": "0.1.1",
+        "@noodlestan/eslint-config": "0.0.9",
+        "@noodlestan/prettier-config": "0.1.1",
+        "@noodlestan/tsconfig": "0.2.1",
+        "@types/node": "24.13.0",
+        "@vitest/coverage-v8": "5.0.5",
+        "eslint": "8.57.1",
+        "lefthook": "2.2.2",
+        "prettier": "3.9.10",
+        "turbo": "2.11.10",
+        "typescript": "5.9.3",
+        "vite": "8.3.5",
+        "vitest": "5.0.5"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Art Lib",
+          "canonical": "noodlestan/art-lib",
+          "remote": "git@github.com:noodlestan/art-lib.git",
+          "owner": "Project: Art Lib",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Art Lib",
+          "owner": "Project: Artificials",
+          "repository": "Repository: Art Lib",
+          "code": "https://github.com/noodlestan/art-lib",
+          "private": false
+        }
+      },
+      "packageRecord": null,
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/dependencies/build-tools-dev.art",
+        "_records/dependencies/cli-dev.art",
+        "_records/dependencies/project-lint.art",
+        "_records/dependencies/project-tools.art",
+        "_records/dependencies/project-typescript.art",
+        "_records/dependencies/purrception-extract.art",
+        "_records/dependencies/solid-lib-dev.art",
+        "_records/dependencies/solid-lib-peer.art",
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/cli-build.art",
+        "_records/scripts/common-scripts.art",
+        "_records/scripts/lib-build.art",
+        "_records/scripts/micro-app-serve.art",
+        "_records/scripts/purrception-extract.art",
+        "_records/scripts/root-extract.art",
+        "_records/scripts/root-lifecycle.art"
+      ]
+    }
+  ]
+}

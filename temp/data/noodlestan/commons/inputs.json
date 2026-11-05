@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "repositoryCanonical": "noodlestan/commons",
+  "checkout": {
+    "name": "commons",
+    "path": "checkouts/commons"
+  },
+  "sourceSnapshot": {
+    "capturedAt": "2026-11-05T23:17:22.890Z",
+    "commit": "d53266523c0b4ff4979bd4ee9dee4d53cab66c48",
+    "dirtyPaths": []
+  },
+  "coverage": {
+    "checkoutRecordPath": "../../_records/checkouts/commons-checkout.art",
+    "repositoryRecordPath": "../../_records/repositories/commons.art",
+    "manifestPathsDiscovered": [
+      "cli/indexer/package.json",
+      "cli/peer/package.json",
+      "package.json"
+    ],
+    "manifestPathsInventoried": [
+      "cli/indexer/package.json",
+      "cli/peer/package.json",
+      "package.json"
+    ],
+    "recordPaths": [
+      "_records/namespace.art",
+      "_records/project.art",
+      "_records/repository.art",
+      "cli/indexer/_records/package.art",
+      "cli/peer/_records/package.art"
+    ]
+  },
+  "issues": [],
+  "manifests": [
+    {
+      "path": "cli/indexer/package.json",
+      "canonical": "@noodle-commons/indexer",
+      "version": "0.0.1",
+      "private": false,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": null,
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Commons",
+          "canonical": "noodlestan/commons",
+          "remote": "git@github.com:noodlestan/commons.git",
+          "owner": "Project: Noodlestan Commons",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["cli/*", "libs/*"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Noodlestan Commons",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Commons",
+          "code": "https://github.com/noodlestan/commons",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "cli/indexer/_records/package.art",
+        "identity": {
+          "name": "Commons Indexer",
+          "canonicalName": "@noodle-commons/indexer",
+          "path": "cli/indexer/",
+          "packageFile": "package.json",
+          "namespace": null,
+          "owner": null,
+          "private": false,
+          "published": false
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "cli/indexer/_records/package.art"
+      ]
+    },
+    {
+      "path": "cli/peer/package.json",
+      "canonical": "@noodle-commons/peer",
+      "version": "0.0.1",
+      "private": false,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": null,
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Commons",
+          "canonical": "noodlestan/commons",
+          "remote": "git@github.com:noodlestan/commons.git",
+          "owner": "Project: Noodlestan Commons",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["cli/*", "libs/*"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Noodlestan Commons",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Commons",
+          "code": "https://github.com/noodlestan/commons",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "cli/peer/_records/package.art",
+        "identity": {
+          "name": "Commons Peer",
+          "canonicalName": "@noodle-commons/peer",
+          "path": "cli/peer/",
+          "packageFile": "package.json",
+          "namespace": null,
+          "owner": null,
+          "private": false,
+          "published": false
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "cli/peer/_records/package.art"
+      ]
+    },
+    {
+      "path": "package.json",
+      "canonical": "noodlestan/commons",
+      "version": "0.0.1",
+      "private": true,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": {
+        "@noodlestan/prettier-config": "0.1.1",
+        "lefthook": "2.2.2",
+        "prettier": "3.9.10"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Commons",
+          "canonical": "noodlestan/commons",
+          "remote": "git@github.com:noodlestan/commons.git",
+          "owner": "Project: Noodlestan Commons",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["cli/*", "libs/*"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Noodlestan Commons",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Commons",
+          "code": "https://github.com/noodlestan/commons",
+          "private": false
+        }
+      },
+      "packageRecord": null,
+      "dependencySetDeclarations": [],
+      "recordFiles": ["_records/namespace.art", "_records/project.art", "_records/repository.art"]
+    }
+  ]
+}

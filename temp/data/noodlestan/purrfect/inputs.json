@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "repositoryCanonical": "noodlestan/purrfect",
+  "checkout": {
+    "name": "purrfect",
+    "path": "checkouts/purrfect"
+  },
+  "sourceSnapshot": {
+    "capturedAt": "2026-11-05T23:17:23.190Z",
+    "commit": "b5a201d137b11317a45b392db31a9e6a2e9b56d7",
+    "dirtyPaths": []
+  },
+  "coverage": {
+    "checkoutRecordPath": "../../_records/checkouts/purrfect-checkout.art",
+    "repositoryRecordPath": "../../_records/repositories/purrfect.art",
+    "manifestPathsDiscovered": ["package.json"],
+    "manifestPathsInventoried": ["package.json"],
+    "recordPaths": [
+      "_records/project.art",
+      "_records/repository.art",
+      "_records/scripts/root-lifecycle.art"
+    ]
+  },
+  "issues": [],
+  "manifests": [
+    {
+      "path": "package.json",
+      "canonical": "noodlestan/purrfect",
+      "version": "0.0.11",
+      "private": true,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": {
+        "@noodlestan/conventions-typescript": "0.1.0",
+        "@noodlestan/conventions-unit-tests": "0.1.0",
+        "@noodlestan/eslint-config": "0.0.9",
+        "@noodlestan/prettier-config": "0.1.1",
+        "@noodlestan/tsconfig": "0.2.1",
+        "lefthook": "2.2.2",
+        "prettier": "3.9.10",
+        "turbo": "2.11.10"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Purrfect",
+          "canonical": "noodlestan/purrfect",
+          "remote": "git@github.com:noodlestan/purrfect.git",
+          "owner": "Project: Purrfect",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": ["libs/**"]
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Purrfect",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Purrfect",
+          "code": "https://github.com/noodlestan/purrfect",
+          "private": false
+        }
+      },
+      "packageRecord": null,
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/root-lifecycle.art"
+      ]
+    }
+  ]
+}

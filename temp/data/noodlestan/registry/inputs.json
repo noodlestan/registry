@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "repositoryCanonical": "noodlestan/registry",
+  "checkout": {
+    "name": "registry",
+    "path": "checkouts/registry"
+  },
+  "sourceSnapshot": {
+    "capturedAt": "2026-11-05T23:17:23.328Z",
+    "commit": "bd2bb562ea7e29b51ff774fbdfe1ae067506a2a9",
+    "dirtyPaths": ["scripts/", "temp/"]
+  },
+  "coverage": {
+    "checkoutRecordPath": "../../_records/checkouts/registry-checkout.art",
+    "repositoryRecordPath": "../../_records/repositories/registry.art",
+    "manifestPathsDiscovered": ["package.json"],
+    "manifestPathsInventoried": ["package.json"],
+    "recordPaths": ["_records/license.art", "_records/project.art", "_records/repository.art"]
+  },
+  "issues": [],
+  "manifests": [
+    {
+      "path": "package.json",
+      "canonical": "noodlestan/registry",
+      "version": "0.0.1",
+      "private": true,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": {
+        "@noodlestan/prettier-config": "0.1.1",
+        "lefthook": "2.2.2",
+        "prettier": "3.9.10"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Registry",
+          "canonical": "noodlestan/registry",
+          "remote": "git@github.com:noodlestan/registry.git",
+          "owner": "Project: Registry",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Registry",
+          "owner": "Project: Noodlestan Management",
+          "repository": "Repository: Registry",
+          "code": "https://github.com/noodlestan/registry",
+          "private": false
+        }
+      },
+      "packageRecord": null,
+      "dependencySetDeclarations": [],
+      "recordFiles": ["_records/license.art", "_records/project.art", "_records/repository.art"]
+    }
+  ]
+}

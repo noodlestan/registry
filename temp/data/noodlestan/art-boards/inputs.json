@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "repositoryCanonical": "noodlestan/art-boards",
+  "checkout": {
+    "name": "art-boards",
+    "path": "checkouts/art-boards"
+  },
+  "sourceSnapshot": {
+    "capturedAt": "2026-11-05T23:17:22.563Z",
+    "commit": "f4fb025a4f4103b41e86909699b42d491d8d3300",
+    "dirtyPaths": []
+  },
+  "coverage": {
+    "checkoutRecordPath": "../../_records/checkouts/art-boards-checkout.art",
+    "repositoryRecordPath": "../../_records/repositories/art-boards.art",
+    "manifestPathsDiscovered": ["cli/relayboard/package.json", "package.json"],
+    "manifestPathsInventoried": ["cli/relayboard/package.json", "package.json"],
+    "recordPaths": [
+      "_records/namespace.art",
+      "_records/project.art",
+      "_records/repository.art",
+      "cli/relayboard/_records/npm-deployment.art",
+      "cli/relayboard/_records/package.art",
+      "cli/whiteboard/_records/npm-deployment.art",
+      "cli/whiteboard/_records/package.art"
+    ]
+  },
+  "issues": [
+    {
+      "sourcePath": "cli/relayboard/_records/package.art",
+      "code": "unresolved-dependency-set-reference",
+      "message": "`cli/relayboard/_records/package.art` references `Package Dependency Set: CLI Development` but this checkout declares no `## Package Dependency Set: CLI Development` section. The reference remains unresolved as observed."
+    },
+    {
+      "sourcePath": "cli/whiteboard/_records/package.art",
+      "code": "package-record-without-manifest",
+      "message": "`cli/whiteboard/_records/package.art` (package `Art Whiteboard CLI`) describes `cli/whiteboard/` but no `package.json` was discovered there."
+    }
+  ],
+  "manifests": [
+    {
+      "path": "cli/relayboard/package.json",
+      "canonical": "@art-boards/relayboard-cli",
+      "version": "0.0.1",
+      "private": false,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": null,
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Art Boards",
+          "canonical": "noodlestan/art-boards",
+          "remote": "git@github.com:noodlestan/art-boards.git",
+          "owner": "Project: Art Boards",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": "cli/**"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Art Boards",
+          "owner": "Project: Artificials",
+          "repository": "Repository: Art Boards",
+          "code": "https://github.com/noodlestan/art-boards",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "cli/relayboard/_records/package.art",
+        "identity": {
+          "name": "Art Relayboard CLI",
+          "canonicalName": "@art-boards/relayboard-cli",
+          "path": "cli/relayboard",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Art Boards",
+          "owner": "Project: Art Boards",
+          "private": false,
+          "published": false
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "cli/relayboard/_records/npm-deployment.art",
+        "cli/relayboard/_records/package.art"
+      ]
+    },
+    {
+      "path": "package.json",
+      "canonical": "noodlestan/art-boards",
+      "version": "0.0.1",
+      "private": true,
+      "dependencies": null,
+      "peerDependencies": null,
+      "devDependencies": {
+        "@noodlestan/conventions-typescript": "0.1.0",
+        "@noodlestan/conventions-unit-tests": "0.1.0",
+        "@noodlestan/esbuild": "0.1.1",
+        "@noodlestan/eslint-config": "0.0.9",
+        "@noodlestan/prettier-config": "0.1.1",
+        "@noodlestan/tsconfig": "0.2.1",
+        "@types/node": "24.13.0",
+        "@vitest/coverage-v8": "5.0.5",
+        "eslint": "8.57.1",
+        "lefthook": "2.2.2",
+        "prettier": "3.9.10",
+        "turbo": "2.11.10",
+        "typescript": "5.9.3",
+        "vite": "8.3.5",
+        "vitest": "5.0.5"
+      },
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Art Boards",
+          "canonical": "noodlestan/art-boards",
+          "remote": "git@github.com:noodlestan/art-boards.git",
+          "owner": "Project: Art Boards",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": "cli/**"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Art Boards",
+          "owner": "Project: Artificials",
+          "repository": "Repository: Art Boards",
+          "code": "https://github.com/noodlestan/art-boards",
+          "private": false
+        }
+      },
+      "packageRecord": null,
+      "dependencySetDeclarations": [],
+      "recordFiles": ["_records/namespace.art", "_records/project.art", "_records/repository.art"]
+    }
+  ]
+}
