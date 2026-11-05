@@ -6,11 +6,13 @@
 
 Base: `https://raw.githubusercontent.com/noodlestan/registry/main/`
 
-| Resource     | Path                                  |
-| ------------ | ------------------------------------- |
-| Namespaces   | `schema/v1/namespaces.schema.json`    |
-| Repositories | `schema/v1/repositories}.schema.json` |
-| Projects     | `schema/v1/projects.schema.json`      |
+| Resource        | Path                                                |
+| --------------- | --------------------------------------------------- |
+| Namespaces      | `schema/v1/namespaces.schema.json`                  |
+| Repositories    | `schema/v1/repositories.schema.json`                |
+| Projects        | `schema/v1/projects.schema.json`                    |
+| Packages        | `schema/v1/packages.schema.json` _(planned)_        |
+| Dependency Sets | `schema/v1/dependency-sets.schema.json` _(planned)_ |
 
 ## Versioning
 

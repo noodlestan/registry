@@ -6,13 +6,15 @@
 
 Base: `https://raw.githubusercontent.com/noodlestan/registry/main/`
 
-| Resource          | Path                                                       |
-| ----------------- | ---------------------------------------------------------- |
-| Namespaces view   | `data/namespaces.json`                                     |
-| Repositories view | `data/repositories.json`                                   |
-| Projects view     | `data/projects.json`                                       |
-| Endpoint index    | `data/endpoints.json`                                      |
-| Schemas           | `schema/v1/{namespaces,repositories,projects}.schema.json` |
+| Resource             | Path                                                                                |
+| -------------------- | ----------------------------------------------------------------------------------- |
+| Namespaces view      | `data/namespaces.json`                                                              |
+| Repositories view    | `data/repositories.json`                                                            |
+| Projects view        | `data/projects.json`                                                                |
+| Packages view        | `data/packages.json` _(planned)_                                                    |
+| Dependency Sets view | `data/dependency-sets.json` _(planned)_                                             |
+| Endpoint index       | `data/endpoints.json`                                                               |
+| Schemas              | `schema/v1/{namespaces,repositories,projects,packages,dependency-sets}.schema.json` |
 
 The paths are the contract: `data/` for views, `schema/v1/` for versioned schemas. They move only with a deliberate version or location decision.
 
