@@ -1,0 +1,48 @@
+# Module
+
+## Uses
+
+::READ (Structure: Resource (Abstract)) FROM `$DOMAINS/_artificials/structures/resource-abstract.art`
+
+## Structure: Dependency Set
+
+**Status:** `WIP`
+
+**Purpose:** Declare centrally managed dependency sets for different types of manifests, so that consumers can validate and update them via Commons Registry Peer.
+
+**Description:** Describes a named group of pinned dependencies applied together in repositories or packages, qualified by dependency type.
+
+**Extends:** Structure: Resource (Abstract)
+
+**Inherits:**
+
+- `purpose` — Example: "Tooling shared by every repository root manifest."
+- `description` — Example: "Pinned toolchain required by all repositories, installed with `npm`."
+
+**Shape:**
+
+- `target` — Enum (`repo`, `package`). Whether the set applies to a repository or a package manifest. Exclusive.
+- `packageManager` — Identifier. Package manager that resolves the set. Example: `npm`.
+- `dependencies` — List (Identifier). Runtime dependencies, as `{package name}@{version}`. Example: `commander@12.0.0`.
+- `peerDependencies` — List (Identifier). Peer dependencies, as `{package name}@{version}`. Example: `typescript@5.9.3`.
+- `devDependencies` — List (Identifier). Development dependencies, as `{package name}@{version}`. Example: `prettier@3.9.10`.
+
+**Example:**
+
+```md
+## Dependency Set: Root Tools
+
+**Purpose:** Tooling shared by every repository root manifest.
+
+**Description:** Pinned toolchain required by all repositories.
+
+**Target:** `repo`
+
+**PackageManager:** `npm`
+
+**DevDependencies:**
+
+- `turbo@2.11.10`
+- `lefthook@2.2.2`
+- `prettier@3.9.10`
+```

@@ -59,3 +59,20 @@
 | `docs`          |               | `https://art-md.noodlestan.org/docs/api/art-md/parser`        |
 | `private`       |               | `false`                                                       |
 | `keywords`      |               | `library, records`                                            |
+
+## Dependency Set
+
+**Structure:** `$REGISTRY/domain/structures/dependency-set.art`
+
+**Hosted in:** `$REGISTRY/_records/dependency-sets/*.art` _(planned)_
+
+| Field              | Description                | Example                                             |
+| ------------------ | -------------------------- | --------------------------------------------------- |
+| `name`             | Resource name              | `Dependency Set: Root Tools`                        |
+| `purpose`          | Intent                     | `Tooling shared by every repository root manifest.` |
+| `description`      | Scope                      | `Pinned toolchain required by all repositories.`    |
+| `target`           | Enum `repo` \| `package`   | `repo`                                              |
+| `packageManager`   | Identifier                 | `npm`                                               |
+| `dependencies`     | `{name}@{version}` entries | `turbo@2.11.10`                                     |
+| `peerDependencies` | `{name}@{version}` entries | `typescript@5.9.3`                                  |
+| `devDependencies`  | `{name}@{version}` entries | `prettier@3.9.10`                                   |

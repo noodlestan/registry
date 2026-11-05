@@ -19,13 +19,13 @@ Rule: Package manifests is the authority on identity and registry core data. Rec
 
 ## Canonicals Per Entity
 
-| Entity         | Canonical form                      | Example                               |
-| -------------- | ----------------------------------- | ------------------------------------- |
-| Project        | resource name                       | `Project: Art JS`                     |
-| Repository     | GitHub slug / manifest `name` field | `noodlestan/art-js`                   |
-| Namespace      | npm scope                           | `@art-js`                             |
-| Package        | manifest `name` field               | `@art-js/records`, `apps-art-md-web`  |
-| Dependency set | resource name                       | `Package Dependency Set: Build Tools` |
+| Entity         | Canonical form                      | Example                              |
+| -------------- | ----------------------------------- | ------------------------------------ |
+| Project        | resource name                       | `Project: Art JS`                    |
+| Repository     | GitHub slug / manifest `name` field | `noodlestan/art-js`                  |
+| Namespace      | npm scope                           | `@art-js`                            |
+| Package        | manifest `name` field               | `@art-js/records`, `apps-art-md-web` |
+| Dependency set | resource name                       | `Dependency Set: Build Tools`        |
 
 ## Records
 
@@ -72,7 +72,11 @@ See [design/records.md](records.md)
 
 - Commons Registry Peer (validates and updates)
 
-### Dependency set records
+### Dependency Set records
+
+**Migration:** There are currently ~70 instances of `Package Dependency Set`, co-located with repos and packages. Migration will move them to the registry repository, simplifying their `kind` to `Dependency Set` and make them available to the Registry Commons Peer via a registry endpoint. In the same commit, the per-repo and per-package `_records/dependencies/` files are deleted and the owning repository and package records gain a `Dependency Set:` field listing the sets they must satisfy.
+
+**Hosted in:** `$REGISTRY/_records/dependency-sets/*.art`
 
 **Read by:**
 
@@ -80,7 +84,7 @@ See [design/records.md](records.md)
 
 **Updated by:**
 
-- Commons Registry Peer.
+- humans.
 
 ## Manifests
 
