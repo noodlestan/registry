@@ -1,6 +1,6 @@
 {
   "schema": "noodlestan.registry.namespaces/1",
-  "snapshot": "2026-11-04",
+  "snapshot": "2026-11-05",
   "namespaces": [
     {
       "name": "Namespace: Art Boards",
@@ -9,6 +9,14 @@
       "description": "Tools for coordinating agent sessions and discovering and visualizing resources and artefacts.",
       "owner": "Project: Art Boards",
       "repositories": ["Repository: Art Boards"]
+    },
+    {
+      "name": "Namespace: Art Domains",
+      "canonical": "@art-domains",
+      "purpose": "Curated domains for operational knowledge and workflows.",
+      "description": "Distributable artificial resources within knowledge and work domains: structures, templates, processes, agent instructions, modes, and skills.",
+      "owner": "Project: Art Domains",
+      "repositories": ["Repository: Art Domains"]
     },
     {
       "name": "Namespace: Art JS",
@@ -73,7 +81,6 @@
       "description": "Packages published from multiple Noodlestan repositories `noodlestan/conventions`, `noodlestan/noodlestan-web`, and `noodlestan/workspace-tooling`.",
       "owner": "Project: Noodlestan Management",
       "repositories": [
-        "Repository: Art MD",
         "Repository: Conventions",
         "Repository: Noodlestan Web",
         "Repository: Workspace Tooling"
