@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/noodlestan/registry/main/schema/v1/packages.schema.json",
+  "title": "Packages view",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "snapshot", "packages"],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "noodlestan.registry.packages/1"
+    },
+    "snapshot": {
+      "type": "string"
+    },
+    "packages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "canonical",
+          "owner",
+          "repository",
+          "license",
+          "keywords",
+          "dependencies",
+          "peerDependencies",
+          "devDependencies"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "canonical": {
+            "type": "string",
+            "pattern": "^@[^@/\\s]+/[^@/\\s]+$"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "repository": {
+            "type": "string",
+            "pattern": "^[a-z0-9._-]+/[a-z0-9._-]+$"
+          },
+          "license": {
+            "type": "string"
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "version": {
+            "type": "string",
+            "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$"
+          },
+          "dependencies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "peerDependencies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "devDependencies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@
 
 **Endpoint:** `data/packages.json`
 
-**Schema:** `schema/v1/packages.schema.json` (planned)
+**Schema:** [`schema/v1/packages.schema.json`](../../../schema/v1/packages.schema.json)
 
 ## Rationale
 
