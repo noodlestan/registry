@@ -1,13 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/art-js",
   "checkout": {
     "name": "art-js",
     "path": "checkouts/art-js"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:22.640Z",
-    "commit": "66b9549306e4cb95b5746d2a1ca5069535e7b802",
+    "capturedAt": "2026-11-06T02:29:25.666Z",
+    "commit": "44a46975384374cb3aa5cc4f76419c32255f42c5",
     "dirtyPaths": []
   },
   "coverage": {
@@ -157,6 +157,8 @@
       "canonical": "@art-js/bin",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["cli", "build", "art", "markdown", "ast"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {},
@@ -225,6 +227,8 @@
       "canonical": "@art-js/dev-server",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["cli", "dev-server", "art", "markdown", "ast"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {},
@@ -293,6 +297,8 @@
       "canonical": "@art-js/watcher",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["cli", "file-watcher", "art", "markdown", "ast"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {},
@@ -361,6 +367,8 @@
       "canonical": "@art-js/bundler",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["library", "bundler", "build", "art", "markdown", "ast"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {},
@@ -439,6 +447,8 @@
       "canonical": "@art-js/program",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["library", "programs", "execution", "art", "markdown", "ast"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {},
@@ -517,6 +527,8 @@
       "canonical": "@art-js/records",
       "version": "0.2.0",
       "private": false,
+      "license": "MIT",
+      "keywords": ["library", "records", "art", "markdown", "ast"],
       "dependencies": {
         "@art-md/constructs": "0.0.7",
         "@art-md/primitives": "0.0.7"
@@ -601,6 +613,8 @@
       "canonical": "@art-js/validator",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["library", "validation", "art", "markdown", "ast"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {},
@@ -679,6 +693,8 @@
       "canonical": "noodlestan/art-js",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["art", "markdown", "ast"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {
@@ -749,6 +765,8 @@
       "canonical": "@art-js/test-records",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["cli", "records", "testing", "art", "markdown", "ast"],
       "dependencies": {
         "@art-js/records": "*",
         "@art-lib/fs-records": "0.0.3",

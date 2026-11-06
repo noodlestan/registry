@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/conventions",
   "checkout": {
     "name": "conventions",
     "path": "checkouts/conventions"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:22.924Z",
+    "capturedAt": "2026-11-06T02:29:25.967Z",
     "commit": "0fcd262038e989d4ae87ade74088ee2586687cd0",
     "dirtyPaths": []
   },
@@ -58,6 +58,8 @@
       "canonical": "noodlestan/conventions",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["conventions", "style-guide"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {
@@ -113,6 +115,8 @@
       "canonical": "@noodlestan/conventions-commits",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["commits", "conventions", "style-guide"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": null,
@@ -167,6 +171,8 @@
       "canonical": "@noodlestan/conventions-jsx",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["jsx", "typescript", "conventions", "style-guide"],
       "dependencies": {
         "@noodlestan/conventions-typescript": "*"
       },
@@ -223,6 +229,8 @@
       "canonical": "@noodlestan/conventions-scss",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["scss", "conventions", "style-guide"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": null,
@@ -277,6 +285,8 @@
       "canonical": "@noodlestan/conventions-solidjs",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["solidjs", "typescript", "conventions", "style-guide"],
       "dependencies": {
         "@noodlestan/conventions-jsx": "*"
       },
@@ -333,6 +343,8 @@
       "canonical": "@noodlestan/conventions-typescript",
       "version": "0.1.0",
       "private": false,
+      "license": "MIT",
+      "keywords": ["typescript", "conventions", "style-guide"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": null,
@@ -387,6 +399,8 @@
       "canonical": "@noodlestan/conventions-unit-tests",
       "version": "0.1.0",
       "private": false,
+      "license": "MIT",
+      "keywords": ["unit-tests", "conventions", "style-guide"],
       "dependencies": {
         "@noodlestan/conventions-typescript": "*"
       },

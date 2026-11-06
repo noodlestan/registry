@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/commons",
   "checkout": {
     "name": "commons",
     "path": "checkouts/commons"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:22.890Z",
+    "capturedAt": "2026-11-06T02:29:25.935Z",
     "commit": "d53266523c0b4ff4979bd4ee9dee4d53cab66c48",
     "dirtyPaths": []
   },
@@ -38,6 +38,8 @@
       "canonical": "@noodle-commons/indexer",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["commons", "registry", "indexer", "cli", "tooling"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": null,
@@ -89,6 +91,8 @@
       "canonical": "@noodle-commons/peer",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["commons", "registry", "peer", "cli", "tooling"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": null,
@@ -140,6 +144,8 @@
       "canonical": "noodlestan/commons",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["commons", "registry", "indexer", "peer", "cli", "tooling"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {

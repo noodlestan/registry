@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/purrception",
   "checkout": {
     "name": "purrception",
     "path": "checkouts/purrception"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:23.156Z",
+    "capturedAt": "2026-11-06T02:29:26.196Z",
     "commit": "e9d0762d876933fccc4483581b5cc27759c270d8",
     "dirtyPaths": []
   },
@@ -50,6 +50,8 @@
       "canonical": "@purrception/lang-ts-extract",
       "version": "0.1.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["cli", "typescript", "metadata", "extraction", "source-code", "heuristics"],
       "dependencies": {
         "@purrception/primitives": "0.1.0",
         "@purrception/lang-ts": "0.1.1",
@@ -108,6 +110,8 @@
       "canonical": "@purrception/source-fs",
       "version": "0.1.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["cli", "file-system", "metadata", "extraction", "source-code", "heuristics"],
       "dependencies": {
         "@purrception/primitives": "0.1.0",
         "chokidar": "5.0.0",
@@ -166,6 +170,16 @@
       "canonical": "@purrception/lang-ts",
       "version": "0.1.1",
       "private": false,
+      "license": "MIT",
+      "keywords": [
+        "library",
+        "typescript",
+        "language",
+        "metadata",
+        "extraction",
+        "source-code",
+        "heuristics"
+      ],
       "dependencies": {
         "@purrception/primitives": "0.1.0"
       },
@@ -222,6 +236,16 @@
       "canonical": "@purrception/primitives",
       "version": "0.1.0",
       "private": false,
+      "license": "MIT",
+      "keywords": [
+        "library",
+        "primitives",
+        "schemas",
+        "metadata",
+        "extraction",
+        "source-code",
+        "heuristics"
+      ],
       "dependencies": {},
       "peerDependencies": null,
       "devDependencies": {},
@@ -276,6 +300,8 @@
       "canonical": "noodlestan/purrception",
       "version": "0.0.12",
       "private": true,
+      "license": "MIT",
+      "keywords": ["metadata", "extraction", "source-code", "heuristics"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {

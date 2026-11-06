@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/ops",
   "checkout": {
     "name": "ops",
     "path": "checkouts/ops"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:23.122Z",
+    "capturedAt": "2026-11-06T02:29:26.164Z",
     "commit": "f2a870beec7d66e7155b951ae2c0af637512f6a4",
     "dirtyPaths": []
   },
@@ -29,6 +29,8 @@
       "canonical": "noodlestan/ops",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["infrastructure", "terraform", "aws"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {

@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/art-boards",
   "checkout": {
     "name": "art-boards",
     "path": "checkouts/art-boards"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:22.563Z",
+    "capturedAt": "2026-11-06T02:29:25.588Z",
     "commit": "f4fb025a4f4103b41e86909699b42d491d8d3300",
     "dirtyPaths": []
   },
@@ -43,6 +43,15 @@
       "canonical": "@art-boards/relayboard-cli",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": [
+        "cli",
+        "relayboards",
+        "art",
+        "agent-workflows",
+        "delegation",
+        "agent-visualization"
+      ],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": null,
@@ -95,6 +104,8 @@
       "canonical": "noodlestan/art-boards",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["art", "agent-workflows", "delegation", "agent-visualization"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {

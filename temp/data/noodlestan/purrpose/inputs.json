@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/purrpose",
   "checkout": {
     "name": "purrpose",
     "path": "checkouts/purrpose"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:23.255Z",
+    "capturedAt": "2026-11-06T02:29:26.314Z",
     "commit": "7fb06b21b6ed6a795b39fd95c24c97affe320ede",
     "dirtyPaths": []
   },
@@ -46,6 +46,8 @@
       "canonical": "@purrpose/client-babel-preset-solidjs",
       "version": "0.0.12",
       "private": false,
+      "license": "MIT",
+      "keywords": ["library", "jsx", "babel", "solidjs"],
       "dependencies": {},
       "peerDependencies": {
         "@purrpose/client-babel": "^0.0.11",
@@ -104,6 +106,8 @@
       "canonical": "@purrpose/client-babel",
       "version": "0.0.11",
       "private": false,
+      "license": "MIT",
+      "keywords": ["library", "jsx", "tsx", "babel", "solidjs"],
       "dependencies": {},
       "peerDependencies": {
         "@babel/standalone": "^7.29.7",
@@ -163,6 +167,8 @@
       "canonical": "@purrpose/solid-shiki-service",
       "version": "0.0.13",
       "private": false,
+      "license": "MIT",
+      "keywords": ["library", "shiki", "syntax-highlighting", "solidjs"],
       "dependencies": {
         "@no-comply/solid-primitives": "0.0.12"
       },
@@ -226,6 +232,8 @@
       "canonical": "noodlestan/purrpose",
       "version": "0.0.11",
       "private": true,
+      "license": "MIT",
+      "keywords": ["solidjs"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {

@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/artificials",
   "checkout": {
     "name": "artificials",
     "path": "checkouts/artificials"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:22.820Z",
+    "capturedAt": "2026-11-06T02:29:25.866Z",
     "commit": "e6bb71cd62f53081602409a9b19547f181d966c0",
     "dirtyPaths": []
   },
@@ -54,6 +54,16 @@
       "canonical": "apps-art-md-web",
       "version": "0.0.2",
       "private": true,
+      "license": "MIT",
+      "keywords": [
+        "web-app",
+        "demo",
+        "art",
+        "markdown",
+        "agent-workflows",
+        "delegation",
+        "agent-instructions"
+      ],
       "dependencies": {
         "@art-md/codec": "0.0.3",
         "@astrojs/mdx": "8.1.1",
@@ -142,6 +152,8 @@
       "canonical": "noodlestan/artificials",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["art", "markdown", "agent-workflows", "delegation", "agent-instructions"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {

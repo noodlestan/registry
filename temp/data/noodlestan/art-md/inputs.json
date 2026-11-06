@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/art-md",
   "checkout": {
     "name": "art-md",
     "path": "checkouts/art-md"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:22.728Z",
+    "capturedAt": "2026-11-06T02:29:25.775Z",
     "commit": "6502b22bdccd1a7d57f9f0b12d1fedc43577fd00",
     "dirtyPaths": []
   },
@@ -87,6 +87,8 @@
       "canonical": "@art-md/bin",
       "version": "0.0.2",
       "private": false,
+      "license": "MIT",
+      "keywords": ["cli", "art", "markdown", "ast", "structured-data", "agent-instructions"],
       "dependencies": {
         "@art-md/codec": "0.0.5",
         "@art-md/primitives": "0.0.7",
@@ -161,6 +163,18 @@
       "canonical": "@art-md/codec",
       "version": "0.0.5",
       "private": false,
+      "license": "MIT",
+      "keywords": [
+        "library",
+        "codec",
+        "parser",
+        "serializer",
+        "art",
+        "markdown",
+        "ast",
+        "structured-data",
+        "agent-instructions"
+      ],
       "dependencies": {
         "@art-md/primitives": "0.0.7",
         "@art-md/constructs": "0.0.7",
@@ -236,6 +250,16 @@
       "canonical": "@art-md/constructs",
       "version": "0.0.7",
       "private": false,
+      "license": "MIT",
+      "keywords": [
+        "library",
+        "constructs",
+        "art",
+        "markdown",
+        "ast",
+        "structured-data",
+        "agent-instructions"
+      ],
       "dependencies": {
         "@art-md/primitives": "0.0.7",
         "mdast-util-from-markdown": "2.1.0",
@@ -312,6 +336,16 @@
       "canonical": "@art-md/parser",
       "version": "0.0.7",
       "private": false,
+      "license": "MIT",
+      "keywords": [
+        "library",
+        "parser",
+        "art",
+        "markdown",
+        "ast",
+        "structured-data",
+        "agent-instructions"
+      ],
       "dependencies": {
         "@art-md/primitives": "0.0.7",
         "@art-md/constructs": "0.0.7",
@@ -393,6 +427,16 @@
       "canonical": "@art-md/primitives",
       "version": "0.0.7",
       "private": false,
+      "license": "MIT",
+      "keywords": [
+        "library",
+        "primitives",
+        "art",
+        "markdown",
+        "ast",
+        "structured-data",
+        "agent-instructions"
+      ],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {
@@ -476,6 +520,16 @@
       "canonical": "@art-md/serializer",
       "version": "0.0.6",
       "private": false,
+      "license": "MIT",
+      "keywords": [
+        "library",
+        "serializer",
+        "art",
+        "markdown",
+        "ast",
+        "structured-data",
+        "agent-instructions"
+      ],
       "dependencies": {
         "@art-md/primitives": "0.0.7",
         "@art-md/constructs": "0.0.7",
@@ -562,6 +616,8 @@
       "canonical": "noodlestan/art-md",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["art", "markdown", "ast", "structured-data", "agent-instructions"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {
@@ -632,6 +688,16 @@
       "canonical": "@art-md/spec",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": [
+        "specification",
+        "language-spec",
+        "art",
+        "markdown",
+        "ast",
+        "structured-data",
+        "agent-instructions"
+      ],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": null,
@@ -700,6 +766,8 @@
       "canonical": "@art-md/codec-tests",
       "version": "0.0.2",
       "private": false,
+      "license": "MIT",
+      "keywords": ["art", "markdown", "testing"],
       "dependencies": {
         "@art-md/codec": "0.0.5"
       },

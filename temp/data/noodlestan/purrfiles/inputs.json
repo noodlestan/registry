@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/purrfiles",
   "checkout": {
     "name": "purrfiles",
     "path": "checkouts/purrfiles"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:23.221Z",
+    "capturedAt": "2026-11-06T02:29:26.283Z",
     "commit": "ae5ed530d930673440550134ad53d42b4c458171",
     "dirtyPaths": []
   },
@@ -46,6 +46,8 @@
       "canonical": "@noodlestan/purrfiles-extract",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["cli", "metadata", "extraction", "purrception", "entities", "typescript"],
       "dependencies": {
         "@noodlestan/purrfiles-entities": "0.0.1",
         "@purrception/lang-ts-extract": "0.1.1",
@@ -105,6 +107,8 @@
       "canonical": "@noodlestan/purrfiles-entities",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["library", "metadata", "purrception", "entities", "typescript"],
       "dependencies": {
         "@purrception/lang-ts": "0.1.1",
         "@purrception/primitives": "0.1.0"
@@ -162,6 +166,8 @@
       "canonical": "noodlestan/purrfiles",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["metadata", "extraction", "entities", "purrception", "governance"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {

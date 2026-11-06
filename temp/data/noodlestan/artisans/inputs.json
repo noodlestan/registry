@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/artisans",
   "checkout": {
     "name": "artisans",
     "path": "checkouts/artisans"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:22.857Z",
+    "capturedAt": "2026-11-06T02:29:25.901Z",
     "commit": "4b595303909590055041e9d70f2032fb446edcf6",
     "dirtyPaths": []
   },
@@ -54,6 +54,8 @@
       "canonical": "@artisans/art-mantras",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["web-app", "interactive", "art", "experimental", "creative", "demo"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": null,
@@ -124,6 +126,8 @@
       "canonical": "noodlestan/artisans",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["art", "experimental", "creative", "demo"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {

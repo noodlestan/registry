@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/noodlestan-web",
   "checkout": {
     "name": "noodlestan-web",
     "path": "checkouts/noodlestan-web"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:23.085Z",
+    "capturedAt": "2026-11-06T02:29:26.128Z",
     "commit": "37de6e228b02617101a77d3c6aa2801ea8ae397e",
     "dirtyPaths": []
   },
@@ -67,6 +67,8 @@
       "canonical": "apps-noodlestan-web",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["web-app", "astro", "website", "static-site", "documentation"],
       "dependencies": {
         "@noodlestan/astro-components": "*",
         "astro": "7.4.2"
@@ -129,6 +131,8 @@
       "canonical": "noodlestan/noodlestan-web",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["documentation", "websites", "astro"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {
@@ -185,6 +189,8 @@
       "canonical": "@noodlestan/astro-components",
       "version": "0.1.2",
       "private": false,
+      "license": "MIT",
+      "keywords": ["astro", "components", "noodlestan"],
       "dependencies": null,
       "peerDependencies": {
         "astro": "^7.4.2"

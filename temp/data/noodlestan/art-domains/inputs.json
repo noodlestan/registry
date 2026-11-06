@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/art-domains",
   "checkout": {
     "name": "art-domains",
     "path": "checkouts/art-domains"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:22.601Z",
+    "capturedAt": "2026-11-06T02:29:25.627Z",
     "commit": "943280a0ca8bb37d80f0f1ab0eb31b43bf1b267e",
     "dirtyPaths": []
   },
@@ -44,6 +44,17 @@
       "canonical": "noodlestan/art-domains",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": [
+        "art",
+        "agent-workflows",
+        "agent-instructions",
+        "skills",
+        "knowledge-management",
+        "structured-data",
+        "workspaces",
+        "records"
+      ],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {

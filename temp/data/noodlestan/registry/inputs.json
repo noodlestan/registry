@@ -1,14 +1,14 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/registry",
   "checkout": {
     "name": "registry",
     "path": "checkouts/registry"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:23.328Z",
-    "commit": "bd2bb562ea7e29b51ff774fbdfe1ae067506a2a9",
-    "dirtyPaths": ["scripts/", "temp/"]
+    "capturedAt": "2026-11-06T02:29:26.383Z",
+    "commit": "9466aa8d0771dc94b4db56d6ada18809e94512f1",
+    "dirtyPaths": ["scripts/inventory-registry-inputs.mjs"]
   },
   "coverage": {
     "checkoutRecordPath": "../../_records/checkouts/registry-checkout.art",
@@ -24,6 +24,8 @@
       "canonical": "noodlestan/registry",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["registry", "governance", "json-api"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {

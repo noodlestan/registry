@@ -1,13 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/art-works",
   "checkout": {
     "name": "art-works",
     "path": "checkouts/art-works"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:22.779Z",
-    "commit": "2894672fa32373cbbb1745ea447ee82fcd8eb856",
+    "capturedAt": "2026-11-06T02:29:25.828Z",
+    "commit": "a12f5f5f7e42a61657c1efc1a40293483bf27ee1",
     "dirtyPaths": []
   },
   "coverage": {
@@ -48,6 +48,16 @@
       "canonical": "@art-works/workspace-cli",
       "version": "0.3.1",
       "private": false,
+      "license": "MIT",
+      "keywords": [
+        "cli",
+        "workspaces",
+        "tooling",
+        "art",
+        "agent-workflows",
+        "multi-repository",
+        "git"
+      ],
       "dependencies": {
         "@art-lib/config": "0.0.1",
         "@art-lib/fs-records": "0.0.3",
@@ -137,6 +147,8 @@
       "canonical": "noodlestan/art-works",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["art", "agent-workflows", "workspaces", "multi-repository", "git"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {

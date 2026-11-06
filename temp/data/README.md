@@ -14,13 +14,13 @@ This directory sits beside the published Registry views (`data/`, `schema/`) but
 - `$REGISTRY/temp/data/README.md` (this file) sits beside the per-checkout directories and is the data dictionary for all of them.
 - Checkouts with missing, malformed, or conflicting sources still get exactly one `inputs.json`; their conditions are reported in that file's `issues` array rather than by omission.
 
-## Keys of `schemaVersion: 1`
+## Keys of `schemaVersion: 2`
 
 Every `inputs.json` contains exactly these top-level keys:
 
 | Key                   | Type    | Meaning                                                                                      |
 | --------------------- | ------- | -------------------------------------------------------------------------------------------- |
-| `schemaVersion`       | integer | Contract version of this layout; currently `1`.                                              |
+| `schemaVersion`       | integer | Contract version of this layout; currently `2`.                                              |
 | `repositoryCanonical` | string  | Registered canonical slug observed for the checkout (`owner/repository`).                    |
 | `checkout`            | object  | Which checkout this file describes.                                                          |
 | `sourceSnapshot`      | object  | When and from which git state the snapshot was captured.                                     |
@@ -63,20 +63,22 @@ Every `inputs.json` contains exactly these top-level keys:
 
 ### `manifests[]`
 
-| Key                         | Type            | Meaning                                                                                                                                                                                                      |
-| --------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `path`                      | string          | Manifest path relative to the source checkout.                                                                                                                                                               |
-| `canonical`                 | string \| null  | The observed manifest `name`.                                                                                                                                                                                |
-| `version`                   | string \| null  | The observed manifest `version`.                                                                                                                                                                             |
-| `private`                   | boolean \| null | The observed manifest `private`.                                                                                                                                                                             |
-| `dependencies`              | object \| null  | The exact `dependencies` map as declared (direct declarations only).                                                                                                                                         |
-| `peerDependencies`          | object \| null  | The exact `peerDependencies` map as declared.                                                                                                                                                                |
-| `devDependencies`           | object \| null  | The exact `devDependencies` map as declared.                                                                                                                                                                 |
-| `repositoryRecord`          | object \| null  | `{ path, identity }` for the checkout's co-located `_records/repository.art`, or `null` when that record is absent.                                                                                          |
-| `projectRecord`             | object \| null  | `{ path, identity }` for the checkout's co-located `_records/project.art`, or `null` when that record is absent.                                                                                             |
-| `packageRecord`             | object \| null  | `{ path, identity }` for the package record resolved to this manifest, or `null` (root manifests and nested manifests without a resolved record; the latter raise an issue).                                 |
-| `dependencySetDeclarations` | array           | `{ path, fields }` per distinct `Package Dependency Set` referenced by the manifest's entity record (its package record, or the checkout repository record when there is no package record); `[]` when none. |
-| `recordFiles`               | string[]        | Record files describing this manifest's repository/package entity: the checkout's root `_records/**` plus, when present, the manifest directory's own `_records/**`.                                         |
+| Key                         | Type             | Meaning                                                                                                                                                                                                      |
+| --------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `path`                      | string           | Manifest path relative to the source checkout.                                                                                                                                                               |
+| `canonical`                 | string \| null   | The observed manifest `name`.                                                                                                                                                                                |
+| `version`                   | string \| null   | The observed manifest `version`.                                                                                                                                                                             |
+| `private`                   | boolean \| null  | The observed manifest `private`.                                                                                                                                                                             |
+| `license`                   | string \| null   | The observed manifest `license`.                                                                                                                                                                             |
+| `keywords`                  | string[] \| null | The observed manifest `keywords` array.                                                                                                                                                                      |
+| `dependencies`              | object \| null   | The exact `dependencies` map as declared (direct declarations only).                                                                                                                                         |
+| `peerDependencies`          | object \| null   | The exact `peerDependencies` map as declared.                                                                                                                                                                |
+| `devDependencies`           | object \| null   | The exact `devDependencies` map as declared.                                                                                                                                                                 |
+| `repositoryRecord`          | object \| null   | `{ path, identity }` for the checkout's co-located `_records/repository.art`, or `null` when that record is absent.                                                                                          |
+| `projectRecord`             | object \| null   | `{ path, identity }` for the checkout's co-located `_records/project.art`, or `null` when that record is absent.                                                                                             |
+| `packageRecord`             | object \| null   | `{ path, identity }` for the package record resolved to this manifest, or `null` (root manifests and nested manifests without a resolved record; the latter raise an issue).                                 |
+| `dependencySetDeclarations` | array            | `{ path, fields }` per distinct `Package Dependency Set` referenced by the manifest's entity record (its package record, or the checkout repository record when there is no package record); `[]` when none. |
+| `recordFiles`               | string[]         | Record files describing this manifest's repository/package entity: the checkout's root `_records/**` plus, when present, the manifest directory's own `_records/**`.                                         |
 
 ### Record references (`repositoryRecord`, `projectRecord`, `packageRecord`)
 
@@ -108,8 +110,8 @@ In `fields`, a scalar field maps to its text as written (enclosing backticks str
 
 ### `null` versus `{}`
 
-- A missing scalar (manifest `name`, `version`, `private`, an undeclared identity field, an absent record reference) is `null`; the key is always present.
-- A dependency map that the manifest does not declare is `null`; a map the manifest declares as empty is preserved as `{}`. The two are never collapsed into each other.
+- A missing scalar (manifest `name`, `version`, `private`, `license`, an undeclared identity field, an absent record reference) is `null`; the key is always present.
+- A dependency map or the `keywords` array that the manifest does not declare is `null`; a declaration the manifest writes empty is preserved as `{}` or `[]`. The two are never collapsed into each other.
 - `dependencySetDeclarations` and the `coverage` lists are always present; an empty array means "present but empty", which is different from `null`.
 
 ## Worked example
@@ -118,7 +120,7 @@ A checkout `noodlestan/example` with a root manifest, one nested package manifes
 
 ```json
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/example",
   "checkout": {
     "name": "example",
@@ -158,6 +160,8 @@ A checkout `noodlestan/example` with a root manifest, one nested package manifes
       "canonical": "example",
       "version": "0.1.0",
       "private": true,
+      "license": null,
+      "keywords": null,
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {
@@ -205,6 +209,8 @@ A checkout `noodlestan/example` with a root manifest, one nested package manifes
       "canonical": "@example/widget",
       "version": "1.2.3",
       "private": false,
+      "license": "MIT",
+      "keywords": ["example", "widget"],
       "dependencies": {
         "turbo": "^2.9.18"
       },
@@ -271,24 +277,24 @@ Values are copied as observed: nothing is inferred, reconciled, or normalized.
 
 Recorded in the `issues` array of the affected checkout:
 
-| Code                                   | Meaning                                                                                                         |
-| -------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `duplicate-repository-record`          | More than one registered repository record resolves the checkout's repository name; all agree on the canonical. |
-| `source-snapshot-unavailable`          | git could not report the checkout's commit and/or dirty state.                                                  |
-| `missing-checkout-repository-record`   | The checkout has no co-located `_records/repository.art`.                                                       |
-| `repository-canonical-conflict`        | The co-located repository record and the registered repository record declare different canonicals.             |
-| `missing-project-record`               | The checkout has no co-located `_records/project.art`.                                                          |
-| `malformed-record`                     | A record file is unreadable or lacks its expected `## {Kind}:` section.                                         |
-| `multiple-package-records-in-file`     | A `package.art` file declares more than one `## Package:` section; only the first is inventoried.               |
-| `duplicate-dependency-set-declaration` | Two record files declare the same `## Package Dependency Set:` name within one checkout.                        |
-| `malformed-manifest`                   | A discovered `package.json` is unreadable or not a JSON object; it is reported, never omitted silently.         |
-| `missing-manifest-name`                | The manifest declares no `name`; `canonical` is `null`.                                                         |
-| `malformed-manifest-field`             | `name`, `version`, `private`, or a dependency map has the wrong JSON type; the value is `null`.                 |
-| `missing-package-record`               | A nested manifest has no resolvable package record.                                                             |
-| `package-record-path-conflict`         | A package record's `Path:` disagrees with the directory it sits in.                                             |
-| `duplicate-package-record-claim`       | Two package records claim the same manifest directory.                                                          |
-| `package-record-without-manifest`      | A package record describes a directory where no `package.json` was discovered.                                  |
-| `unresolved-dependency-set-reference`  | An entity record references a set name this checkout never declares.                                            |
+| Code                                   | Meaning                                                                                                                |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `duplicate-repository-record`          | More than one registered repository record resolves the checkout's repository name; all agree on the canonical.        |
+| `source-snapshot-unavailable`          | git could not report the checkout's commit and/or dirty state.                                                         |
+| `missing-checkout-repository-record`   | The checkout has no co-located `_records/repository.art`.                                                              |
+| `repository-canonical-conflict`        | The co-located repository record and the registered repository record declare different canonicals.                    |
+| `missing-project-record`               | The checkout has no co-located `_records/project.art`.                                                                 |
+| `malformed-record`                     | A record file is unreadable or lacks its expected `## {Kind}:` section.                                                |
+| `multiple-package-records-in-file`     | A `package.art` file declares more than one `## Package:` section; only the first is inventoried.                      |
+| `duplicate-dependency-set-declaration` | Two record files declare the same `## Package Dependency Set:` name within one checkout.                               |
+| `malformed-manifest`                   | A discovered `package.json` is unreadable or not a JSON object; it is reported, never omitted silently.                |
+| `missing-manifest-name`                | The manifest declares no `name`; `canonical` is `null`.                                                                |
+| `malformed-manifest-field`             | `name`, `version`, `private`, `license`, `keywords`, or a dependency map has the wrong JSON type; the value is `null`. |
+| `missing-package-record`               | A nested manifest has no resolvable package record.                                                                    |
+| `package-record-path-conflict`         | A package record's `Path:` disagrees with the directory it sits in.                                                    |
+| `duplicate-package-record-claim`       | Two package records claim the same manifest directory.                                                                 |
+| `package-record-without-manifest`      | A package record describes a directory where no `package.json` was discovered.                                         |
+| `unresolved-dependency-set-reference`  | An entity record references a set name this checkout never declares.                                                   |
 
 ### Blockers (generation aborts, nothing is written)
 

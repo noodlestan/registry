@@ -31,7 +31,7 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync
 import { dirname, join, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const SCHEMA_VERSION = 1;
+const SCHEMA_VERSION = 2;
 const SCRIPT_PATH = fileURLToPath(import.meta.url);
 const SCRIPT_DIR = dirname(SCRIPT_PATH);
 const REGISTRY_ROOT = resolve(SCRIPT_DIR, '..');
@@ -848,6 +848,28 @@ function buildInventory(target) {
 			});
 		}
 
+		let license = null;
+		if ('license' in parsed && typeof parsed.license === 'string') {
+			license = parsed.license;
+		} else if ('license' in parsed) {
+			pushIssue({
+				sourcePath: manifestPath,
+				code: 'malformed-manifest-field',
+				message: 'Manifest `license` is not a string; `license` is null.',
+			});
+		}
+
+		let keywords = null;
+		if ('keywords' in parsed && Array.isArray(parsed.keywords)) {
+			keywords = parsed.keywords;
+		} else if ('keywords' in parsed) {
+			pushIssue({
+				sourcePath: manifestPath,
+				code: 'malformed-manifest-field',
+				message: 'Manifest `keywords` is not an array; `keywords` is null.',
+			});
+		}
+
 		// dependency maps: exact declarations only, no inference
 		const dependencyMaps = {};
 		for (const key of ['dependencies', 'peerDependencies', 'devDependencies']) {
@@ -968,6 +990,8 @@ function buildInventory(target) {
 			canonical,
 			version,
 			private: isPrivate,
+			license,
+			keywords,
 			dependencies: dependencyMaps.dependencies,
 			peerDependencies: dependencyMaps.peerDependencies,
 			devDependencies: dependencyMaps.devDependencies,
@@ -1037,13 +1061,13 @@ This directory sits beside the published Registry views (\`data/\`, \`schema/\`)
 - \`$REGISTRY/temp/data/README.md\` (this file) sits beside the per-checkout directories and is the data dictionary for all of them.
 - Checkouts with missing, malformed, or conflicting sources still get exactly one \`inputs.json\`; their conditions are reported in that file's \`issues\` array rather than by omission.
 
-## Keys of \`schemaVersion: 1\`
+## Keys of \`schemaVersion: 2\`
 
 Every \`inputs.json\` contains exactly these top-level keys:
 
 | Key                  | Type            | Meaning                                                                                       |
 | -------------------- | --------------- | --------------------------------------------------------------------------------------------- |
-| \`schemaVersion\`     | integer         | Contract version of this layout; currently \`1\`.                                              |
+| \`schemaVersion\`     | integer         | Contract version of this layout; currently \`2\`.                                              |
 | \`repositoryCanonical\` | string        | Registered canonical slug observed for the checkout (\`owner/repository\`).                    |
 | \`checkout\`          | object          | Which checkout this file describes.                                                           |
 | \`sourceSnapshot\`    | object          | When and from which git state the snapshot was captured.                                      |
@@ -1092,6 +1116,8 @@ Every \`inputs.json\` contains exactly these top-level keys:
 | \`canonical\`              | string \\| null  | The observed manifest \`name\`.                                                                                                                                              |
 | \`version\`                | string \\| null  | The observed manifest \`version\`.                                                                                                                                           |
 | \`private\`                | boolean \\| null | The observed manifest \`private\`.                                                                                                                                           |
+| \`license\`                | string \\| null  | The observed manifest \`license\`.                                                                                                                                           |
+| \`keywords\`               | string[] \\| null | The observed manifest \`keywords\` array.                                                                                                                                     |
 | \`dependencies\`           | object \\| null  | The exact \`dependencies\` map as declared (direct declarations only).                                                                                                       |
 | \`peerDependencies\`       | object \\| null  | The exact \`peerDependencies\` map as declared.                                                                                                                              |
 | \`devDependencies\`        | object \\| null  | The exact \`devDependencies\` map as declared.                                                                                                                               |
@@ -1131,8 +1157,8 @@ In \`fields\`, a scalar field maps to its text as written (enclosing backticks s
 
 ### \`null\` versus \`{}\`
 
-- A missing scalar (manifest \`name\`, \`version\`, \`private\`, an undeclared identity field, an absent record reference) is \`null\`; the key is always present.
-- A dependency map that the manifest does not declare is \`null\`; a map the manifest declares as empty is preserved as \`{}\`. The two are never collapsed into each other.
+- A missing scalar (manifest \`name\`, \`version\`, \`private\`, \`license\`, an undeclared identity field, an absent record reference) is \`null\`; the key is always present.
+- A dependency map or the \`keywords\` array that the manifest does not declare is \`null\`; a declaration the manifest writes empty is preserved as \`{}\` or \`[]\`. The two are never collapsed into each other.
 - \`dependencySetDeclarations\` and the \`coverage\` lists are always present; an empty array means "present but empty", which is different from \`null\`.
 
 ## Worked example
@@ -1141,7 +1167,7 @@ A checkout \`noodlestan/example\` with a root manifest, one nested package manif
 
 \`\`\`json
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/example",
   "checkout": {
     "name": "example",
@@ -1186,6 +1212,8 @@ A checkout \`noodlestan/example\` with a root manifest, one nested package manif
       "canonical": "example",
       "version": "0.1.0",
       "private": true,
+      "license": null,
+      "keywords": null,
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {
@@ -1236,6 +1264,11 @@ A checkout \`noodlestan/example\` with a root manifest, one nested package manif
       "canonical": "@example/widget",
       "version": "1.2.3",
       "private": false,
+      "license": "MIT",
+      "keywords": [
+        "example",
+        "widget"
+      ],
       "dependencies": {
         "turbo": "^2.9.18"
       },
@@ -1314,7 +1347,7 @@ Recorded in the \`issues\` array of the affected checkout:
 | \`duplicate-dependency-set-declaration\` | Two record files declare the same \`## Package Dependency Set:\` name within one checkout.                         |
 | \`malformed-manifest\`                 | A discovered \`package.json\` is unreadable or not a JSON object; it is reported, never omitted silently.           |
 | \`missing-manifest-name\`              | The manifest declares no \`name\`; \`canonical\` is \`null\`.                                                        |
-| \`malformed-manifest-field\`           | \`name\`, \`version\`, \`private\`, or a dependency map has the wrong JSON type; the value is \`null\`.             |
+| \`malformed-manifest-field\`           | \`name\`, \`version\`, \`private\`, \`license\`, \`keywords\`, or a dependency map has the wrong JSON type; the value is \`null\`. |
 | \`missing-package-record\`             | A nested manifest has no resolvable package record.                                                                 |
 | \`package-record-path-conflict\`       | A package record's \`Path:\` disagrees with the directory it sits in.                                               |
 | \`duplicate-package-record-claim\`     | Two package records claim the same manifest directory.                                                              |

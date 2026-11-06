@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/purrtrait",
   "checkout": {
     "name": "purrtrait",
     "path": "checkouts/purrtrait"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:23.290Z",
+    "capturedAt": "2026-11-06T02:29:26.347Z",
     "commit": "2e36d69f304599a2e507f10ca7b312faabc74768",
     "dirtyPaths": []
   },
@@ -61,6 +61,8 @@
       "canonical": "@purrtrait/astro-components",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["library", "rendering", "astro", "documentation"],
       "dependencies": {
         "@purrtrait/code-renderer": "0.0.11",
         "@purrtrait/jsdoc-renderer": "0.0.2",
@@ -124,6 +126,8 @@
       "canonical": "@purrtrait/client-tsx",
       "version": "0.0.11",
       "private": false,
+      "license": "MIT",
+      "keywords": ["library", "tsx", "code-rendering", "metadata", "visualization", "rendering"],
       "dependencies": {},
       "peerDependencies": {
         "typescript": "^5.9.3"
@@ -182,6 +186,8 @@
       "canonical": "@purrtrait/code-renderer",
       "version": "0.0.11",
       "private": false,
+      "license": "MIT",
+      "keywords": ["library", "code-visualization", "metadata", "visualization", "rendering"],
       "dependencies": {},
       "peerDependencies": {},
       "devDependencies": {},
@@ -236,6 +242,8 @@
       "canonical": "@purrtrait/jsdoc-renderer",
       "version": "0.0.2",
       "private": false,
+      "license": "MIT",
+      "keywords": ["library", "jsdoc", "metadata", "visualization", "rendering"],
       "dependencies": {},
       "peerDependencies": {},
       "devDependencies": {
@@ -292,6 +300,8 @@
       "canonical": "@purrtrait/lang-ts",
       "version": "0.0.12",
       "private": false,
+      "license": "MIT",
+      "keywords": ["library", "typescript", "metadata", "visualization", "rendering"],
       "dependencies": {
         "@purrception/lang-ts": "0.1.1",
         "@purrtrait/code-renderer": "0.0.11"
@@ -349,6 +359,8 @@
       "canonical": "@purrtrait/solid-code",
       "version": "0.0.13",
       "private": false,
+      "license": "MIT",
+      "keywords": ["library", "solidjs", "metadata", "visualization", "rendering"],
       "dependencies": {
         "@purrtrait/code-renderer": "*",
         "@purrtrait/lang-ts": "*"
@@ -410,6 +422,8 @@
       "canonical": "@purrtrait/view-tsx",
       "version": "0.0.11",
       "private": false,
+      "license": "MIT",
+      "keywords": ["library", "tsx", "metadata", "visualization", "rendering"],
       "dependencies": {
         "@purrtrait/client-tsx": "*"
       },
@@ -470,6 +484,8 @@
       "canonical": "noodlestan/purrtrait",
       "version": "0.0.11",
       "private": true,
+      "license": "MIT",
+      "keywords": ["metadata", "visualization", "rendering"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {

@@ -1,13 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/art-lib",
   "checkout": {
     "name": "art-lib",
     "path": "checkouts/art-lib"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:22.686Z",
-    "commit": "5cd8d8269be30ca64170a67b369789dc7d6223ab",
+    "capturedAt": "2026-11-06T02:29:25.720Z",
+    "commit": "2824f3520b8aa292e0864d29793cf040e1a59654",
     "dirtyPaths": []
   },
   "coverage": {
@@ -17,12 +17,14 @@
       "libs/config/package.json",
       "libs/fs-records/package.json",
       "libs/logger/package.json",
+      "libs/operations/package.json",
       "package.json"
     ],
     "manifestPathsInventoried": [
       "libs/config/package.json",
       "libs/fs-records/package.json",
       "libs/logger/package.json",
+      "libs/operations/package.json",
       "package.json"
     ],
     "recordPaths": [
@@ -50,7 +52,9 @@
       "libs/fs-records/_records/npm-deployment.art",
       "libs/fs-records/_records/package.art",
       "libs/logger/_records/npm-deployment.art",
-      "libs/logger/_records/package.art"
+      "libs/logger/_records/package.art",
+      "libs/operations/_records/npm-deployment.art",
+      "libs/operations/_records/package.art"
     ]
   },
   "issues": [],
@@ -60,6 +64,8 @@
       "canonical": "@art-lib/config",
       "version": "0.0.2",
       "private": false,
+      "license": "MIT",
+      "keywords": ["library", "config", "esbuild", "cli", "tooling", "art", "terminal-apps"],
       "dependencies": {
         "esbuild": "0.28.2"
       },
@@ -130,6 +136,17 @@
       "canonical": "@art-lib/fs-records",
       "version": "0.0.3",
       "private": false,
+      "license": "MIT",
+      "keywords": [
+        "library",
+        "markdown",
+        "records",
+        "file-system",
+        "cli",
+        "tooling",
+        "art",
+        "terminal-apps"
+      ],
       "dependencies": {
         "@art-md/primitives": "0.0.6"
       },
@@ -200,6 +217,8 @@
       "canonical": "@art-lib/logger",
       "version": "0.0.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["library", "logging", "messages", "art", "terminal-apps"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": null,
@@ -264,10 +283,84 @@
       ]
     },
     {
+      "path": "libs/operations/package.json",
+      "canonical": "@art-lib/operations",
+      "version": "0.0.1",
+      "private": false,
+      "license": "MIT",
+      "keywords": ["library", "operations", "cli", "tooling", "art", "terminal-apps"],
+      "dependencies": {
+        "@art-lib/logger": "0.0.1"
+      },
+      "peerDependencies": null,
+      "devDependencies": {},
+      "repositoryRecord": {
+        "path": "_records/repository.art",
+        "identity": {
+          "name": "Art Lib",
+          "canonical": "noodlestan/art-lib",
+          "remote": "git@github.com:noodlestan/art-lib.git",
+          "owner": "Project: Art Lib",
+          "packageFile": "package.json",
+          "private": false,
+          "workspaces": "None"
+        }
+      },
+      "projectRecord": {
+        "path": "_records/project.art",
+        "identity": {
+          "name": "Art Lib",
+          "owner": "Project: Artificials",
+          "repository": "Repository: Art Lib",
+          "code": "https://github.com/noodlestan/art-lib",
+          "private": false
+        }
+      },
+      "packageRecord": {
+        "path": "libs/operations/_records/package.art",
+        "identity": {
+          "name": "Art Lib Operations",
+          "canonicalName": "@art-lib/operations",
+          "path": "libs/operations/",
+          "packageFile": "package.json",
+          "namespace": "Namespace: Art Lib",
+          "owner": "Project: Art Lib",
+          "private": false,
+          "published": false
+        }
+      },
+      "dependencySetDeclarations": [],
+      "recordFiles": [
+        "_records/dependencies/build-tools-dev.art",
+        "_records/dependencies/cli-dev.art",
+        "_records/dependencies/project-lint.art",
+        "_records/dependencies/project-tools.art",
+        "_records/dependencies/project-typescript.art",
+        "_records/dependencies/purrception-extract.art",
+        "_records/dependencies/solid-lib-dev.art",
+        "_records/dependencies/solid-lib-peer.art",
+        "_records/license.art",
+        "_records/namespace.art",
+        "_records/project.art",
+        "_records/repository.art",
+        "_records/scripts/cli-build.art",
+        "_records/scripts/common-scripts.art",
+        "_records/scripts/lib-build.art",
+        "_records/scripts/micro-app-serve.art",
+        "_records/scripts/purrception-extract.art",
+        "_records/scripts/root-extract.art",
+        "_records/scripts/root-lifecycle.art",
+        "libs/operations/_records/npm-deployment.art",
+        "libs/operations/_records/package.art"
+      ]
+    },
+    {
       "path": "package.json",
       "canonical": "noodlestan/art-lib",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["art", "terminal-apps"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {

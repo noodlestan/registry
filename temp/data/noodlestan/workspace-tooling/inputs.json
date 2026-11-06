@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/workspace-tooling",
   "checkout": {
     "name": "workspace-tooling",
     "path": "checkouts/workspace-tooling"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:23.361Z",
+    "capturedAt": "2026-11-06T02:29:26.419Z",
     "commit": "9d61dbadd6a35e55acc1e171da8d71ecb75176a1",
     "dirtyPaths": []
   },
@@ -62,6 +62,8 @@
       "canonical": "@noodlestan/esbuild",
       "version": "0.1.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["cli", "esbuild", "build", "tooling", "configs"],
       "dependencies": {
         "esbuild": "0.28.2",
         "esbuild-plugin-file-path-extensions": "2.1.4"
@@ -127,6 +129,8 @@
       "canonical": "@noodlestan/eslint-config",
       "version": "0.0.9",
       "private": false,
+      "license": "MIT",
+      "keywords": ["eslint", "linting", "tooling", "configs"],
       "dependencies": {
         "@typescript-eslint/eslint-plugin": "8.11.0",
         "eslint-config-prettier": "10.1.8",
@@ -237,6 +241,8 @@
       "canonical": "@noodlestan/prettier-config-astro",
       "version": "0.1.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["prettier", "astro", "formatting", "tooling", "configs"],
       "dependencies": {
         "@noodlestan/prettier-config": "0.1.1"
       },
@@ -304,6 +310,8 @@
       "canonical": "@noodlestan/prettier-config",
       "version": "0.1.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["prettier", "formatting", "tooling", "configs"],
       "dependencies": null,
       "peerDependencies": {
         "prettier": "^3.9.10"
@@ -368,6 +376,8 @@
       "canonical": "@noodlestan/tsconfig",
       "version": "0.2.1",
       "private": false,
+      "license": "MIT",
+      "keywords": ["typescript", "tooling", "configs"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": null,
@@ -430,6 +440,8 @@
       "canonical": "noodlestan/workspace-tooling",
       "version": "0.0.11",
       "private": true,
+      "license": "MIT",
+      "keywords": ["tooling", "configs"],
       "dependencies": {
         "esbuild": "0.28.2",
         "esbuild-plugin-file-path-extensions": "2.1.4"

@@ -1,13 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/management",
   "checkout": {
     "name": "management",
     "path": "checkouts/management"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:22.960Z",
-    "commit": "2e6112f8130d571799cca23e52f5f3a0209ac0af",
+    "capturedAt": "2026-11-06T02:29:26.003Z",
+    "commit": "a4bcb4e5e2183285162e7d8ecf67f05389ad5e68",
     "dirtyPaths": ["_backlog/3-now/plan-poc-manifest-registry/plan.md"]
   },
   "coverage": {
@@ -45,6 +45,8 @@
       "canonical": "@noodlestan/{family}-planning",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["planning", "roadmap", "backlog", "{family}"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {
@@ -102,6 +104,8 @@
       "canonical": "noodlestan/management",
       "version": "0.0.1",
       "private": true,
+      "license": "MIT",
+      "keywords": ["project-management", "roadmap", "governance"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {

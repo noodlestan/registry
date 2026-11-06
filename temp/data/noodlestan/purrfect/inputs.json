@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repositoryCanonical": "noodlestan/purrfect",
   "checkout": {
     "name": "purrfect",
     "path": "checkouts/purrfect"
   },
   "sourceSnapshot": {
-    "capturedAt": "2026-11-05T23:17:23.190Z",
+    "capturedAt": "2026-11-06T02:29:26.253Z",
     "commit": "b5a201d137b11317a45b392db31a9e6a2e9b56d7",
     "dirtyPaths": []
   },
@@ -28,6 +28,8 @@
       "canonical": "noodlestan/purrfect",
       "version": "0.0.11",
       "private": true,
+      "license": "MIT",
+      "keywords": ["metadata", "extraction", "visualization", "aggregation", "indexing"],
       "dependencies": null,
       "peerDependencies": null,
       "devDependencies": {
