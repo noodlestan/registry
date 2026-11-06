@@ -309,12 +309,12 @@ Increment `schemaVersion` whenever a key is added or removed, a type changes, th
 
 Only the maintained inventory generator — `$REGISTRY/scripts/inventory-registry-inputs.mjs`, run as part of the `inventory-registry-inputs` iteration of `plan-poc-manifest-registry` — may create or replace this README and the `inputs.json` files.
 
-Consumers that find the snapshot stale, incomplete, or missing report it and wait for that iteration to regenerate it. Consumers must not edit these files and must not regenerate them independently.
+Consumers that find the snapshot incomplete or missing report it and wait for that iteration to regenerate it. Consumers must not edit these files and must not regenerate them independently.
 
 ## Consumer obligations
 
 - Read this README first, then the `inputs.json` files.
-- Check `schemaVersion`, the checkout coverage (exactly one file per checkout), and each file's `sourceSnapshot` before trusting the data; stop on an unsupported version or a stale snapshot and request regeneration.
+- Check `schemaVersion` and the checkout coverage (exactly one file per checkout) before trusting the data; stop on an unsupported version and request regeneration. Treat `sourceSnapshot` as provenance for diagnostics, not as a freshness gate.
 - Do not rescan manifests and do not read lockfiles; this snapshot is the sole manifest-discovery input.
 - Use only direct dependencies from the three manifest maps (`dependencies`, `peerDependencies`, `devDependencies`); never infer transitive dependencies.
 - Preserve observed values; surface conflicts and issues instead of guessing a winner.
